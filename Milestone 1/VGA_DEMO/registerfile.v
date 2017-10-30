@@ -4,7 +4,7 @@
 module registerfile (
 	input wire clock,
 	input wire reset,
-	input wire write,
+	input wire write_en,
 	input wire clock_debug,
 	input wire [4:0] read_address_debug,
 	input wire [31:0] data_in,
@@ -28,13 +28,13 @@ module registerfile (
 	always @(posedge clock) begin
 		
 		
-		if (reset==1'b1) begin
-			for (i=0;i<32;i=i+1) begin
+		if (reset == 1'b1) begin
+			for (i=0; i<32; i=i+1) begin
 				Regfile[i]<=i;	
 			end
 		end 
 		
-		else if (write==1) begin
+		else if (write_en == 1'b1 && write_address != 5'b00000) begin
 			Regfile[write_address]<=data_in;
 		end
 		
