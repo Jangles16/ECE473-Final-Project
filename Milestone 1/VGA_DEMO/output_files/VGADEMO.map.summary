@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Nov 02 08:38:58 2017
+Analysis & Synthesis Status : Successful - Thu Nov 02 13:20:05 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : VGADEMO
 Top-level Entity Name : VGADEMO
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 859
+Total registers : 1986
 Total pins : 17
 Total virtual pins : 0
 Total block memory bits : 311,296
