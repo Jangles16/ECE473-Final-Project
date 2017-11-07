@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 264 224)
+	(rect 16 16 264 256)
 	(text "ID_EX_PIPE" (rect 5 0 60 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -95,6 +95,13 @@ agreement for further details.
 		(line (pt 0 176)(pt 16 176)(line_width 1))
 	)
 	(port
+		(pt 0 192)
+		(input)
+		(text "jump_in" (rect 0 0 30 12)(font "Arial" ))
+		(text "jump_in" (rect 21 187 51 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
 		(pt 248 32)
 		(output)
 		(text "data_out_1[31..0]" (rect 0 0 67 12)(font "Arial" ))
@@ -150,7 +157,14 @@ agreement for further details.
 		(text "mem_reg_dst_out" (rect 152 139 227 151)(font "Arial" ))
 		(line (pt 248 144)(pt 232 144)(line_width 1))
 	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "jump_out" (rect 0 0 36 12)(font "Arial" ))
+		(text "jump_out" (rect 191 155 227 167)(font "Arial" ))
+		(line (pt 248 160)(pt 232 160)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 232 192)(line_width 1))
+		(rectangle (rect 16 16 232 224)(line_width 1))
 	)
 )

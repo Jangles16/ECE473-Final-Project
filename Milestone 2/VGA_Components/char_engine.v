@@ -484,6 +484,18 @@ module char_engine(
 					row = 42;
 					num_chars = 19;
 				end
+				
+			//18: begin //16-31: label
+					
+			//		hex_buffer[3] <= 6'h13;
+			//		hex_buffer[2] <= 6'h18;
+			//		hex_buffer[1] <= 6'h1C;
+			//		hex_buffer[0] <= 6'h11;
+				
+			//		row = 42;
+			//		column = 50;
+			//		num_chars = 4;
+			//	end
 				//data tasks send an address to various sources, and render the received data using the decoder.
 			
 			(NUM_LABEL_TASKS + 1): begin //instruction memory indexes 00-31

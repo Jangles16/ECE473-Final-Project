@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADEMO
-Fri Nov 03 01:27:40 2017
+Fri Nov 03 09:11:20 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 03 01:27:39 2017       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 03 09:11:20 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGADEMO                                     ;
 ; Top-level Entity Name           ; VGADEMO                                     ;
@@ -196,34 +196,34 @@ agreement for further details.
 +-----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path  ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                           ; Library ;
 +-----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; ins3.mif                          ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ins3.mif               ;         ;
-; data.mif                          ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/data.mif               ;         ;
-; ../VGA_Components/VGA_BLOCK.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/VGA_BLOCK.bdf    ;         ;
-; ../VGA_Components/vram.v          ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vram.v           ;         ;
-; ../VGA_Components/vgaclk_0002.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk_0002.v    ;         ;
-; ../VGA_Components/vgaclk.v        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk.v         ;         ;
-; ../VGA_Components/vga_control.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vga_control.v    ;         ;
-; ../VGA_Components/color_encoder.v ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/color_encoder.v  ;         ;
-; ../VGA_Components/char_engine.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v    ;         ;
-; instructionmem.v                  ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/instructionmem.v       ;         ;
-; datamem.v                         ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/datamem.v              ;         ;
-; VGADEMO.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/VGADEMO.bdf            ;         ;
-; registerfile.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/registerfile.v         ;         ;
-; PC.v                              ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/PC.v                   ;         ;
-; SignExtend.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/SignExtend.v           ;         ;
-; ZeroExtend.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ZeroExtend.v           ;         ;
-; Add4.v                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Add4.v                 ;         ;
-; IF_ID_pipe.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/IF_ID_pipe.v           ;         ;
-; EX_MEM_pipe.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/EX_MEM_pipe.v          ;         ;
-; ID_EX_pipe.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v           ;         ;
-; ALU.v                             ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v                  ;         ;
-; MEM_WB_pipe.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MEM_WB_pipe.v          ;         ;
-; Controller.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v           ;         ;
-; MUX_2x32.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x32.v             ;         ;
-; Forwarding.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Forwarding.v           ;         ;
-; MUX_3x32.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_3x32.v             ;         ;
-; MUX_2x5.v                         ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x5.v              ;         ;
-; Cycle_Counter.v                   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Cycle_Counter.v        ;         ;
+; ins3.mif                          ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ins3.mif               ;         ;
+; data.mif                          ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/data.mif               ;         ;
+; ../VGA_Components/VGA_BLOCK.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/VGA_BLOCK.bdf    ;         ;
+; ../VGA_Components/vram.v          ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vram.v           ;         ;
+; ../VGA_Components/vgaclk_0002.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk_0002.v    ;         ;
+; ../VGA_Components/vgaclk.v        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk.v         ;         ;
+; ../VGA_Components/vga_control.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vga_control.v    ;         ;
+; ../VGA_Components/color_encoder.v ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/color_encoder.v  ;         ;
+; ../VGA_Components/char_engine.v   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v    ;         ;
+; instructionmem.v                  ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/instructionmem.v       ;         ;
+; datamem.v                         ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/datamem.v              ;         ;
+; VGADEMO.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/VGADEMO.bdf            ;         ;
+; registerfile.v                    ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/registerfile.v         ;         ;
+; PC.v                              ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/PC.v                   ;         ;
+; SignExtend.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/SignExtend.v           ;         ;
+; ZeroExtend.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ZeroExtend.v           ;         ;
+; Add4.v                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Add4.v                 ;         ;
+; IF_ID_pipe.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/IF_ID_pipe.v           ;         ;
+; EX_MEM_pipe.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/EX_MEM_pipe.v          ;         ;
+; ID_EX_pipe.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v           ;         ;
+; ALU.v                             ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v                  ;         ;
+; MEM_WB_pipe.v                     ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MEM_WB_pipe.v          ;         ;
+; Controller.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v           ;         ;
+; MUX_2x32.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x32.v             ;         ;
+; Forwarding.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Forwarding.v           ;         ;
+; MUX_3x32.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_3x32.v             ;         ;
+; MUX_2x5.v                         ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x5.v              ;         ;
+; Cycle_Counter.v                   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Cycle_Counter.v        ;         ;
 ; altera_pll.v                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altera_pll.v                                    ;         ;
 ; altsyncram.tdf                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf                                  ;         ;
 ; stratix_ram_block.inc             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc                           ;         ;
@@ -234,20 +234,20 @@ agreement for further details.
 ; altrom.inc                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                      ;         ;
 ; altram.inc                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                      ;         ;
 ; altdpram.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                    ;         ;
-; db/altsyncram_1tn2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf ;         ;
-; db/decode_3na.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/decode_3na.tdf      ;         ;
-; db/decode_s2a.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/decode_s2a.tdf      ;         ;
-; db/mux_chb.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_chb.tdf         ;         ;
-; db/mux_jhb.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_jhb.tdf         ;         ;
-; db/altsyncram_tfl2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_tfl2.tdf ;         ;
+; db/altsyncram_1tn2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf ;         ;
+; db/decode_3na.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/decode_3na.tdf      ;         ;
+; db/decode_s2a.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/decode_s2a.tdf      ;         ;
+; db/mux_chb.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_chb.tdf         ;         ;
+; db/mux_jhb.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_jhb.tdf         ;         ;
+; db/altsyncram_tfl2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_tfl2.tdf ;         ;
 ; lpm_mux.tdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf                                     ;         ;
 ; muxlut.inc                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/muxlut.inc                                      ;         ;
 ; bypassff.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc                                    ;         ;
 ; altshift.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc                                    ;         ;
-; db/mux_flc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_flc.tdf         ;         ;
-; db/mux_dlc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_dlc.tdf         ;         ;
-; db/mux_tjc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_tjc.tdf         ;         ;
-; db/altsyncram_h3k2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_h3k2.tdf ;         ;
+; db/mux_flc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_flc.tdf         ;         ;
+; db/mux_dlc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_dlc.tdf         ;         ;
+; db/mux_tjc.tdf                    ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_tjc.tdf         ;         ;
+; db/altsyncram_h3k2.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_h3k2.tdf ;         ;
 +-----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1707,84 +1707,84 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 03 01:27:06 2017
+    Info: Processing started: Fri Nov 03 09:10:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/vga_block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/vga_block.bdf
     Info (12023): Found entity 1: VGA_BLOCK
-Info (12021): Found 2 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/clock_div/clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/Clock_Div/CLK_DIV.VHD Line: 21
-    Info (12023): Found entity 1: clk_div File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/Clock_Div/CLK_DIV.VHD Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/clock_div/clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/Clock_Div/CLK_DIV.VHD Line: 21
+    Info (12023): Found entity 1: clk_div File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/Clock_Div/CLK_DIV.VHD Line: 6
 Warning (12019): Can't analyze file -- file ../VGA_Components/DE0VGA.bdf is missing
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/vram.v
-    Info (12023): Found entity 1: vram File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vram.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/vgaclk_0002.v
-    Info (12023): Found entity 1: vgaclk_0002 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk_0002.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/vgaclk.v
-    Info (12023): Found entity 1: vgaclk File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk.v Line: 8
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/vga_control.v
-    Info (12023): Found entity 1: vga_control File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vga_control.v Line: 11
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/color_encoder.v
-    Info (12023): Found entity 1: color_encoder File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/color_encoder.v Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 1/vga_components/char_engine.v
-    Info (12023): Found entity 1: char_engine File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/vram.v
+    Info (12023): Found entity 1: vram File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vram.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/vgaclk_0002.v
+    Info (12023): Found entity 1: vgaclk_0002 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk_0002.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/vgaclk.v
+    Info (12023): Found entity 1: vgaclk File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/vga_control.v
+    Info (12023): Found entity 1: vga_control File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vga_control.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/color_encoder.v
+    Info (12023): Found entity 1: color_encoder File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/color_encoder.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /users/josh andrews/desktop/ece 473/ece473-final-project/milestone 2/vga_components/char_engine.v
+    Info (12023): Found entity 1: char_engine File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmem.v
-    Info (12023): Found entity 1: instructionmem File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/instructionmem.v Line: 40
+    Info (12023): Found entity 1: instructionmem File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/instructionmem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file datamem.v
-    Info (12023): Found entity 1: datamem File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/datamem.v Line: 40
+    Info (12023): Found entity 1: datamem File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/datamem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file vgademo.bdf
     Info (12023): Found entity 1: VGADEMO
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile.v
-    Info (12023): Found entity 1: registerfile File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/registerfile.v Line: 4
+    Info (12023): Found entity 1: registerfile File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/registerfile.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline.v
-    Info (12023): Found entity 1: pipeline File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/pipeline.v Line: 4
+    Info (12023): Found entity 1: pipeline File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/pipeline.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: PC File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/PC.v Line: 3
+    Info (12023): Found entity 1: PC File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/PC.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file add.v
-    Info (12023): Found entity 1: add File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Add.v Line: 3
+    Info (12023): Found entity 1: add File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Add.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file signextend.v
-    Info (12023): Found entity 1: SignExtend File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/SignExtend.v Line: 3
+    Info (12023): Found entity 1: SignExtend File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/SignExtend.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file leftshift2.v
-    Info (12023): Found entity 1: LeftShift2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/LeftShift2.v Line: 3
+    Info (12023): Found entity 1: LeftShift2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/LeftShift2.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file zeros.v
-    Info (12023): Found entity 1: Zeros File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Zeros.v Line: 3
+    Info (12023): Found entity 1: Zeros File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Zeros.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file zeroextend.v
-    Info (12023): Found entity 1: ZeroExtend File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ZeroExtend.v Line: 4
+    Info (12023): Found entity 1: ZeroExtend File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ZeroExtend.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file add4.v
-    Info (12023): Found entity 1: Add4 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Add4.v Line: 3
+    Info (12023): Found entity 1: Add4 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Add4.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file if_id_pipe.v
-    Info (12023): Found entity 1: IF_ID_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/IF_ID_pipe.v Line: 3
+    Info (12023): Found entity 1: IF_ID_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/IF_ID_pipe.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file ex_mem_pipe.v
-    Info (12023): Found entity 1: EX_MEM_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/EX_MEM_pipe.v Line: 3
+    Info (12023): Found entity 1: EX_MEM_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/EX_MEM_pipe.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file id_ex_pipe.v
-    Info (12023): Found entity 1: ID_EX_PIPE File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 5
+    Info (12023): Found entity 1: ID_EX_PIPE File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 3
+    Info (12023): Found entity 1: ALU File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mem_wb_pipe.v
-    Info (12023): Found entity 1: MEM_WB_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MEM_WB_pipe.v Line: 4
+    Info (12023): Found entity 1: MEM_WB_pipe File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MEM_WB_pipe.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file controller.v
-    Info (12023): Found entity 1: Controller File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v Line: 3
+    Info (12023): Found entity 1: Controller File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2x32.v
-    Info (12023): Found entity 1: MUX_2x32 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x32.v Line: 40
+    Info (12023): Found entity 1: MUX_2x32 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x32.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file forwarding.v
-    Info (12023): Found entity 1: Forwarding File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Forwarding.v Line: 3
+    Info (12023): Found entity 1: Forwarding File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Forwarding.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3x32.v
-    Info (12023): Found entity 1: MUX_3x32 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_3x32.v Line: 40
+    Info (12023): Found entity 1: MUX_3x32 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_3x32.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2x5.v
-    Info (12023): Found entity 1: MUX_2x5 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x5.v Line: 40
+    Info (12023): Found entity 1: MUX_2x5 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x5.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file cycle_counter.v
-    Info (12023): Found entity 1: Cycle_Counter File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Cycle_Counter.v Line: 3
+    Info (12023): Found entity 1: Cycle_Counter File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Cycle_Counter.v Line: 3
 Info (12127): Elaborating entity "VGADEMO" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_BLOCK" for hierarchy "VGA_BLOCK:inst4"
 Info (12128): Elaborating entity "vga_control" for hierarchy "VGA_BLOCK:inst4|vga_control:inst2"
-Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vga_control.v Line: 63
+Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vga_control.v Line: 63
 Info (12128): Elaborating entity "vgaclk" for hierarchy "VGA_BLOCK:inst4|vgaclk:inst4"
-Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk.v Line: 19
-Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk_0002.v Line: 85
+Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk.v Line: 19
+Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk_0002.v Line: 85
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vgaclk_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk_0002.v Line: 85
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vgaclk_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -1846,21 +1846,21 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_000
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "char_engine" for hierarchy "VGA_BLOCK:inst4|char_engine:inst"
-Warning (10230): Verilog HDL assignment warning at char_engine.v(172): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 172
-Warning (10230): Verilog HDL assignment warning at char_engine.v(173): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 173
-Warning (10230): Verilog HDL assignment warning at char_engine.v(174): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 174
-Warning (10230): Verilog HDL assignment warning at char_engine.v(175): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 175
-Warning (10230): Verilog HDL assignment warning at char_engine.v(177): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 177
-Warning (10230): Verilog HDL assignment warning at char_engine.v(178): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 178
-Warning (10230): Verilog HDL assignment warning at char_engine.v(551): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 551
-Warning (10230): Verilog HDL assignment warning at char_engine.v(558): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 558
-Warning (10762): Verilog HDL Case Statement warning at char_engine.v(180): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 180
-Warning (10230): Verilog HDL assignment warning at char_engine.v(97): truncated value with size 32 to match size of target (16) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/char_engine.v Line: 97
+Warning (10230): Verilog HDL assignment warning at char_engine.v(172): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 172
+Warning (10230): Verilog HDL assignment warning at char_engine.v(173): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 173
+Warning (10230): Verilog HDL assignment warning at char_engine.v(174): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 174
+Warning (10230): Verilog HDL assignment warning at char_engine.v(175): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 175
+Warning (10230): Verilog HDL assignment warning at char_engine.v(177): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 177
+Warning (10230): Verilog HDL assignment warning at char_engine.v(178): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 178
+Warning (10230): Verilog HDL assignment warning at char_engine.v(563): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 563
+Warning (10230): Verilog HDL assignment warning at char_engine.v(570): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 570
+Warning (10762): Verilog HDL Case Statement warning at char_engine.v(180): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 180
+Warning (10230): Verilog HDL assignment warning at char_engine.v(97): truncated value with size 32 to match size of target (16) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/char_engine.v Line: 97
 Info (12128): Elaborating entity "color_encoder" for hierarchy "VGA_BLOCK:inst4|color_encoder:inst1"
 Info (12128): Elaborating entity "vram" for hierarchy "VGA_BLOCK:inst4|vram:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vram.v Line: 98
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vram.v Line: 98
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_Components/vram.v Line: 98
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vram.v Line: 98
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vram.v Line: 98
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_Components/vram.v Line: 98
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1888,29 +1888,29 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst4|vram:inst3|altsyncram:a
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1tn2.tdf
-    Info (12023): Found entity 1: altsyncram_1tn2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 36
+    Info (12023): Found entity 1: altsyncram_1tn2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 36
 Info (12128): Elaborating entity "altsyncram_1tn2" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3na.tdf
-    Info (12023): Found entity 1: decode_3na File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/decode_3na.tdf Line: 23
-Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 51
+    Info (12023): Found entity 1: decode_3na File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/decode_3na.tdf Line: 23
+Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_s2a.tdf
-    Info (12023): Found entity 1: decode_s2a File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/decode_s2a.tdf Line: 23
-Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 53
+    Info (12023): Found entity 1: decode_s2a File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/decode_s2a.tdf Line: 23
+Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_chb.tdf
-    Info (12023): Found entity 1: mux_chb File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_chb.tdf Line: 23
-Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 55
+    Info (12023): Found entity 1: mux_chb File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_chb.tdf Line: 23
+Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_jhb.tdf
-    Info (12023): Found entity 1: mux_jhb File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_jhb.tdf Line: 23
-Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 56
+    Info (12023): Found entity 1: mux_jhb File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_jhb.tdf Line: 23
+Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_1tn2.tdf Line: 56
 Info (12128): Elaborating entity "Cycle_Counter" for hierarchy "Cycle_Counter:inst9"
-Warning (10230): Verilog HDL assignment warning at Cycle_Counter.v(15): truncated value with size 32 to match size of target (16) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Cycle_Counter.v Line: 15
+Warning (10230): Verilog HDL assignment warning at Cycle_Counter.v(15): truncated value with size 32 to match size of target (16) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Cycle_Counter.v Line: 15
 Info (12128): Elaborating entity "PC" for hierarchy "PC:inst15"
 Info (12128): Elaborating entity "Add4" for hierarchy "Add4:inst12"
 Info (12128): Elaborating entity "IF_ID_pipe" for hierarchy "IF_ID_pipe:inst6"
 Info (12128): Elaborating entity "instructionmem" for hierarchy "instructionmem:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/instructionmem.v Line: 100
-Info (12130): Elaborated megafunction instantiation "instructionmem:inst|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/instructionmem.v Line: 100
-Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/instructionmem.v Line: 100
+Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/instructionmem.v Line: 100
+Info (12130): Elaborated megafunction instantiation "instructionmem:inst|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/instructionmem.v Line: 100
+Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/instructionmem.v Line: 100
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1938,93 +1938,93 @@ Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncr
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tfl2.tdf
-    Info (12023): Found entity 1: altsyncram_tfl2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_tfl2.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_tfl2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_tfl2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_tfl2" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component|altsyncram_tfl2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "ID_EX_PIPE" for hierarchy "ID_EX_PIPE:inst14"
 Info (12128): Elaborating entity "Controller" for hierarchy "Controller:inst2"
-Warning (10240): Verilog HDL Always Construct warning at Controller.v(10): inferring latch(es) for variable "mem_reg_dst", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v Line: 10
-Warning (10240): Verilog HDL Always Construct warning at Controller.v(10): inferring latch(es) for variable "reg_dest", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v Line: 10
-Info (10041): Inferred latch for "reg_dest" at Controller.v(15) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v Line: 15
-Info (10041): Inferred latch for "mem_reg_dst" at Controller.v(15) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/Controller.v Line: 15
+Warning (10240): Verilog HDL Always Construct warning at Controller.v(10): inferring latch(es) for variable "mem_reg_dst", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v Line: 10
+Warning (10240): Verilog HDL Always Construct warning at Controller.v(10): inferring latch(es) for variable "reg_dest", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v Line: 10
+Info (10041): Inferred latch for "reg_dest" at Controller.v(15) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v Line: 15
+Info (10041): Inferred latch for "mem_reg_dst" at Controller.v(15) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/Controller.v Line: 15
 Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:inst5"
 Info (12128): Elaborating entity "MEM_WB_pipe" for hierarchy "MEM_WB_pipe:inst17"
 Info (12128): Elaborating entity "EX_MEM_pipe" for hierarchy "EX_MEM_pipe:inst13"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst16"
-Warning (10764): Verilog HDL warning at ALU.v(56): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 56
-Warning (10764): Verilog HDL warning at ALU.v(60): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 60
-Warning (10764): Verilog HDL warning at ALU.v(64): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 64
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(16): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(16): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 16
-Info (10041): Inferred latch for "result[0]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[1]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[2]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[3]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[4]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[5]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[6]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[7]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[8]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[9]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[10]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[11]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[12]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[13]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[14]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[15]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[16]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[17]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[18]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[19]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[20]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[21]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[22]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[23]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[24]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[25]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[26]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[27]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[28]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[29]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[30]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-Info (10041): Inferred latch for "result[31]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
+Warning (10764): Verilog HDL warning at ALU.v(56): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 56
+Warning (10764): Verilog HDL warning at ALU.v(60): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 60
+Warning (10764): Verilog HDL warning at ALU.v(64): converting signed shift amount to unsigned File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 64
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(16): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(16): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 16
+Info (10041): Inferred latch for "result[0]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[1]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[2]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[3]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[4]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[5]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[6]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[7]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[8]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[9]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[10]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[11]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[12]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[13]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[14]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[15]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[16]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[17]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[18]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[19]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[20]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[21]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[22]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[23]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[24]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[25]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[26]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[27]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[28]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[29]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[30]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+Info (10041): Inferred latch for "result[31]" at ALU.v(76) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
 Info (12128): Elaborating entity "MUX_3x32" for hierarchy "MUX_3x32:inst21"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_3x32.v Line: 70
-Info (12130): Elaborated megafunction instantiation "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_3x32.v Line: 70
-Info (12133): Instantiated megafunction "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_3x32.v Line: 70
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_3x32.v Line: 70
+Info (12130): Elaborated megafunction instantiation "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_3x32.v Line: 70
+Info (12133): Instantiated megafunction "MUX_3x32:inst21|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_3x32.v Line: 70
     Info (12134): Parameter "lpm_size" = "3"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_flc.tdf
-    Info (12023): Found entity 1: mux_flc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_flc.tdf Line: 23
+    Info (12023): Found entity 1: mux_flc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_flc.tdf Line: 23
 Info (12128): Elaborating entity "mux_flc" for hierarchy "MUX_3x32:inst21|lpm_mux:LPM_MUX_component|mux_flc:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "MUX_2x32" for hierarchy "MUX_2x32:inst8"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x32.v Line: 69
-Info (12130): Elaborated megafunction instantiation "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x32.v Line: 69
-Info (12133): Instantiated megafunction "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x32.v Line: 69
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x32.v Line: 69
+Info (12130): Elaborated megafunction instantiation "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x32.v Line: 69
+Info (12133): Instantiated megafunction "MUX_2x32:inst8|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x32.v Line: 69
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
-    Info (12023): Found entity 1: mux_dlc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_dlc.tdf Line: 23
+    Info (12023): Found entity 1: mux_dlc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_dlc.tdf Line: 23
 Info (12128): Elaborating entity "mux_dlc" for hierarchy "MUX_2x32:inst8|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "Forwarding" for hierarchy "Forwarding:inst18"
 Info (12128): Elaborating entity "MUX_2x5" for hierarchy "MUX_2x5:inst22"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x5.v Line: 69
-Info (12130): Elaborated megafunction instantiation "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x5.v Line: 69
-Info (12133): Instantiated megafunction "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/MUX_2x5.v Line: 69
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x5.v Line: 69
+Info (12130): Elaborated megafunction instantiation "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x5.v Line: 69
+Info (12133): Instantiated megafunction "MUX_2x5:inst22|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/MUX_2x5.v Line: 69
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "5"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tjc.tdf
-    Info (12023): Found entity 1: mux_tjc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/mux_tjc.tdf Line: 23
+    Info (12023): Found entity 1: mux_tjc File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/mux_tjc.tdf Line: 23
 Info (12128): Elaborating entity "mux_tjc" for hierarchy "MUX_2x5:inst22|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "datamem" for hierarchy "datamem:inst1"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datamem:inst1|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/datamem.v Line: 100
-Info (12130): Elaborated megafunction instantiation "datamem:inst1|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/datamem.v Line: 100
-Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/datamem.v Line: 100
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datamem:inst1|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/datamem.v Line: 100
+Info (12130): Elaborated megafunction instantiation "datamem:inst1|altsyncram:altsyncram_component" File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/datamem.v Line: 100
+Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/datamem.v Line: 100
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -2052,106 +2052,106 @@ Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_h3k2.tdf
-    Info (12023): Found entity 1: altsyncram_h3k2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/db/altsyncram_h3k2.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_h3k2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/db/altsyncram_h3k2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_h3k2" for hierarchy "datamem:inst1|altsyncram:altsyncram_component|altsyncram_h3k2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:inst10"
 Info (12128): Elaborating entity "ZeroExtend" for hierarchy "ZeroExtend:inst7"
-Warning (13012): Latch ALU:inst16|result[0] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[4] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[16] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[20] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[8] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[12] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[24] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[28] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[1] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[5] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[17] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[21] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[9] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[13] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[25] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[29] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[2] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[10] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[6] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[14] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[18] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[26] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[22] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[30] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[3] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[7] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[19] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[23] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[11] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[15] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[27] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-Warning (13012): Latch ALU:inst16|result[31] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ALU.v Line: 76
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[0] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[4] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[16] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[20] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[8] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[12] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[24] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[28] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[1] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[5] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[17] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[21] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[9] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[13] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[25] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[29] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[2] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[10] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[6] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[14] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[18] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[26] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[22] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[30] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[3] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[7] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[19] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[23] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[11] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[15] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[27] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+Warning (13012): Latch ALU:inst16|result[31] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ALU.v Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[5] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[4] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/ID_EX_pipe.v Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 94 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -2179,7 +2179,7 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not e
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_CV -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_CV -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV -section_id Top was ignored
-Info (144001): Generated suppressed messages file C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/output_files/VGADEMO.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/output_files/VGADEMO.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altera_pll.v Line: 749
@@ -2192,15 +2192,15 @@ Info (21057): Implemented 4620 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 143 warnings
-    Info: Peak virtual memory: 798 megabytes
-    Info: Processing ended: Fri Nov 03 01:27:40 2017
-    Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Peak virtual memory: 797 megabytes
+    Info: Processing ended: Fri Nov 03 09:11:20 2017
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 1/VGA_DEMO/output_files/VGADEMO.map.smsg.
+The suppressed messages can be found in C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 2/VGA_DEMO/output_files/VGADEMO.map.smsg.
 
 
