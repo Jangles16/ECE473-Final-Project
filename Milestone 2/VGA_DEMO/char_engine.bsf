@@ -185,7 +185,7 @@ agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"NUM_LABEL_TASKS"
-		"17"
+		"20"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter

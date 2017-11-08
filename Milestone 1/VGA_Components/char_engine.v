@@ -26,7 +26,7 @@ module char_engine(
 	input wire [31:0] gp_reg_7,
 	input wire [31:0] gp_reg_8,	
 	
-	output reg [0:7] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
+	output reg [7:0] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
 	output reg [15:0] mem_add,
 	output mem_write,
 	
@@ -45,7 +45,7 @@ module char_engine(
 	reg [63:0] mem_buffer;
 	
 	parameter HORI_OFFSET = 0; //sets the horizontal offset of the memory renderer, only use if the top of the screen gets cut off.
-	parameter NUM_LABEL_TASKS = 17; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
+	parameter NUM_LABEL_TASKS = 18; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
 	parameter MAX_STRING_LENGTH = 20; //Generally you do not need to modify this, but it will change the global maximum string length (default = 20)
 	parameter DEBUG_TRUE = 6'h01; //This will change the charcter used when a debug value comes back as true
 	parameter DEBUG_FALSE = 6'h00; //This will change the character used when a debug value comes back as false
@@ -484,6 +484,19 @@ module char_engine(
 					row = 42;
 					num_chars = 19;
 				end
+				
+				18: begin //16-31: label
+						hex_buffer[5] <= 6'h01;
+						hex_buffer[4] <= 6'h06;
+						hex_buffer[3] <= 6'h26;
+						hex_buffer[2] <= 6'h03;
+						hex_buffer[1] <= 6'h01;
+						hex_buffer[0] <= 6'h27;
+					
+						row = 40;
+						column = 40;
+						num_chars = 6;
+					end
 				//data tasks send an address to various sources, and render the received data using the decoder.
 			
 			(NUM_LABEL_TASKS + 1): begin //instruction memory indexes 00-31

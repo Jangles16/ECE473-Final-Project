@@ -45,7 +45,7 @@ module char_engine(
 	reg [63:0] mem_buffer;
 	
 	parameter HORI_OFFSET = 0; //sets the horizontal offset of the memory renderer, only use if the top of the screen gets cut off.
-	parameter NUM_LABEL_TASKS = 17; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
+	parameter NUM_LABEL_TASKS = 20; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
 	parameter MAX_STRING_LENGTH = 20; //Generally you do not need to modify this, but it will change the global maximum string length (default = 20)
 	parameter DEBUG_TRUE = 6'h01; //This will change the charcter used when a debug value comes back as true
 	parameter DEBUG_FALSE = 6'h00; //This will change the character used when a debug value comes back as false
@@ -175,7 +175,7 @@ module char_engine(
 		if (data_index == NUM_LABEL_TASKS + 7) mem_sw <= reg_index + 32; //it always request the data one clock ahead of time, so that the data is ready when the system reads it
 		// Two lines below added by Nicholas LaJoie - corrects register data formatting on screen
 		if (data_index == NUM_LABEL_TASKS + 8) reg_sw <= reg_index; 
-		if (data_index == NUM_LABEL_TASKS + 9) reg_sw <= reg_index + 32; 
+		//if (data_index == NUM_LABEL_TASKS + 9) reg_sw <= reg_index + 32; //this line is not needed, as there are only 32 registers
 		
 		case (data_index)
 		//in the case of text labels, the hex_buffer is set manually for each character, and the data is only written to memory once.
@@ -485,19 +485,58 @@ module char_engine(
 					num_chars = 19;
 				end
 				
-			//18: begin //16-31: label
-					
-			//		hex_buffer[3] <= 6'h13;
-			//		hex_buffer[2] <= 6'h18;
-			//		hex_buffer[1] <= 6'h1C;
-			//		hex_buffer[0] <= 6'h11;
-				
-			//		row = 42;
-			//		column = 50;
-			//		num_chars = 4;
-			//	end
-				//data tasks send an address to various sources, and render the received data using the decoder.
+			18: begin 
 			
+					hex_buffer[11] <= 6'h13;
+					hex_buffer[10] <= 6'h18;
+					hex_buffer[9] <= 6'h1c;
+					hex_buffer[8] <= 6'h11;
+					hex_buffer[7] <= 6'h24;
+					hex_buffer[6] <= 6'h0a;
+					hex_buffer[5] <= 6'h17;
+					hex_buffer[4] <= 6'h0d;
+					hex_buffer[3] <= 6'h1b;
+					hex_buffer[2] <= 6'h0e;
+					hex_buffer[1] <= 6'h20;
+					hex_buffer[0] <= 6'h1c;
+					
+					row = 40;
+					column = 50;
+					num_chars = 12;
+			end
+			
+			19: begin 
+			
+					hex_buffer[10] <= 6'h16;
+					hex_buffer[9] <= 6'h12;
+					hex_buffer[8] <= 6'h15;
+					hex_buffer[7] <= 6'h0e;
+					hex_buffer[6] <= 6'h1c;
+					hex_buffer[5] <= 6'h1d;
+					hex_buffer[4] <= 6'h18;
+					hex_buffer[3] <= 6'h17;
+					hex_buffer[2] <= 6'h0e;
+					hex_buffer[1] <= 6'h24;
+					hex_buffer[0] <= 6'h02;
+					
+					row = 41;
+					column = 50;
+					num_chars = 11;
+			end
+			
+			20: begin 
+			
+					hex_buffer[5] <= 6'h1d;
+					hex_buffer[4] <= 6'h0e;
+					hex_buffer[3] <= 6'h1c;
+					hex_buffer[2] <= 6'h1d;
+					hex_buffer[1] <= 6'h24;
+					hex_buffer[0] <= 6'h02;
+					
+					row = 42;
+					column = 50;
+					num_chars = 6;
+			end
 			(NUM_LABEL_TASKS + 1): begin //instruction memory indexes 00-31
 					data <= reg_index;
 					column = 0;

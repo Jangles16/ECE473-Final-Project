@@ -23,6 +23,10 @@ module registerfile (
 		for (i=0;i<32;i=i+1) begin
 			Regfile[i]=i;	
 		end
+		
+		Regfile[1] = 32'hffffffe2;
+		Regfile[2] = 32'h00000038;
+		
 	end
 		
 	always @(posedge clock) begin
@@ -32,6 +36,10 @@ module registerfile (
 			for (i=0; i<32; i=i+1) begin
 				Regfile[i]<=i;	
 			end
+			
+			Regfile[1] = 32'hffffffe2;
+			Regfile[2] = 32'h00000038;
+			
 		end 
 		
 		else if (write_en == 1'b1 && write_address != 5'b00000) begin
