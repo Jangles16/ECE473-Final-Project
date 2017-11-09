@@ -26,7 +26,7 @@ module char_engine(
 	input wire [31:0] gp_reg_7,
 	input wire [31:0] gp_reg_8,	
 	
-	output reg [0:7] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
+	output reg [7:0] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
 	output reg [15:0] mem_add,
 	output mem_write,
 	
@@ -45,7 +45,7 @@ module char_engine(
 	reg [63:0] mem_buffer;
 	
 	parameter HORI_OFFSET = 0; //sets the horizontal offset of the memory renderer, only use if the top of the screen gets cut off.
-	parameter NUM_LABEL_TASKS = 18; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
+	parameter NUM_LABEL_TASKS = 20; // This tells the code where to start tasks that require data manipulation, this must be set as you add more labels, debug tasks must be part of this number
 	parameter MAX_STRING_LENGTH = 20; //Generally you do not need to modify this, but it will change the global maximum string length (default = 20)
 	parameter DEBUG_TRUE = 6'h01; //This will change the charcter used when a debug value comes back as true
 	parameter DEBUG_FALSE = 6'h00; //This will change the character used when a debug value comes back as false
@@ -484,26 +484,59 @@ module char_engine(
 					row = 42;
 					num_chars = 19;
 				end
-				//data tasks send an address to various sources, and render the received data using the decoder.
-				18: begin //PLACEHOLDER label for modification purposes
-				//does not render as num_chars is set to 0, this is here so someone can manipulate this, and add 1 additional task without much effort
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h01;
-						
-						row = 13;
-						column = 63;
-						num_chars = 0;
+				
+			18: begin //just my name
+			
+					hex_buffer[11] <= 6'h13;
+					hex_buffer[10] <= 6'h18;
+					hex_buffer[9] <= 6'h1c;
+					hex_buffer[8] <= 6'h11;
+					hex_buffer[7] <= 6'h24;
+					hex_buffer[6] <= 6'h0a;
+					hex_buffer[5] <= 6'h17;
+					hex_buffer[4] <= 6'h0d;
+					hex_buffer[3] <= 6'h1b;
+					hex_buffer[2] <= 6'h0e;
+					hex_buffer[1] <= 6'h20;
+					hex_buffer[0] <= 6'h1c;
+					
+					row = 40;
+					column = 50;
+					num_chars = 12;
+			end
+			
+			19: begin //milestone #
+			
+					hex_buffer[10] <= 6'h16;
+					hex_buffer[9] <= 6'h12;
+					hex_buffer[8] <= 6'h15;
+					hex_buffer[7] <= 6'h0e;
+					hex_buffer[6] <= 6'h1c;
+					hex_buffer[5] <= 6'h1d;
+					hex_buffer[4] <= 6'h18;
+					hex_buffer[3] <= 6'h17;
+					hex_buffer[2] <= 6'h0e;
+					hex_buffer[1] <= 6'h24;
+					hex_buffer[0] <= 6'h02;		//change to hex # of current milestone
+					
+					row = 41;
+					column = 50;
+					num_chars = 11;
+			end
+			
+			20: begin // Test #
+			
+					hex_buffer[5] <= 6'h1d;
+					hex_buffer[4] <= 6'h0e;
+					hex_buffer[3] <= 6'h1c;
+					hex_buffer[2] <= 6'h1d;
+					hex_buffer[1] <= 6'h24;
+					hex_buffer[0] <= 6'h01;		//change to hex number of current test
+					
+					row = 42;
+					column = 50;
+					num_chars = 6;
+			end
 			(NUM_LABEL_TASKS + 1): begin //instruction memory indexes 00-31
 					data <= reg_index;
 					column = 0;

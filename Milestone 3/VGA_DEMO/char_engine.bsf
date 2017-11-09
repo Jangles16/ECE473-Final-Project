@@ -139,8 +139,8 @@ agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "mem_out[7..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "mem_out[7..0]" (rect 168 27 227 39)(font "Arial" ))
+		(text "mem_out[0..7]" (rect 0 0 59 12)(font "Arial" ))
+		(text "mem_out[0..7]" (rect 168 27 227 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port
@@ -185,7 +185,7 @@ agreement for further details.
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"NUM_LABEL_TASKS"
-		"17"
+		"20"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
