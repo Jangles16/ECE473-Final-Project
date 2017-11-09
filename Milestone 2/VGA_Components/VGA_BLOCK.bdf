@@ -794,8 +794,8 @@ agreement for further details.
 	(port
 		(pt 248 32)
 		(output)
-		(text "mem_out[7..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "mem_out[7..0]" (rect 167 27 227 39)(font "Arial" ))
+		(text "mem_out[0..7]" (rect 0 0 71 12)(font "Arial" ))
+		(text "mem_out[0..7]" (rect 167 27 227 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port

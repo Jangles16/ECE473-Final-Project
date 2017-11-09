@@ -26,7 +26,7 @@ module char_engine(
 	input wire [31:0] gp_reg_7,
 	input wire [31:0] gp_reg_8,	
 	
-	output reg [0:7] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
+	output reg [7:0] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
 	output reg [15:0] mem_add,
 	output mem_write,
 	
@@ -485,7 +485,7 @@ module char_engine(
 					num_chars = 19;
 				end
 				
-			18: begin 
+			18: begin //just my name
 			
 					hex_buffer[11] <= 6'h13;
 					hex_buffer[10] <= 6'h18;
@@ -505,7 +505,7 @@ module char_engine(
 					num_chars = 12;
 			end
 			
-			19: begin 
+			19: begin //milestone #
 			
 					hex_buffer[10] <= 6'h16;
 					hex_buffer[9] <= 6'h12;
@@ -517,21 +517,21 @@ module char_engine(
 					hex_buffer[3] <= 6'h17;
 					hex_buffer[2] <= 6'h0e;
 					hex_buffer[1] <= 6'h24;
-					hex_buffer[0] <= 6'h02;
+					hex_buffer[0] <= 6'h02;		//change to hex # of current milestone
 					
 					row = 41;
 					column = 50;
 					num_chars = 11;
 			end
 			
-			20: begin 
+			20: begin // Test #
 			
 					hex_buffer[5] <= 6'h1d;
 					hex_buffer[4] <= 6'h0e;
 					hex_buffer[3] <= 6'h1c;
 					hex_buffer[2] <= 6'h1d;
 					hex_buffer[1] <= 6'h24;
-					hex_buffer[0] <= 6'h02;
+					hex_buffer[0] <= 6'h01;		//change to hex number of current test
 					
 					row = 42;
 					column = 50;
