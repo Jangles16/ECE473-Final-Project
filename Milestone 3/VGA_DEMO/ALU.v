@@ -4,6 +4,7 @@ module ALU(
 	input wire [31:0] op1,
 	input wire [31:0] op2,
 	input wire [31:0] ins,
+	input wire [31:0] pc,
 	output reg [31:0] result);
 	
 	integer shift_am;
@@ -14,66 +15,110 @@ module ALU(
 	
 	always @* begin
 		shift_am = ins[10:6];
-	
-		//normal add
-		if(ins[5:0] == 6'b100000) begin
-			result = op1 + op2;
-		end
-		//unsigned add
-		if(ins[5:0] == 6'b100001) begin
-			result = op1 + op2;
-		end
-		//normal sub
-		if(ins[5:0] == 6'b100010) begin
-			result = op1 - op2;
-		end
-		//unsigned sub
-		if(ins[5:0] == 6'b100011) begin
-			result = op1 - op2;
-		end
-		//and
-		if(ins[5:0] == 6'b100100) begin
-			result = op1 & op2;
-		end
-		//or
-		if(ins[5:0] == 6'b100101) begin
-			result = op1 | op2;
-		end
-		//nor
-		if(ins[5:0] == 6'b100111) begin
-			result = ~(op1 | op2);
-		end
-		//slt meow
-		if(ins[5:0] == 6'b101010) begin
-			if (op1 < op2) begin
-				result = 0;
-			end else begin
-				result = 1;
+		
+		if (ins[31:26] == 6'b000000) begin		//r-type
+		
+			if(ins[5:0] == 6'b100000) begin		//normal add
+				result = op1 + op2;
 			end
-		end
-		//sll
-		if(ins[5:0] == 6'b000000) begin
-			result = op2 << shift_am;
-		end
-		//srl
-		if(ins[5:0] == 6'b000010) begin
-			result = op2 >> shift_am;
-		end
-		//sra
-		if(ins[5:0] == 6'b000011) begin
-			result = op2 >> shift_am;
-			if (op2[31] == 1'b1) begin
-				for (i = 0; i < shift_am; i=i+1) begin
-					result[31-i] = 1'b1;
+			
+			if(ins[5:0] == 6'b100001) begin		//unsigned add
+				result = op1 + op2;
+			end
+			
+			if(ins[5:0] == 6'b100010) begin		//normal sub
+				result = op1 - op2;
+			end
+			
+			if(ins[5:0] == 6'b100011) begin		//unsigned sub
+				result = op1 - op2;
+			end
+			
+			if(ins[5:0] == 6'b100100) begin		//and
+				result = op1 & op2;
+			end
+			
+			if(ins[5:0] == 6'b100101) begin		//or
+				result = op1 | op2;
+			end
+			
+			if(ins[5:0] == 6'b100111) begin		//nor
+				result = ~(op1 | op2);
+			end
+			
+			if(ins[5:0] == 6'b101010) begin		//slt meow
+				if (op1 < op2) begin
+					result = 0;
+				end else begin
+					result = 1;
 				end
 			end
+			
+			if(ins[5:0] == 6'b000000) begin		//sll
+				result = op2 << shift_am;
+			end
+			
+			if(ins[5:0] == 6'b000010) begin		//srl
+				result = op2 >> shift_am;
+			end
+			
+			if(ins[5:0] == 6'b000011) begin		//sra
+				result = op2 >> shift_am;
+				if (op2[31] == 1'b1) begin
+					for (i = 0; i < shift_am; i=i+1) begin
+						result[31-i] = 1'b1;
+					end
+				end
+			end
+			
+			if(ins[5:0] == 6'b001000) begin		//jr
+				result = op1;
+			end
 		end
-		//jr
-		if(ins[5:0] == 6'b001000) begin
-			result = 0;
+		
+		//i-type
+		if (ins[31:26] == 6'b001100) begin		//andi
+			result = op1 & op2;
 		end
-		//nop 
-		if(ins[31:0] == 32'h00000000) begin
+		
+		if (ins[31:26] == 6'b001101) begin		//ori
+			result = op1 | op2;
+		end
+		
+		if (ins[31:26] == 6'b001010) begin		//slti
+			if (op1 < op2) begin
+					result = 1;
+				end else begin
+					result = 0;
+				end
+		end
+		
+		if (ins[31:26] == 6'b001000) begin		//addi
+			result = op1 + op2;
+		end
+		
+		if (ins[31:26] == 6'b001001) begin		//addiu
+			result = op1 + op2;
+		end	
+		if (ins[31:26] == 6'b100011) begin		//lw
+			result = op1 + op2;
+		end
+		
+		if (ins[31:26] == 6'b101011) begin		//sw
+			result = op1 + op2;
+		end
+		
+		if (ins[31:26] == 6'b001111) begin		//lui
+			result = op2 << 16;
+		end
+		
+		//j-type
+		
+		if (ins[31:26] == 6'b00011) begin		//jal
+			result = pc + 4;
+		end
+ 
+		if(ins[31:0] == 32'h00000000) begin		//nop
 			result = 0;
 		end
 	end
