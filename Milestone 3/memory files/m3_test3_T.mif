@@ -7,16 +7,16 @@ DATA_RADIX = HEX;		% Enter BIN, DEC, HEX, or OCT; unless     %
 -- Specify initial data values for memory, format is address : data 
 
 CONTENT BEGIN
-[00..3F]	: 00000000;	% Range - Every address from 00 to 40 = 00000000 % 
+ 
 -- Initialize data
-00 : 34010001
-01 : 34020001
-02 : 10220004
-03 : 00000000
-04 : 3c01ffff
-05 : 3421ffff
-06 : 00012025
-07 : 34030001
+00 : 34010001;
+01 : 34020001;
+02 : 10220004;
+03 : 00000000;
+04 : 3c01ffff;
+05 : 3421ffff;
+06 : 00012025;
+07 : 34030001;
 [08..3F] : 00000000; % nop
 END;
 

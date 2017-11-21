@@ -228,6 +228,22 @@ agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 2544 608 2720 624)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LEDR[5]" (rect 90 0 132 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 360 216 696 536)
 	(text "VGA_BLOCK" (rect 5 0 79 19)(font "Intel Clear" (font_size 8)))
@@ -3029,11 +3045,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "branch" (rect 2536 528 2567 545)(font "Intel Clear" ))
-	(pt 2528 544)
-	(pt 2600 544)
-)
-(connector
 	(pt 2216 248)
 	(pt 2216 528)
 	(bus)
@@ -3084,43 +3095,8 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2096 -32)
-	(pt 2096 248)
-	(bus)
-)
-(connector
-	(pt 2096 248)
-	(pt 2096 256)
-	(bus)
-)
-(connector
-	(pt 2096 256)
-	(pt 2168 256)
-	(bus)
-)
-(connector
-	(pt 2168 256)
-	(pt 2168 592)
-	(bus)
-)
-(connector
 	(pt 2168 592)
 	(pt 2288 592)
-	(bus)
-)
-(connector
-	(pt 2176 280)
-	(pt 2176 608)
-	(bus)
-)
-(connector
-	(pt 2224 280)
-	(pt 2176 280)
-	(bus)
-)
-(connector
-	(pt 2176 280)
-	(pt 2104 280)
 	(bus)
 )
 (connector
@@ -3984,19 +3960,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 512 -16)
-	(pt 528 -16)
-)
-(connector
-	(pt 528 -16)
-	(pt 568 -16)
-)
-(connector
-	(text "reset" (rect 681 -32 704 -15)(font "Intel Clear" ))
-	(pt 568 -16)
-	(pt 824 -16)
-)
-(connector
 	(text "ex_mem_fw[5..0]" (rect 3904 360 3986 377)(font "Intel Clear" ))
 	(pt 3936 376)
 	(pt 3896 376)
@@ -4039,12 +4002,6 @@ agreement for further details.
 (connector
 	(pt 2488 424)
 	(pt 3312 424)
-)
-(connector
-	(text "instr_ex[31..0]" (rect 336 392 402 409)(font "Intel Clear" ))
-	(pt 360 408)
-	(pt 328 408)
-	(bus)
 )
 (connector
 	(text "rt_out[4..0]" (rect 2568 264 2619 281)(font "Intel Clear" ))
@@ -4105,6 +4062,73 @@ agreement for further details.
 	(pt 2832 264)
 	(bus)
 )
+(connector
+	(pt 2544 616)
+	(pt 2544 544)
+)
+(connector
+	(pt 2528 544)
+	(pt 2544 544)
+)
+(connector
+	(text "branch" (rect 2536 528 2567 545)(font "Intel Clear" ))
+	(pt 2544 544)
+	(pt 2600 544)
+)
+(connector
+	(pt 2096 256)
+	(pt 2168 256)
+	(bus)
+)
+(connector
+	(pt 2096 -32)
+	(pt 2096 248)
+	(bus)
+)
+(connector
+	(pt 2096 248)
+	(pt 2096 256)
+	(bus)
+)
+(connector
+	(pt 2168 256)
+	(pt 2168 592)
+	(bus)
+)
+(connector
+	(pt 2176 280)
+	(pt 2176 608)
+	(bus)
+)
+(connector
+	(pt 2104 280)
+	(pt 2176 280)
+	(bus)
+)
+(connector
+	(pt 2176 280)
+	(pt 2224 280)
+	(bus)
+)
+(connector
+	(text "br_addr[31..0]" (rect 336 392 402 409)(font "Intel Clear" ))
+	(pt 360 408)
+	(pt 328 408)
+	(bus)
+)
+(connector
+	(pt 512 -16)
+	(pt 528 -16)
+)
+(connector
+	(pt 528 -16)
+	(pt 568 -16)
+)
+(connector
+	(text "reset" (rect 681 -32 704 -15)(font "Intel Clear" ))
+	(pt 568 -16)
+	(pt 824 -16)
+)
 (junction (pt 1664 296))
 (junction (pt 552 -48))
 (junction (pt 568 -16))
@@ -4114,8 +4138,6 @@ agreement for further details.
 (junction (pt 2104 88))
 (junction (pt 2216 248))
 (junction (pt 2208 232))
-(junction (pt 2096 248))
-(junction (pt 2176 280))
 (junction (pt 2784 8))
 (junction (pt 2800 -8))
 (junction (pt 2680 480))
@@ -4131,6 +4153,9 @@ agreement for further details.
 (junction (pt 2584 248))
 (junction (pt 2488 424))
 (junction (pt 2664 280))
+(junction (pt 2544 544))
+(junction (pt 2096 248))
+(junction (pt 2176 280))
 (text "ALU" (rect 3408 192 3432 211)(font "Intel Clear" (font_size 8)))
 (text "IF_ID" (rect 1480 -192 1546 -158)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
 (text "EX_MEM" (rect 3648 -184 3761 -150)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
