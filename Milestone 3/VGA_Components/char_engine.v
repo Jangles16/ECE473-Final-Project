@@ -26,7 +26,7 @@ module char_engine(
 	input wire [31:0] gp_reg_7,
 	input wire [31:0] gp_reg_8,	
 	
-	output reg [7:0] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
+	output reg [0:7] mem_out, //if everything is backwards, swap the bit order on this output and recompile!
 	output reg [15:0] mem_add,
 	output mem_write,
 	
@@ -394,44 +394,36 @@ module char_engine(
 						num_chars = 13;
 					end
 
-				12: begin //GP REGISTER 7 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
+				12: begin //GP REGISTER 7 label, changed to alu op 1
+				
+						hex_buffer[7] <= 6'h0a;
+						hex_buffer[6] <= 6'h15;
+						hex_buffer[5] <= 6'h1e;
+						hex_buffer[4] <= 6'h24;
+						hex_buffer[3] <= 6'h18;
+						hex_buffer[2] <= 6'h19;
 						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h07;
+						hex_buffer[0] <= 6'h01;
 						
 						row = 31;
 						column = 63;
-						num_chars = 13;
+						num_chars = 8;
 					end
 
-				13: begin //GP REGISTER 8 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
+				13: begin //GP REGISTER 8 label, changed to ALU OP 2
+						
+						hex_buffer[7] <= 6'h0a;
+						hex_buffer[6] <= 6'h15;
+						hex_buffer[5] <= 6'h1e;
+						hex_buffer[4] <= 6'h24;
+						hex_buffer[3] <= 6'h18;
+						hex_buffer[2] <= 6'h19;
 						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h08;
+						hex_buffer[0] <= 6'h02;
 						
 						row = 34;
 						column = 63;
-						num_chars = 13;
+						num_chars = 8;
 					end					
 					
 				14: begin //00-15: label
@@ -517,7 +509,7 @@ module char_engine(
 					hex_buffer[3] <= 6'h17;
 					hex_buffer[2] <= 6'h0e;
 					hex_buffer[1] <= 6'h24;
-					hex_buffer[0] <= 6'h02;		//change to hex # of current milestone
+					hex_buffer[0] <= 6'h03;		//change to hex # of current milestone
 					
 					row = 41;
 					column = 50;

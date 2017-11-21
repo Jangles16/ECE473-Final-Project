@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for VGADEMO
-Mon Nov 20 07:55:46 2017
+Mon Nov 20 20:38:29 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -102,12 +102,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.63        ;
+; Average used               ; 1.61        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  62.6%      ;
+;     Processor 2            ;  61.4%      ;
 +----------------------------+-------------+
 
 
@@ -130,10 +130,10 @@ agreement for further details.
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                     ; Note ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
-; 38.02 MHz ; 38.02 MHz       ; KEY[0]                                                                         ;      ;
-; 59.15 MHz ; 59.15 MHz       ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 62.64 MHz ; 62.64 MHz       ; IF_ID_pipe:inst6|instr_out[26]                                                 ;      ;
-; 65.57 MHz ; 65.57 MHz       ; ID_EX_PIPE:inst14|instr_out[0]                                                 ;      ;
+; 29.61 MHz ; 29.61 MHz       ; ID_EX_PIPE:inst14|instr_out[0]                                                 ;      ;
+; 38.19 MHz ; 38.19 MHz       ; KEY[0]                                                                         ;      ;
+; 56.71 MHz ; 56.71 MHz       ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 73.25 MHz ; 73.25 MHz       ; IF_ID_pipe:inst6|instr_out[26]                                                 ;      ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -149,10 +149,10 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                          ; Slack   ; End Point TNS ;
 +--------------------------------------------------------------------------------+---------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -19.100 ; -544.167      ;
-; KEY[0]                                                                         ; -17.111 ; -8582.863     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -16.852 ; -137.241      ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -11.076 ; -628.943      ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -26.928 ; -550.812      ;
+; KEY[0]                                                                         ; -17.545 ; -9449.950     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -15.828 ; -132.129      ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -13.498 ; -705.004      ;
 +--------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -161,10 +161,10 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -6.482 ; -32.725       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.116 ; -0.116        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.266  ; 0.000         ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.513  ; 0.000         ;
+; KEY[0]                                                                         ; -6.214 ; -42.768       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.719 ; -0.941        ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.272  ; 0.000         ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; 1.310  ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -173,19 +173,19 @@ HTML report is unavailable in plain text report export.
 +--------------------------------+---------+---------------+
 ; Clock                          ; Slack   ; End Point TNS ;
 +--------------------------------+---------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; -14.791 ; -100.564      ;
-; ID_EX_PIPE:inst14|instr_out[0] ; -13.012 ; -396.750      ;
+; ID_EX_PIPE:inst14|instr_out[0] ; -20.998 ; -393.254      ;
+; IF_ID_pipe:inst6|instr_out[26] ; -15.618 ; -100.769      ;
 +--------------------------------+---------+---------------+
 
 
-+--------------------------------------------------------+
-; Slow 1100mV 85C Model Removal Summary                  ;
-+--------------------------------+-------+---------------+
-; Clock                          ; Slack ; End Point TNS ;
-+--------------------------------+-------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; 0.551 ; 0.000         ;
-; ID_EX_PIPE:inst14|instr_out[0] ; 0.604 ; 0.000         ;
-+--------------------------------+-------+---------------+
++---------------------------------------------------------+
+; Slow 1100mV 85C Model Removal Summary                   ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0] ; -0.195 ; -0.195        ;
+; IF_ID_pipe:inst6|instr_out[26] ; 1.009  ; 0.000         ;
++--------------------------------+--------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -193,12 +193,12 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -2.636 ; -2029.613     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.762 ; -12.049       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.045 ; -0.048        ;
+; KEY[0]                                                                         ; -2.636 ; -2031.314     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.735 ; -13.813       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.029  ; 0.000         ;
 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.949  ; 0.000         ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.489 ; 0.000         ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.490 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -214,10 +214,10 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name                                                                     ; Note ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
-; 39.01 MHz ; 39.01 MHz       ; KEY[0]                                                                         ;      ;
-; 60.51 MHz ; 60.51 MHz       ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 63.71 MHz ; 63.71 MHz       ; IF_ID_pipe:inst6|instr_out[26]                                                 ;      ;
-; 66.09 MHz ; 66.09 MHz       ; ID_EX_PIPE:inst14|instr_out[0]                                                 ;      ;
+; 30.72 MHz ; 30.72 MHz       ; ID_EX_PIPE:inst14|instr_out[0]                                                 ;      ;
+; 39.71 MHz ; 39.71 MHz       ; KEY[0]                                                                         ;      ;
+; 58.22 MHz ; 58.22 MHz       ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 76.99 MHz ; 76.99 MHz       ; IF_ID_pipe:inst6|instr_out[26]                                                 ;      ;
 +-----------+-----------------+--------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -227,10 +227,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                          ; Slack   ; End Point TNS ;
 +--------------------------------------------------------------------------------+---------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -18.877 ; -538.958      ;
-; KEY[0]                                                                         ; -16.669 ; -8225.312     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -16.575 ; -134.489      ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.817 ; -615.881      ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -26.259 ; -548.158      ;
+; KEY[0]                                                                         ; -16.949 ; -9015.786     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -15.481 ; -130.821      ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -13.272 ; -693.969      ;
 +--------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -239,10 +239,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -6.439 ; -32.145       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.157 ; -0.157        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.249  ; 0.000         ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.348  ; 0.000         ;
+; KEY[0]                                                                         ; -6.051 ; -42.408       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.670 ; -0.722        ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.257  ; 0.000         ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; 1.405  ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -251,19 +251,19 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------+---------+---------------+
 ; Clock                          ; Slack   ; End Point TNS ;
 +--------------------------------+---------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; -14.413 ; -98.221       ;
-; ID_EX_PIPE:inst14|instr_out[0] ; -12.856 ; -394.582      ;
+; ID_EX_PIPE:inst14|instr_out[0] ; -20.579 ; -394.107      ;
+; IF_ID_pipe:inst6|instr_out[26] ; -15.326 ; -98.938       ;
 +--------------------------------+---------+---------------+
 
 
-+--------------------------------------------------------+
-; Slow 1100mV 0C Model Removal Summary                   ;
-+--------------------------------+-------+---------------+
-; Clock                          ; Slack ; End Point TNS ;
-+--------------------------------+-------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; 0.255 ; 0.000         ;
-; ID_EX_PIPE:inst14|instr_out[0] ; 0.540 ; 0.000         ;
-+--------------------------------+-------+---------------+
++---------------------------------------------------------+
+; Slow 1100mV 0C Model Removal Summary                    ;
++--------------------------------+--------+---------------+
+; Clock                          ; Slack  ; End Point TNS ;
++--------------------------------+--------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0] ; -0.257 ; -0.257        ;
+; IF_ID_pipe:inst6|instr_out[26] ; 0.772  ; 0.000         ;
++--------------------------------+--------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -271,12 +271,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -2.636 ; -1887.864     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.763 ; -12.791       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.043  ; 0.000         ;
+; KEY[0]                                                                         ; -2.636 ; -1891.432     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.834 ; -17.527       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.074  ; 0.000         ;
 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.980  ; 0.000         ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.446 ; 0.000         ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.455 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -287,16 +287,16 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                                                     ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                          ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -9.508 ; -267.217      ;
-; KEY[0]                                                                         ; -9.304 ; -4264.544     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -8.403 ; -68.022       ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.076 ; -332.459      ;
-+--------------------------------------------------------------------------------+--------+---------------+
++----------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                                                      ;
++--------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                          ; Slack   ; End Point TNS ;
++--------------------------------------------------------------------------------+---------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -14.764 ; -265.367      ;
+; KEY[0]                                                                         ; -9.367  ; -4682.028     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -8.262  ; -63.980       ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -7.245  ; -366.093      ;
++--------------------------------------------------------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -304,21 +304,21 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -3.017 ; -13.402       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.371 ; -1.280        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.138  ; 0.000         ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.242  ; 0.000         ;
+; KEY[0]                                                                         ; -2.953 ; -17.803       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.684 ; -1.173        ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.135  ; 0.000         ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.588  ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------------+
-; Fast 1100mV 85C Model Recovery Summary                  ;
-+--------------------------------+--------+---------------+
-; Clock                          ; Slack  ; End Point TNS ;
-+--------------------------------+--------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; -7.601 ; -51.104       ;
-; ID_EX_PIPE:inst14|instr_out[0] ; -6.246 ; -188.356      ;
-+--------------------------------+--------+---------------+
++----------------------------------------------------------+
+; Fast 1100mV 85C Model Recovery Summary                   ;
++--------------------------------+---------+---------------+
+; Clock                          ; Slack   ; End Point TNS ;
++--------------------------------+---------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0] ; -11.331 ; -176.265      ;
+; IF_ID_pipe:inst6|instr_out[26] ; -8.093  ; -51.623       ;
++--------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------+
@@ -326,8 +326,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0] ; -0.071 ; -0.071        ;
-; IF_ID_pipe:inst6|instr_out[26] ; 0.145  ; 0.000         ;
+; ID_EX_PIPE:inst14|instr_out[0] ; -0.416 ; -0.688        ;
+; IF_ID_pipe:inst6|instr_out[26] ; 0.457  ; 0.000         ;
 +--------------------------------+--------+---------------+
 
 
@@ -336,9 +336,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -2.174 ; -1016.257     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.422 ; -6.892        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.065 ; -0.339        ;
+; KEY[0]                                                                         ; -2.174 ; -1017.450     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.250 ; -2.052        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.016  ; 0.000         ;
 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.643  ; 0.000         ;
 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.784 ; 0.000         ;
@@ -352,16 +352,16 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                                                                      ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                          ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------+--------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -8.795 ; -247.340      ;
-; KEY[0]                                                                         ; -8.146 ; -3574.439     ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -7.616 ; -62.544       ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.725 ; -313.808      ;
-+--------------------------------------------------------------------------------+--------+---------------+
++----------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                                                                       ;
++--------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                          ; Slack   ; End Point TNS ;
++--------------------------------------------------------------------------------+---------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -13.254 ; -245.737      ;
+; KEY[0]                                                                         ; -8.220  ; -3870.969     ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -7.514  ; -59.432       ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.729  ; -345.050      ;
++--------------------------------------------------------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -369,21 +369,21 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -2.969 ; -13.617       ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.247 ; -0.505        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.125  ; 0.000         ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.212  ; 0.000         ;
+; KEY[0]                                                                         ; -2.875 ; -17.707       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; -0.558 ; -0.870        ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.078  ; 0.000         ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; 0.660  ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------------+
-; Fast 1100mV 0C Model Recovery Summary                   ;
-+--------------------------------+--------+---------------+
-; Clock                          ; Slack  ; End Point TNS ;
-+--------------------------------+--------+---------------+
-; IF_ID_pipe:inst6|instr_out[26] ; -6.972 ; -47.031       ;
-; ID_EX_PIPE:inst14|instr_out[0] ; -5.833 ; -176.926      ;
-+--------------------------------+--------+---------------+
++----------------------------------------------------------+
+; Fast 1100mV 0C Model Recovery Summary                    ;
++--------------------------------+---------+---------------+
+; Clock                          ; Slack   ; End Point TNS ;
++--------------------------------+---------+---------------+
+; ID_EX_PIPE:inst14|instr_out[0] ; -10.230 ; -166.849      ;
+; IF_ID_pipe:inst6|instr_out[26] ; -7.408  ; -47.433       ;
++--------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------+
@@ -391,8 +391,8 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------+--------+---------------+
 ; Clock                          ; Slack  ; End Point TNS ;
 +--------------------------------+--------+---------------+
-; ID_EX_PIPE:inst14|instr_out[0] ; -0.025 ; -0.025        ;
-; IF_ID_pipe:inst6|instr_out[26] ; 0.073  ; 0.000         ;
+; ID_EX_PIPE:inst14|instr_out[0] ; -0.355 ; -0.564        ;
+; IF_ID_pipe:inst6|instr_out[26] ; 0.419  ; 0.000         ;
 +--------------------------------+--------+---------------+
 
 
@@ -401,12 +401,12 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                          ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------+--------+---------------+
-; KEY[0]                                                                         ; -2.174 ; -936.570      ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.261 ; -3.644        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.057  ; 0.000         ;
+; KEY[0]                                                                         ; -2.174 ; -936.781      ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; -0.172 ; -1.139        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0.113  ; 0.000         ;
 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                       ; 9.632  ; 0.000         ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.786 ; 0.000         ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.787 ; 0.000         ;
 +--------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -417,26 +417,26 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                                              ;
-+---------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
-; Clock                                                                           ; Setup     ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
-+---------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
-; Worst-case Slack                                                                ; -19.100   ; -6.482  ; -14.791  ; -0.071  ; -2.636              ;
-;  CLOCK_50                                                                       ; N/A       ; N/A     ; N/A      ; N/A     ; 9.632               ;
-;  ID_EX_PIPE:inst14|instr_out[0]                                                 ; -19.100   ; -0.371  ; -13.012  ; -0.071  ; -0.065              ;
-;  IF_ID_pipe:inst6|instr_out[26]                                                 ; -16.852   ; 0.212   ; -14.791  ; 0.073   ; -0.763              ;
-;  KEY[0]                                                                         ; -17.111   ; -6.482  ; N/A      ; N/A     ; -2.636              ;
-;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A     ; N/A      ; N/A     ; 0.497               ;
-;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -11.076   ; 0.125   ; N/A      ; N/A     ; 18.446              ;
-; Design-wide TNS                                                                 ; -9893.214 ; -32.841 ; -497.314 ; -0.071  ; -2041.71            ;
-;  CLOCK_50                                                                       ; N/A       ; N/A     ; N/A      ; N/A     ; 0.000               ;
-;  ID_EX_PIPE:inst14|instr_out[0]                                                 ; -544.167  ; -1.280  ; -396.750 ; -0.071  ; -0.339              ;
-;  IF_ID_pipe:inst6|instr_out[26]                                                 ; -137.241  ; 0.000   ; -100.564 ; 0.000   ; -12.791             ;
-;  KEY[0]                                                                         ; -8582.863 ; -32.725 ; N/A      ; N/A     ; -2029.613           ;
-;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A     ; N/A      ; N/A     ; 0.000               ;
-;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -628.943  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
-+---------------------------------------------------------------------------------+-----------+---------+----------+---------+---------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                                               ;
++---------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
+; Clock                                                                           ; Setup      ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
+; Worst-case Slack                                                                ; -26.928    ; -6.214  ; -20.998  ; -0.416  ; -2.636              ;
+;  CLOCK_50                                                                       ; N/A        ; N/A     ; N/A      ; N/A     ; 9.632               ;
+;  ID_EX_PIPE:inst14|instr_out[0]                                                 ; -26.928    ; -0.719  ; -20.998  ; -0.416  ; 0.016               ;
+;  IF_ID_pipe:inst6|instr_out[26]                                                 ; -15.828    ; 0.588   ; -15.618  ; 0.419   ; -0.834              ;
+;  KEY[0]                                                                         ; -17.545    ; -6.214  ; N/A      ; N/A     ; -2.636              ;
+;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A        ; N/A     ; N/A      ; N/A     ; 0.497               ;
+;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -13.498    ; 0.078   ; N/A      ; N/A     ; 18.455              ;
+; Design-wide TNS                                                                 ; -10837.895 ; -43.709 ; -494.023 ; -0.688  ; -2045.127           ;
+;  CLOCK_50                                                                       ; N/A        ; N/A     ; N/A      ; N/A     ; 0.000               ;
+;  ID_EX_PIPE:inst14|instr_out[0]                                                 ; -550.812   ; -1.173  ; -394.107 ; -0.688  ; 0.000               ;
+;  IF_ID_pipe:inst6|instr_out[26]                                                 ; -132.129   ; 0.000   ; -100.769 ; 0.000   ; -17.527             ;
+;  KEY[0]                                                                         ; -9449.950  ; -42.768 ; N/A      ; N/A     ; -2031.314           ;
+;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A        ; N/A     ; N/A      ; N/A     ; 0.000               ;
+;  inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -705.004   ; 0.000   ; N/A      ; N/A     ; 0.000               ;
++---------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -446,6 +446,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 ; VGA_HS   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_VS   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR[4]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; VGA_B[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -466,9 +471,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+-----------------+-----------------+
 ; Pin      ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +----------+--------------+-----------------+-----------------+
-; CLOCK_50 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; KEY[0]   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[9]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CLOCK_50 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +----------+--------------+-----------------+-----------------+
 
 
@@ -479,6 +484,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; VGA_HS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
 ; VGA_VS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; LEDR[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; LEDR[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
+; LEDR[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
+; LEDR[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; LEDR[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0492 V           ; 0.181 V                              ; 0.116 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0492 V          ; 0.181 V                             ; 0.116 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.88e-07 V                   ; 2.35 V              ; -0.0185 V           ; 0.153 V                              ; 0.099 V                              ; 4.6e-10 s                   ; 4.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.88e-07 V                  ; 2.35 V             ; -0.0185 V          ; 0.153 V                             ; 0.099 V                             ; 4.6e-10 s                  ; 4.48e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.19e-07 V                   ; 2.4 V               ; -0.039 V            ; 0.21 V                               ; 0.145 V                              ; 4.67e-10 s                  ; 4.63e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.19e-07 V                  ; 2.4 V              ; -0.039 V           ; 0.21 V                              ; 0.145 V                             ; 4.67e-10 s                 ; 4.63e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.15e-07 V                   ; 2.41 V              ; -0.0495 V           ; 0.18 V                               ; 0.115 V                              ; 4.54e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.15e-07 V                  ; 2.41 V             ; -0.0495 V          ; 0.18 V                              ; 0.115 V                             ; 4.54e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
@@ -501,6 +511,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; VGA_HS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
 ; VGA_VS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; LEDR[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; LEDR[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
+; LEDR[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
+; LEDR[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.032 V            ; 0.204 V                              ; 0.181 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.032 V           ; 0.204 V                             ; 0.181 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.27e-05 V                   ; 2.34 V              ; -0.0089 V           ; 0.206 V                              ; 0.058 V                              ; 4.97e-10 s                  ; 5.13e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.27e-05 V                  ; 2.34 V             ; -0.0089 V          ; 0.206 V                             ; 0.058 V                             ; 4.97e-10 s                 ; 5.13e-10 s                 ; Yes                       ; Yes                       ;
 ; VGA_B[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.56e-05 V                   ; 2.38 V              ; -0.026 V            ; 0.249 V                              ; 0.089 V                              ; 4.95e-10 s                  ; 6.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.56e-05 V                  ; 2.38 V             ; -0.026 V           ; 0.249 V                             ; 0.089 V                             ; 4.95e-10 s                 ; 6.01e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.52e-05 V                   ; 2.38 V              ; -0.0315 V           ; 0.205 V                              ; 0.182 V                              ; 4.74e-10 s                  ; 4.85e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.52e-05 V                  ; 2.38 V             ; -0.0315 V          ; 0.205 V                             ; 0.182 V                             ; 4.74e-10 s                 ; 4.85e-10 s                 ; No                        ; Yes                       ;
@@ -523,6 +538,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; VGA_HS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; VGA_VS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LEDR[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LEDR[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; LEDR[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LEDR[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LEDR[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; VGA_B[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; VGA_B[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; VGA_B[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
@@ -545,6 +565,11 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 ; VGA_HS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; VGA_VS   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; LEDR[4]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; LEDR[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; LEDR[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LEDR[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; LEDR[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; VGA_B[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; VGA_B[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; VGA_B[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
@@ -565,17 +590,17 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 1256     ; 1256     ;
-; KEY[0]                                                                         ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 320475   ; 0        ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 18       ; 18       ; 26       ; 26       ;
-; KEY[0]                                                                         ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 126      ; 0        ; 165      ; 0        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 33       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 1239     ; 1239     ;
+; KEY[0]                                                                         ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 320951   ; 0        ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 14       ; 14       ; 20       ; 20       ;
+; KEY[0]                                                                         ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 126      ; 0        ; 160      ; 0        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 1        ;
 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 1        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1206709  ; 992      ; 760      ; 7026824  ;
-; KEY[0]                                                                         ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 992      ; 0        ; 398      ; 0        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; KEY[0]                                                                         ; 0        ; 29012    ; 0        ; 0        ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; KEY[0]                                                                         ; 345      ; 475      ; 0        ; 0        ;
-; KEY[0]                                                                         ; KEY[0]                                                                         ; 2229489  ; 29108    ; 4956     ; 32       ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1487048  ; 992      ; 760      ; 4902998  ;
+; KEY[0]                                                                         ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 992      ; 0        ; 4189     ; 0        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; KEY[0]                                                                         ; 0        ; 28177    ; 0        ; 0        ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; KEY[0]                                                                         ; 353      ; 483      ; 0        ; 0        ;
+; KEY[0]                                                                         ; KEY[0]                                                                         ; 2204196  ; 28468    ; 5266     ; 32       ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -585,17 +610,17 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                     ; To Clock                                                                       ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 1256     ; 1256     ;
-; KEY[0]                                                                         ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 320475   ; 0        ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 18       ; 18       ; 26       ; 26       ;
-; KEY[0]                                                                         ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 126      ; 0        ; 165      ; 0        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 33       ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 1239     ; 1239     ;
+; KEY[0]                                                                         ; ID_EX_PIPE:inst14|instr_out[0]                                                 ; 0        ; 0        ; 320951   ; 0        ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 14       ; 14       ; 20       ; 20       ;
+; KEY[0]                                                                         ; IF_ID_pipe:inst6|instr_out[26]                                                 ; 126      ; 0        ; 160      ; 0        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 1        ;
 ; IF_ID_pipe:inst6|instr_out[26]                                                 ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 0        ; 1        ; 1        ;
-; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1206709  ; 992      ; 760      ; 7026824  ;
-; KEY[0]                                                                         ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 992      ; 0        ; 398      ; 0        ;
-; ID_EX_PIPE:inst14|instr_out[0]                                                 ; KEY[0]                                                                         ; 0        ; 29012    ; 0        ; 0        ;
-; IF_ID_pipe:inst6|instr_out[26]                                                 ; KEY[0]                                                                         ; 345      ; 475      ; 0        ; 0        ;
-; KEY[0]                                                                         ; KEY[0]                                                                         ; 2229489  ; 29108    ; 4956     ; 32       ;
+; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1487048  ; 992      ; 760      ; 4902998  ;
+; KEY[0]                                                                         ; inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 992      ; 0        ; 4189     ; 0        ;
+; ID_EX_PIPE:inst14|instr_out[0]                                                 ; KEY[0]                                                                         ; 0        ; 28177    ; 0        ; 0        ;
+; IF_ID_pipe:inst6|instr_out[26]                                                 ; KEY[0]                                                                         ; 353      ; 483      ; 0        ; 0        ;
+; KEY[0]                                                                         ; KEY[0]                                                                         ; 2204196  ; 28468    ; 5266     ; 32       ;
 +--------------------------------------------------------------------------------+--------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -647,8 +672,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
 ; Unconstrained Input Port Paths  ; 1408  ; 1408 ;
-; Unconstrained Output Ports      ; 14    ; 14   ;
-; Unconstrained Output Port Paths ; 542   ; 542  ;
+; Unconstrained Output Ports      ; 19    ; 19   ;
+; Unconstrained Output Port Paths ; 547   ; 547  ;
 +---------------------------------+-------+------+
 
 
@@ -680,6 +705,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -711,6 +741,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; LEDR[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_B[2]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -734,7 +769,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Nov 20 07:55:22 2017
+    Info: Processing started: Mon Nov 20 20:38:05 2017
 Info: Command: quartus_sta VGADEMO -c VGADEMO
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -775,12 +810,12 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 40 -duty_cycle 50.00 -name {inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name ID_EX_PIPE:inst14|instr_out[0] ID_EX_PIPE:inst14|instr_out[0]
     Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
     Info (332105): create_clock -period 1.000 -name IF_ID_pipe:inst6|instr_out[26] IF_ID_pipe:inst6|instr_out[26]
+    Info (332105): create_clock -period 1.000 -name ID_EX_PIPE:inst14|instr_out[0] ID_EX_PIPE:inst14|instr_out[0]
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: inst16|result[31]~15  from: dataa  to: combout
-    Info (332098): Cell: inst2|op2_src[1]~1  from: datac  to: combout
+    Info (332098): Cell: inst16|result[31]~26  from: datac  to: combout
+    Info (332098): Cell: inst2|op2_src[1]~0  from: dataa  to: combout
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
@@ -790,130 +825,130 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -19.100
+Info (332146): Worst-case setup slack is -26.928
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -19.100            -544.167 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):   -17.111           -8582.863 KEY[0] 
-    Info (332119):   -16.852            -137.241 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):   -11.076            -628.943 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -6.482
+    Info (332119):   -26.928            -550.812 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):   -17.545           -9449.950 KEY[0] 
+    Info (332119):   -15.828            -132.129 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):   -13.498            -705.004 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -6.214
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.482             -32.725 KEY[0] 
-    Info (332119):    -0.116              -0.116 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.266               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.513               0.000 IF_ID_pipe:inst6|instr_out[26] 
-Info (332146): Worst-case recovery slack is -14.791
+    Info (332119):    -6.214             -42.768 KEY[0] 
+    Info (332119):    -0.719              -0.941 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.272               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.310               0.000 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case recovery slack is -20.998
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -14.791            -100.564 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):   -13.012            -396.750 ID_EX_PIPE:inst14|instr_out[0] 
-Info (332146): Worst-case removal slack is 0.551
+    Info (332119):   -20.998            -393.254 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):   -15.618            -100.769 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case removal slack is -0.195
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.551               0.000 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):     0.604               0.000 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -0.195              -0.195 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     1.009               0.000 IF_ID_pipe:inst6|instr_out[26] 
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -2029.613 KEY[0] 
-    Info (332119):    -0.762             -12.049 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -0.045              -0.048 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -2.636           -2031.314 KEY[0] 
+    Info (332119):    -0.735             -13.813 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):     0.029               0.000 ID_EX_PIPE:inst14|instr_out[0] 
     Info (332119):     0.497               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.949               0.000 CLOCK_50 
-    Info (332119):    18.489               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.490               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 60 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: inst16|result[31]~15  from: dataa  to: combout
-    Info (332098): Cell: inst2|op2_src[1]~1  from: datac  to: combout
+    Info (332098): Cell: inst16|result[31]~26  from: datac  to: combout
+    Info (332098): Cell: inst2|op2_src[1]~0  from: dataa  to: combout
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -18.877
+Info (332146): Worst-case setup slack is -26.259
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -18.877            -538.958 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):   -16.669           -8225.312 KEY[0] 
-    Info (332119):   -16.575            -134.489 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):   -10.817            -615.881 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -6.439
+    Info (332119):   -26.259            -548.158 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):   -16.949           -9015.786 KEY[0] 
+    Info (332119):   -15.481            -130.821 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):   -13.272            -693.969 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -6.051
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.439             -32.145 KEY[0] 
-    Info (332119):    -0.157              -0.157 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.249               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.348               0.000 IF_ID_pipe:inst6|instr_out[26] 
-Info (332146): Worst-case recovery slack is -14.413
+    Info (332119):    -6.051             -42.408 KEY[0] 
+    Info (332119):    -0.670              -0.722 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.257               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     1.405               0.000 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case recovery slack is -20.579
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -14.413             -98.221 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):   -12.856            -394.582 ID_EX_PIPE:inst14|instr_out[0] 
-Info (332146): Worst-case removal slack is 0.255
+    Info (332119):   -20.579            -394.107 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):   -15.326             -98.938 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case removal slack is -0.257
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.255               0.000 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):     0.540               0.000 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -0.257              -0.257 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.772               0.000 IF_ID_pipe:inst6|instr_out[26] 
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -1887.864 KEY[0] 
-    Info (332119):    -0.763             -12.791 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):     0.043               0.000 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -2.636           -1891.432 KEY[0] 
+    Info (332119):    -0.834             -17.527 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):     0.074               0.000 ID_EX_PIPE:inst14|instr_out[0] 
     Info (332119):     0.497               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.980               0.000 CLOCK_50 
-    Info (332119):    18.446               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.455               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 60 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: inst16|result[31]~15  from: dataa  to: combout
-    Info (332098): Cell: inst2|op2_src[1]~1  from: datac  to: combout
+    Info (332098): Cell: inst16|result[31]~26  from: datac  to: combout
+    Info (332098): Cell: inst2|op2_src[1]~0  from: dataa  to: combout
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.508
+Info (332146): Worst-case setup slack is -14.764
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.508            -267.217 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):    -9.304           -4264.544 KEY[0] 
-    Info (332119):    -8.403             -68.022 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -6.076            -332.459 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -3.017
+    Info (332119):   -14.764            -265.367 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -9.367           -4682.028 KEY[0] 
+    Info (332119):    -8.262             -63.980 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):    -7.245            -366.093 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -2.953
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.017             -13.402 KEY[0] 
-    Info (332119):    -0.371              -1.280 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.138               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.242               0.000 IF_ID_pipe:inst6|instr_out[26] 
-Info (332146): Worst-case recovery slack is -7.601
+    Info (332119):    -2.953             -17.803 KEY[0] 
+    Info (332119):    -0.684              -1.173 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.135               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.588               0.000 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case recovery slack is -11.331
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.601             -51.104 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -6.246            -188.356 ID_EX_PIPE:inst14|instr_out[0] 
-Info (332146): Worst-case removal slack is -0.071
+    Info (332119):   -11.331            -176.265 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -8.093             -51.623 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case removal slack is -0.416
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.071              -0.071 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.145               0.000 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):    -0.416              -0.688 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.457               0.000 IF_ID_pipe:inst6|instr_out[26] 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -1016.257 KEY[0] 
-    Info (332119):    -0.422              -6.892 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -0.065              -0.339 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -2.174           -1017.450 KEY[0] 
+    Info (332119):    -0.250              -2.052 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):     0.016               0.000 ID_EX_PIPE:inst14|instr_out[0] 
     Info (332119):     0.497               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.643               0.000 CLOCK_50 
     Info (332119):    18.784               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
@@ -921,55 +956,55 @@ Info (332114): Report Metastability: Found 60 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: inst16|result[31]~15  from: dataa  to: combout
-    Info (332098): Cell: inst2|op2_src[1]~1  from: datac  to: combout
+    Info (332098): Cell: inst16|result[31]~26  from: datac  to: combout
+    Info (332098): Cell: inst2|op2_src[1]~0  from: dataa  to: combout
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.795
+Info (332146): Worst-case setup slack is -13.254
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.795            -247.340 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):    -8.146           -3574.439 KEY[0] 
-    Info (332119):    -7.616             -62.544 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -5.725            -313.808 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-Info (332146): Worst-case hold slack is -2.969
+    Info (332119):   -13.254            -245.737 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -8.220           -3870.969 KEY[0] 
+    Info (332119):    -7.514             -59.432 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):    -6.729            -345.050 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+Info (332146): Worst-case hold slack is -2.875
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.969             -13.617 KEY[0] 
-    Info (332119):    -0.247              -0.505 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.125               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.212               0.000 IF_ID_pipe:inst6|instr_out[26] 
-Info (332146): Worst-case recovery slack is -6.972
+    Info (332119):    -2.875             -17.707 KEY[0] 
+    Info (332119):    -0.558              -0.870 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.078               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.660               0.000 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case recovery slack is -10.230
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.972             -47.031 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):    -5.833            -176.926 ID_EX_PIPE:inst14|instr_out[0] 
-Info (332146): Worst-case removal slack is -0.025
+    Info (332119):   -10.230            -166.849 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -7.408             -47.433 IF_ID_pipe:inst6|instr_out[26] 
+Info (332146): Worst-case removal slack is -0.355
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.025              -0.025 ID_EX_PIPE:inst14|instr_out[0] 
-    Info (332119):     0.073               0.000 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):    -0.355              -0.564 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):     0.419               0.000 IF_ID_pipe:inst6|instr_out[26] 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -936.570 KEY[0] 
-    Info (332119):    -0.261              -3.644 IF_ID_pipe:inst6|instr_out[26] 
-    Info (332119):     0.057               0.000 ID_EX_PIPE:inst14|instr_out[0] 
+    Info (332119):    -2.174            -936.781 KEY[0] 
+    Info (332119):    -0.172              -1.139 IF_ID_pipe:inst6|instr_out[26] 
+    Info (332119):     0.113               0.000 ID_EX_PIPE:inst14|instr_out[0] 
     Info (332119):     0.497               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.632               0.000 CLOCK_50 
-    Info (332119):    18.786               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.787               0.000 inst4|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 60 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 32 warnings
     Info: Peak virtual memory: 1064 megabytes
-    Info: Processing ended: Mon Nov 20 07:55:46 2017
+    Info: Processing ended: Mon Nov 20 20:38:29 2017
     Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Total CPU time (on all processors): 00:00:37
 
 
