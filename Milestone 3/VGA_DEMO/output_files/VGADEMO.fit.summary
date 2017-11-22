@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Nov 20 23:59:05 2017
+Fitter Status : Successful - Tue Nov 21 12:54:44 2017
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : VGADEMO
 Top-level Entity Name : VGADEMO
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 2,854 / 18,480 ( 15 % )
-Total registers : 2257
+Logic utilization (in ALMs) : 2,860 / 18,480 ( 15 % )
+Total registers : 2243
 Total pins : 23 / 224 ( 10 % )
 Total virtual pins : 0
 Total block memory bits : 311,296 / 3,153,920 ( 10 % )

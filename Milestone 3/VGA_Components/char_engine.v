@@ -523,7 +523,7 @@ module char_engine(
 					hex_buffer[3] <= 6'h1c;
 					hex_buffer[2] <= 6'h1d;
 					hex_buffer[1] <= 6'h24;
-					hex_buffer[0] <= 6'h03;		//change to hex number of current test
+					hex_buffer[0] <= 6'h07;		//change to hex number of current test
 					
 					row = 42;
 					column = 50;
