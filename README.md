@@ -1,36 +1,35 @@
 # ECE473-Final-Project
+VGA-DEMO.bdf is the schematic file
 
-## VGA-DEMO.bdf is the schematic file
+# MILESTONE 1
 
-#MILESTONE 1
+## Complete
 
-##Complete
+# MILESTONE 2
 
-#MILESTONE 2
+## Complete
 
-##Complete
+# MILESTONE 3
 
-#MILESTONE 3
+## Complete
 
-##Complete
+# MILESTONE 4
 
-#MILESTONE 4
+## Test 1
 
-##Test 1
+## Test 2
 
-##Test 2
+## Test 3
 
-##Test 3
+## Test 4
 
-##Test 4
+## Test 5
 
-##Test 5
+## Test 6
 
-##Test 6
+## Test 7
 
-##Test 7
+## Test 8
 
-##Test 8
-
-##Test 9
+## Test 9
 
