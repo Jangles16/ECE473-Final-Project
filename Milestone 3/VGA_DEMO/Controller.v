@@ -119,7 +119,7 @@ module Controller(
 				stall = 0;
 			end
 			if(instr == 6'b001111) begin	//lui
-				op2_src = 2'b10;	//totally right
+				op2_src = 2'b10;
 				reg_write = 1;
 				reg_dest = 1;
 				mem_reg_dst = 0;
@@ -150,10 +150,49 @@ module Controller(
 				jal = 1;
 				mem_write = 0;
 			end
+			if(instr == 6'b000100) begin	//beq
+				op2_src = 2'b00;
+				reg_write = 0;
+				reg_dest = 0;
+				mem_reg_dst = 0;
+				jump_out = 0;
+				j_jump = 0;
+				jal = 0;
+				mem_write = 0;
+			end
+			if(instr == 6'b000101) begin	//bne
+				op2_src = 2'b00;
+				reg_write = 0;
+				reg_dest = 0;
+				mem_reg_dst = 0;
+				jump_out = 0;
+				j_jump = 0;
+				jal = 0;
+				mem_write = 0;
+			end
+			if(instr == 6'b000111) begin	//bgtz
+				op2_src = 2'b00;
+				reg_write = 0;
+				reg_dest = 0;
+				mem_reg_dst = 0;
+				jump_out = 0;
+				j_jump = 0;
+				jal = 0;
+				mem_write = 0;
+			end
+			if(instr == 6'b000001) begin	//bgez
+				op2_src = 2'b00;
+				reg_write = 0;
+				reg_dest = 0;
+				mem_reg_dst = 0;
+				jump_out = 0;
+				j_jump = 0;
+				jal = 0;
+				mem_write = 0;
+			end
 		end
 		else begin
 			reg_write = 0;
 		end
 	end
 endmodule
-	

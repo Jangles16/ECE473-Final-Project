@@ -24,8 +24,8 @@ module registerfile (
 			Regfile[i]=i;	
 		end
 		
-		Regfile[1] = 32'hffffffe2;
-		Regfile[2] = 32'h00000038;
+		Regfile[29] = 32'h000000FC;
+		
 		
 	end
 		
@@ -37,8 +37,7 @@ module registerfile (
 				Regfile[i]<=i;	
 			end
 			
-			Regfile[1] = 32'hffffffe2;
-			Regfile[2] = 32'h00000038;
+			Regfile[29] = 32'h000000FC;
 			
 		end 
 		

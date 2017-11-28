@@ -46,11 +46,11 @@ module ALU(
 				result = ~(op1 | op2);
 			end
 			
-			if(ins[5:0] == 6'b101010) begin		//slt meow
+			if(ins[5:0] == 6'b101010) begin		//slt
 				if (op1 < op2) begin
-					result = 0;
-				end else begin
 					result = 1;
+				end else begin
+					result = 0;
 				end
 			end
 			

@@ -273,157 +273,146 @@ module char_engine(
 						num_chars = 5;
 					end
 					
-				6: begin //GP REGISTER 1 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h01;
+				6: begin //Current PC
+						
+						hex_buffer[9] <= 6'h0c;
+						hex_buffer[8] <= 6'h1e;
+						hex_buffer[7] <= 6'h1b;
+						hex_buffer[6] <= 6'h1b;
+						hex_buffer[5] <= 6'h0e;
+						hex_buffer[4] <= 6'h17;
+						hex_buffer[3] <= 6'h1d;
+						hex_buffer[2] <= 6'h24;
+						hex_buffer[1] <= 6'h19;
+						hex_buffer[0] <= 6'h0c;
 						
 						row = 13;
 						column = 63;
-						num_chars = 13;
+						num_chars = 10;
 					end
 					
-				7: begin //GP REGISTER 2 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h02;
+				7: begin //IF ID INSTR
+						
+						hex_buffer[10] <= 6'h12;
+						hex_buffer[9] <= 6'h0f;
+						hex_buffer[8] <= 6'h24;
+						hex_buffer[7] <= 6'h12;
+						hex_buffer[6] <= 6'h0d;
+						hex_buffer[5] <= 6'h24;
+						hex_buffer[4] <= 6'h12;
+						hex_buffer[3] <= 6'h17;
+						hex_buffer[2] <= 6'h1c;
+						hex_buffer[1] <= 6'h1d;
+						hex_buffer[0] <= 6'h1b;
 						
 						row = 16;
 						column = 63;
-						num_chars = 13;
+						num_chars = 11;
 					end
 					
-				8: begin //GP REGISTER 3 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h03;
+				8: begin //Branch Addr
+						
+						hex_buffer[10] <= 6'h0b;
+						hex_buffer[9] <= 6'h1b;
+						hex_buffer[8] <= 6'h0a;
+						hex_buffer[7] <= 6'h17;
+						hex_buffer[6] <= 6'h0c;
+						hex_buffer[5] <= 6'h11;
+						hex_buffer[4] <= 6'h24;
+						hex_buffer[3] <= 6'h0a;
+						hex_buffer[2] <= 6'h0d;
+						hex_buffer[1] <= 6'h0d;
+						hex_buffer[0] <= 6'h1b;
 						
 						row = 19;
 						column = 63;
-						num_chars = 13;
+						num_chars = 11;
 					end
 			
-				9: begin //GP REGISTER 4 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h04;
+				9: begin //EX MEM FW
+					
+						hex_buffer[8] <= 6'h0e;
+						hex_buffer[7] <= 6'h21;
+						hex_buffer[6] <= 6'h24;
+						hex_buffer[5] <= 6'h16;
+						hex_buffer[4] <= 6'h0e;
+						hex_buffer[3] <= 6'h16;
+						hex_buffer[2] <= 6'h24;
+						hex_buffer[1] <= 6'h0f;
+						hex_buffer[0] <= 6'h20;
 						
 						row = 22;
 						column = 63;
-						num_chars = 13;
+						num_chars = 9;
 					end
 					
 
-				10: begin //GP REGISTER 5 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h05;
+				10: begin //RAM OUT
+						
+						hex_buffer[6] <= 6'h1b;
+						hex_buffer[5] <= 6'h0a;
+						hex_buffer[4] <= 6'h16;
+						hex_buffer[3] <= 6'h24;
+						hex_buffer[2] <= 6'h18;
+						hex_buffer[1] <= 6'h1e;
+						hex_buffer[0] <= 6'h1d;
 						
 						row = 25;
 						column = 63;
-						num_chars = 13;
+						num_chars = 7;
 					end
 
-				11: begin //GP REGISTER 6 label
-						hex_buffer[12] <= 6'h10;
-						hex_buffer[11] <= 6'h19;
-						hex_buffer[10] <= 6'h24;
-						hex_buffer[9] <= 6'h1B;
-						hex_buffer[8] <= 6'h0E;
-						hex_buffer[7] <= 6'h10;
-						hex_buffer[6] <= 6'h12;
-						hex_buffer[5] <= 6'h1C;
-						hex_buffer[4] <= 6'h1D;
-						hex_buffer[3] <= 6'h0E;
-						hex_buffer[2] <= 6'h1B;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h06;
+				11: begin //RAM WRITE
+						
+						hex_buffer[8] <= 6'h1b;
+						hex_buffer[7] <= 6'h0a;
+						hex_buffer[6] <= 6'h16;
+						hex_buffer[5] <= 6'h24;
+						hex_buffer[4] <= 6'h20;
+						hex_buffer[3] <= 6'h1b;
+						hex_buffer[2] <= 6'h12;
+						hex_buffer[1] <= 6'h1d;
+						hex_buffer[0] <= 6'h0e;
 						
 						row = 28;
 						column = 63;
-						num_chars = 13;
+						num_chars = 9;
 					end
 
-				12: begin //GP REGISTER 7 label, changed to alu op 1
-				
-						hex_buffer[7] <= 6'h0a;
-						hex_buffer[6] <= 6'h15;
-						hex_buffer[5] <= 6'h1e;
+				12: begin //WRITE DATA
+						
+						hex_buffer[9] <= 6'h20;
+						hex_buffer[8] <= 6'h1b;
+						hex_buffer[7] <= 6'h12;
+						hex_buffer[6] <= 6'h1d;
+						hex_buffer[5] <= 6'h0e;
 						hex_buffer[4] <= 6'h24;
-						hex_buffer[3] <= 6'h18;
-						hex_buffer[2] <= 6'h19;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h01;
+						hex_buffer[3] <= 6'h0d;
+						hex_buffer[2] <= 6'h0a;
+						hex_buffer[1] <= 6'h1d;
+						hex_buffer[0] <= 6'h0a;
 						
 						row = 31;
 						column = 63;
-						num_chars = 8;
+						num_chars = 10;
 					end
 
-				13: begin //GP REGISTER 8 label, changed to ALU OP 2
+				13: begin //WRITE ADDR
 						
-						hex_buffer[7] <= 6'h0a;
-						hex_buffer[6] <= 6'h15;
-						hex_buffer[5] <= 6'h1e;
+						hex_buffer[9] <= 6'h20;
+						hex_buffer[8] <= 6'h1b;
+						hex_buffer[7] <= 6'h12;
+						hex_buffer[6] <= 6'h1d;
+						hex_buffer[5] <= 6'h0e;
 						hex_buffer[4] <= 6'h24;
-						hex_buffer[3] <= 6'h18;
-						hex_buffer[2] <= 6'h19;
-						hex_buffer[1] <= 6'h24;
-						hex_buffer[0] <= 6'h02;
+						hex_buffer[3] <= 6'h0a;
+						hex_buffer[2] <= 6'h0d;
+						hex_buffer[1] <= 6'h0d;
+						hex_buffer[0] <= 6'h1b;
 						
 						row = 34;
 						column = 63;
-						num_chars = 8;
+						num_chars = 10;
 					end					
 					
 				14: begin //00-15: label
