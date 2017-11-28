@@ -21,7 +21,7 @@ module registerfile (
 	
 	initial begin
 		for (i=0;i<32;i=i+1) begin
-			Regfile[i]=i;	
+			Regfile[i]=0;	
 		end
 		
 		Regfile[29] = 32'h000000FC;
@@ -34,7 +34,7 @@ module registerfile (
 		
 		if (reset == 1'b1) begin
 			for (i=0; i<32; i=i+1) begin
-				Regfile[i]<=i;	
+				Regfile[i]<=0;	
 			end
 			
 			Regfile[29] = 32'h000000FC;
