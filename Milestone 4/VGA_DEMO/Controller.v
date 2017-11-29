@@ -159,6 +159,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
+				stall = 0;
 			end
 			if(instr == 6'b000101) begin	//bne
 				op2_src = 2'b00;
@@ -169,6 +170,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
+				stall = 0;
 			end
 			if(instr == 6'b000111) begin	//bgtz
 				op2_src = 2'b00;
@@ -179,6 +181,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
+				stall=0;
 			end
 			if(instr == 6'b000001) begin	//bgez
 				op2_src = 2'b00;
@@ -189,6 +192,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
+				stall =0;
 			end
 		end
 		else begin

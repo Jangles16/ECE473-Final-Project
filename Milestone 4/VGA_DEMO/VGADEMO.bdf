@@ -374,7 +374,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 0 448 176 464)
+	(rect 2024 -160 2200 -144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LEDR[0]" (rect 90 0 132 12)(font "Arial" ))
 	(pt 0 8)
@@ -2466,31 +2466,6 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 3856 472 3904 504)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
 	(rect 1000 352 1256 552)
 	(text "instructionmem" (rect 84 0 189 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 184 25 196)(font "Arial" ))
@@ -2636,6 +2611,78 @@ agreement for further details.
 	(rect 2288 16 2368 96)
 	(text "MUX2x1" (rect 10 0 66 16)(font "Arial" (font_size 10)))
 	(text "inst13" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "data1" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "data1" (rect 4 24 35 38)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 32 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "data0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "data0" (rect 4 40 35 54)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 32 56))
+	)
+	(port
+		(pt 40 80)
+		(input)
+		(text "sel" (rect 0 0 14 16)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 32 48 46 64)(font "Arial" (font_size 8))(vertical))
+		(line (pt 40 80)(pt 40 68))
+	)
+	(port
+		(pt 80 48)
+		(output)
+		(text "result" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "result" (rect 45 32 76 46)(font "Arial" (font_size 8)))
+		(line (pt 80 48)(pt 48 48))
+	)
+	(drawing
+		(line (pt 32 24)(pt 32 72))
+		(line (pt 32 24)(pt 48 32))
+		(line (pt 32 72)(pt 48 64))
+		(line (pt 48 32)(pt 48 64))
+		(line (pt 0 0)(pt 82 0))
+		(line (pt 82 0)(pt 82 82))
+		(line (pt 0 82)(pt 82 82))
+		(line (pt 0 0)(pt 0 82))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
+	(rect 3856 472 3904 504)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst7" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1432 96 1512 176)
+	(text "MUX2x1" (rect 10 0 66 16)(font "Arial" (font_size 10)))
+	(text "inst24" (rect 8 64 37 76)(font "Arial" ))
 	(port
 		(pt 0 40)
 		(input)
@@ -2876,12 +2923,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "INSTR[31..0]" (rect 328 376 385 393)(font "Intel Clear" ))
-	(pt 360 392)
-	(pt 320 392)
-	(bus)
-)
-(connector
 	(text "cycle[15..0]" (rect 328 328 382 345)(font "Intel Clear" ))
 	(pt 360 344)
 	(pt 320 344)
@@ -3022,14 +3063,9 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "clock" (rect 1408 243 1425 267)(font "Intel Clear" )(vertical))
+	(text "clock" (rect 1407 242 1424 266)(font "Intel Clear" )(vertical))
 	(pt 1424 232)
 	(pt 1424 280)
-)
-(connector
-	(text "reset" (rect 1392 260 1409 283)(font "Intel Clear" )(vertical))
-	(pt 1408 232)
-	(pt 1408 296)
 )
 (connector
 	(pt 1440 328)
@@ -3714,11 +3750,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2472 200)
-	(pt 2760 200)
-	(bus)
-)
-(connector
 	(pt 2760 24)
 	(pt 2760 200)
 	(bus)
@@ -3757,11 +3788,6 @@ agreement for further details.
 (connector
 	(pt 2776 440)
 	(pt 3576 440)
-	(bus)
-)
-(connector
-	(pt 2536 160)
-	(pt 2776 160)
 	(bus)
 )
 (connector
@@ -4176,12 +4202,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "br_addr[31..0]" (rect 336 392 402 409)(font "Intel Clear" ))
-	(pt 360 408)
-	(pt 328 408)
-	(bus)
-)
-(connector
 	(text "mem_write_ex" (rect 2528 376 2598 393)(font "Intel Clear" ))
 	(pt 2472 392)
 	(pt 2592 392)
@@ -4269,24 +4289,6 @@ agreement for further details.
 	(text "ram_out[31..0]" (rect 328 424 397 441)(font "Intel Clear" ))
 	(pt 360 440)
 	(pt 320 440)
-	(bus)
-)
-(connector
-	(text "ram_data[31..0]" (rect 318 440 393 457)(font "Intel Clear" ))
-	(pt 280 456)
-	(pt 360 456)
-	(bus)
-)
-(connector
-	(text "wb_data[31..0]" (rect 333 456 403 473)(font "Intel Clear" ))
-	(pt 360 472)
-	(pt 320 472)
-	(bus)
-)
-(connector
-	(text "dst_wb[31..0]" (rect 340 472 403 489)(font "Intel Clear" ))
-	(pt 360 488)
-	(pt 320 488)
 	(bus)
 )
 (connector
@@ -4473,15 +4475,6 @@ agreement for further details.
 	(pt 992 -304)
 )
 (connector
-	(pt 3904 488)
-	(pt 3936 488)
-)
-(connector
-	(text "clock" (rect 3816 472 3840 489)(font "Intel Clear" ))
-	(pt 3856 488)
-	(pt 3808 488)
-)
-(connector
 	(text "dst_wb[4..0]" (rect 2221 -48 2278 -31)(font "Intel Clear" ))
 	(pt 2280 -32)
 	(pt 2200 -32)
@@ -4519,11 +4512,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2096 -80)
-	(pt 2096 248)
-	(bus)
-)
-(connector
 	(pt 2096 248)
 	(pt 2096 256)
 	(bus)
@@ -4531,11 +4519,6 @@ agreement for further details.
 (connector
 	(pt 2184 264)
 	(pt 2184 8)
-	(bus)
-)
-(connector
-	(pt 2184 8)
-	(pt 2528 8)
 	(bus)
 )
 (connector
@@ -4596,6 +4579,121 @@ agreement for further details.
 	(bus)
 )
 (connector
+	(text "rt_data[31..0]" (rect 2667 144 2730 161)(font "Intel Clear" ))
+	(pt 2536 160)
+	(pt 2776 160)
+	(bus)
+)
+(connector
+	(text "rs_data[31..0]" (rect 2670 184 2734 201)(font "Intel Clear" ))
+	(pt 2472 200)
+	(pt 2760 200)
+	(bus)
+)
+(connector
+	(text "jump_addr[31..0]" (rect 336 392 416 409)(font "Intel Clear" ))
+	(pt 360 408)
+	(pt 328 408)
+	(bus)
+)
+(connector
+	(pt 3904 488)
+	(pt 3936 488)
+)
+(connector
+	(text "clock" (rect 3830 472 3854 489)(font "Intel Clear" ))
+	(pt 3808 488)
+	(pt 3856 488)
+)
+(connector
+	(pt 2008 -8)
+	(pt 2008 -152)
+)
+(connector
+	(pt 2008 -152)
+	(pt 2024 -152)
+)
+(connector
+	(text "HI" (rect 1400 120 1409 137)(font "Intel Clear" ))
+	(pt 1432 136)
+	(pt 1392 136)
+)
+(connector
+	(text "reset" (rect 1407 136 1430 153)(font "Intel Clear" ))
+	(pt 1432 152)
+	(pt 1400 152)
+)
+(connector
+	(pt 1408 296)
+	(pt 1408 200)
+)
+(connector
+	(pt 1408 200)
+	(pt 1536 200)
+)
+(connector
+	(pt 1536 200)
+	(pt 1536 144)
+)
+(connector
+	(pt 1536 144)
+	(pt 1512 144)
+)
+(connector
+	(pt 1472 176)
+	(pt 1472 192)
+)
+(connector
+	(text "rs_data[31..0]" (rect 328 376 392 393)(font "Intel Clear" ))
+	(pt 360 392)
+	(pt 320 392)
+	(bus)
+)
+(connector
+	(pt 2096 -80)
+	(pt 2096 176)
+	(bus)
+)
+(connector
+	(pt 2096 176)
+	(pt 2096 248)
+	(bus)
+)
+(connector
+	(pt 2184 8)
+	(pt 2528 8)
+	(bus)
+)
+(connector
+	(text "rs1[31..0]" (rect 2069 160 2112 177)(font "Intel Clear" ))
+	(pt 2096 176)
+	(pt 2048 176)
+	(bus)
+)
+(connector
+	(text "rs2[31..0]" (rect 2568 -8 2611 9)(font "Intel Clear" ))
+	(pt 2528 8)
+	(pt 2592 8)
+	(bus)
+)
+(connector
+	(text "LO" (rect 1450 176 1464 193)(font "Intel Clear" ))
+	(pt 1472 192)
+	(pt 1424 192)
+)
+(connector
+	(text "rs1[31..0]" (rect 333 456 376 473)(font "Intel Clear" ))
+	(pt 360 472)
+	(pt 320 472)
+	(bus)
+)
+(connector
+	(text "rs2[31..0]" (rect 340 472 383 489)(font "Intel Clear" ))
+	(pt 360 488)
+	(pt 320 488)
+	(bus)
+)
+(connector
 	(pt 472 -128)
 	(pt 480 -128)
 )
@@ -4612,6 +4710,12 @@ agreement for further details.
 	(text "ck[0]" (rect 509 -128 532 -111)(font "Intel Clear" ))
 	(pt 480 -112)
 	(pt 544 -112)
+)
+(connector
+	(text "wb_data[31..0]" (rect 318 440 388 457)(font "Intel Clear" ))
+	(pt 280 456)
+	(pt 360 456)
+	(bus)
 )
 (connector
 	(text "LO" (rect 2284 96 2298 113)(font "Intel Clear" ))
@@ -4648,6 +4752,8 @@ agreement for further details.
 (junction (pt 200 248))
 (junction (pt 480 -128))
 (junction (pt 480 -112))
+(junction (pt 2096 176))
+(junction (pt 2528 8))
 (text "ALU" (rect 3408 192 3432 211)(font "Intel Clear" (font_size 8)))
 (text "IF_ID" (rect 1480 -192 1546 -158)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
 (text "EX_MEM" (rect 3648 -184 3761 -150)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
@@ -4663,15 +4769,8 @@ agreement for further details.
 (text "REGISTER FILE" (rect 1824 -192 2018 -158)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
 (text "INSTRUCTION" (rect 1144 -152 1331 -118)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
 (text "PC/" (rect 1208 -184 1255 -150)(font "Intel Clear" (color 0 0 0)(font_size 18)(bold)))
-(text "done" (rect 904 64 933 83)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 1176 64 1205 83)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 640 72 669 91)(font "Intel Clear" (font_size 8)))
 (text "done" (rect 1480 416 1509 435)(font "Intel Clear" (font_size 8)))
 (text "done" (rect 1488 224 1517 243)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 2352 480 2381 499)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 4400 80 4429 99)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 4712 80 4741 99)(font "Intel Clear" (font_size 8)))
-(text "done" (rect 2304 152 2333 171)(font "Intel Clear" (font_size 8)))
 (text "done" (rect 1416 -104 1445 -85)(font "Intel Clear" (font_size 8)))
 (text "Write ram data led" (rect 4696 248 4808 267)(font "Intel Clear" (font_size 8)))
 (rectangle (rect 1368 -200 1680 760))
