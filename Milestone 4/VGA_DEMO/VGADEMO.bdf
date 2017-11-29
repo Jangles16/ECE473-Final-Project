@@ -4614,7 +4614,7 @@ agreement for further details.
 	(pt 544 -112)
 )
 (connector
-	(text "jump" (rect 2284 96 2307 113)(font "Intel Clear" ))
+	(text "LO" (rect 2284 96 2298 113)(font "Intel Clear" ))
 	(pt 2328 112)
 	(pt 2280 112)
 )

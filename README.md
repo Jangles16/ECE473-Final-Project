@@ -6,9 +6,10 @@
 
           SW8  SW9    CLOCK
            0    0     KEY[0]
-           0    1      1Hz
-           1    0      10Hz
-           1    1      1kHz
+           0    1     1Hz
+           1    0     10Hz
+           1    1     1kHz
+
 - Editing charengine.v allows editing labels used with the VGA display
 - LEDs are labeled as follows (refer to schematic for more info):
 
@@ -19,9 +20,14 @@
            2      write enable
            1      Ram write enable
            0      Not Used
+
 - Two successful test cases required
 
-	1,7 Passed = I PASS
+	Required(2) = 1,2 both work correctly
+	
+	Bonus Tests = 7
+
+	I get full credit and extra points!
            
 ## MILESTONE 1
 
@@ -37,13 +43,15 @@ Complete
 
 ## MILESTONE 4
 
+I seem to be having a problem with jr, possibly jump too
+
 - [x] Test 1 (Zero-Array)
 
 	- Works Great!
 
-- [ ] Test 2 (Multiply)
+- [x] Test 2 (Multiply)
 
-	- Having Issues
+	- Works Great!
 
 - [ ] Test 3 (Sort Data)
 
