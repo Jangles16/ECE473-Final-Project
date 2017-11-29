@@ -20,14 +20,6 @@
            2      write enable
            1      Ram write enable
            0      Not Used
-
-- Two successful test cases required
-
-	Required(2) = 1,2 both work correctly
-	
-	Bonus Tests = 7
-
-	I get full credit and extra points!
            
 ## MILESTONE 1
 
@@ -43,44 +35,33 @@ Complete
 
 ## MILESTONE 4
 
-I seem to be having a problem with jr, possibly jump too
+- Two successful test cases in Milestone 4 required (single person):
+	- Required(2) = 1,2 both work correctly
+	- Bonus Tests = 7
+	- I get full credit and extra points!
+- I seem to be having a problem with jr, possibly jump too.
+- Also having issues with writing to datamemory when not supposed to.
+
 
 - [x] Test 1 (Zero-Array)
-
 	- Works Great!
-
 - [x] Test 2 (Multiply)
-
 	- Works Great!
-
 - [ ] Test 3 (Sort Data)
-
 	- Having Issues
 	- It doesnt reach exit, just keeps going through sort loop over and over
-
+	- I'm writing to datamemory too???
 - [ ] Test 4 (Binary Search)
-
 	- Having Issues
-
 - [ ] Test 5 (Palindrome)
-
 	- Having Issues
-
 - [ ] Test 6 (Prime)
-
 	- Having Issues
-
 - [x] Test 7 (GCD)
-
 	- Works Great!
-
 - [ ] Test 8 (polynomial)
-
 	- Having Issues
 	- Seems to work fine until jr $ra
-	- I'm writing to datamem for some reason????
-	
+	- I'm writing to datamem for some reason????	
 - [ ] Test 9 (Fibonacci)
-
 	- Haven't Tested
-
