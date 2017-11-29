@@ -19,32 +19,59 @@
            2      write enable
            1      Ram write enable
            0      Not Used
+- Two successful test cases required
+
+	1,7 Passed = I PASS
            
 ## MILESTONE 1
+
 Complete
 
 ## MILESTONE 2
+
 Complete
 
 ## MILESTONE 3
+
 Complete
 
 ## MILESTONE 4
-- [ ] Test 1
 
-- [ ] Test 2
+- [x] Test 1 (Zero-Array)
 
-- [ ] Test 3
+	- Works Great!
 
-- [ ] Test 4
+- [ ] Test 2 (Multiply)
 
-- [ ] Test 5
+	- Having Issues
 
-- [ ] Test 6
+- [ ] Test 3 (Sort Data)
 
-- [ ] Test 7
+	- Having Issues
 
-- [ ] Test 8
+- [ ] Test 4 (Binary Search)
 
-- [ ] Test 9
+	- Having Issues
+
+- [ ] Test 5 (Palindrome)
+
+	- Having Issues
+
+- [ ] Test 6 (Prime)
+
+	- Having Issues
+
+- [x] Test 7 (GCD)
+
+	- Works Great!
+
+- [ ] Test 8 (polynomial)
+
+	- Having Issues
+	- Seems to work fine until jr $ra
+	- I'm writing to datamem for some reason????
+	
+- [ ] Test 9 (Fibonacci)
+
+	- Haven't Tested
 
