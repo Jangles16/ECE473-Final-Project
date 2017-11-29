@@ -56,6 +56,7 @@ I seem to be having a problem with jr, possibly jump too
 - [ ] Test 3 (Sort Data)
 
 	- Having Issues
+	- It doesnt reach exit, just keeps going through sort loop over and over
 
 - [ ] Test 4 (Binary Search)
 
