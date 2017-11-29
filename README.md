@@ -20,14 +20,6 @@
            2      write enable
            1      Ram write enable
            0      Not Used
-
-- Two successful test cases required
-
-	Required(2) = 1,2 both work correctly
-	
-	Bonus Tests = 7
-
-	I get full credit and extra points!
            
 ## MILESTONE 1
 
@@ -43,7 +35,15 @@ Complete
 
 ## MILESTONE 4
 
-I seem to be having a problem with jr, possibly jump too
+- Two successful test cases in Milestone 4 required (single person)
+
+	- Required(2) = 1,2 both work correctly
+	
+	- Bonus Tests = 7
+
+	- I get full credit and extra points!
+
+- I seem to be having a problem with jr, possibly jump too
 
 - [x] Test 1 (Zero-Array)
 
