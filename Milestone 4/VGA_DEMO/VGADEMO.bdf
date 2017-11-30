@@ -4626,12 +4626,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "jump_addr[31..0]" (rect 336 392 416 409)(font "Intel Clear" ))
-	(pt 360 408)
-	(pt 328 408)
-	(bus)
-)
-(connector
 	(pt 3904 488)
 	(pt 3936 488)
 )
@@ -4679,12 +4673,6 @@ agreement for further details.
 	(pt 1472 192)
 )
 (connector
-	(text "rs_data[31..0]" (rect 328 376 392 393)(font "Intel Clear" ))
-	(pt 360 392)
-	(pt 320 392)
-	(bus)
-)
-(connector
 	(pt 2096 -80)
 	(pt 2096 176)
 	(bus)
@@ -4709,24 +4697,6 @@ agreement for further details.
 	(text "rs2[31..0]" (rect 2568 -8 2611 9)(font "Intel Clear" ))
 	(pt 2528 8)
 	(pt 2592 8)
-	(bus)
-)
-(connector
-	(text "rs1[31..0]" (rect 333 456 376 473)(font "Intel Clear" ))
-	(pt 360 472)
-	(pt 320 472)
-	(bus)
-)
-(connector
-	(text "rs2[31..0]" (rect 340 472 383 489)(font "Intel Clear" ))
-	(pt 360 488)
-	(pt 320 488)
-	(bus)
-)
-(connector
-	(text "wb_data[31..0]" (rect 318 440 388 457)(font "Intel Clear" ))
-	(pt 280 456)
-	(pt 360 456)
 	(bus)
 )
 (connector
@@ -4838,6 +4808,41 @@ agreement for further details.
 	(bus)
 )
 (connector
+	(text "jr" (rect 2232 -32 2237 -15)(font "Intel Clear" ))
+	(pt 2280 -16)
+	(pt 2224 -16)
+)
+(connector
+	(text "dst_wb[31..0]" (rect 340 472 403 489)(font "Intel Clear" ))
+	(pt 360 488)
+	(pt 320 488)
+	(bus)
+)
+(connector
+	(text "wb_data[31..0]" (rect 333 456 403 473)(font "Intel Clear" ))
+	(pt 360 472)
+	(pt 320 472)
+	(bus)
+)
+(connector
+	(text "ram_data[31..0]" (rect 318 440 393 457)(font "Intel Clear" ))
+	(pt 280 456)
+	(pt 360 456)
+	(bus)
+)
+(connector
+	(text "br_addr[31..0]" (rect 336 392 402 409)(font "Intel Clear" ))
+	(pt 360 408)
+	(pt 328 408)
+	(bus)
+)
+(connector
+	(text "INSTR[31..0]" (rect 328 376 385 393)(font "Intel Clear" ))
+	(pt 360 392)
+	(pt 320 392)
+	(bus)
+)
+(connector
 	(pt 472 -128)
 	(pt 480 -128)
 )
@@ -4856,12 +4861,7 @@ agreement for further details.
 	(pt 544 -112)
 )
 (connector
-	(text "jr" (rect 2232 -32 2237 -15)(font "Intel Clear" ))
-	(pt 2280 -16)
-	(pt 2224 -16)
-)
-(connector
-	(text "jr_out" (rect 1450 176 1477 193)(font "Intel Clear" ))
+	(text "LO" (rect 1450 176 1464 193)(font "Intel Clear" ))
 	(pt 1472 192)
 	(pt 1424 192)
 )

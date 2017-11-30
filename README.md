@@ -37,7 +37,7 @@ Complete
 
 - Two successful test cases in Milestone 4 required (single person):
 	- Required(2) = 1,2 both work correctly
-	- Bonus Tests = 7,6
+	- Bonus Tests = 7,6,3
 	- I get full credit and extra points!
 - I seem to be having a problem with jr, possibly jump too.
 	- I seem to have jr fixed (for the most part) right now.
@@ -49,10 +49,9 @@ Complete
 	- Works Great!
 - [x] Test 2 (Multiply)
 	- Works Great!
-- [ ] Test 3 (Sort Data)
-	- Having Issues
-	- It doesnt reach exit, just keeps going through sort loop over and over
-	- I'm writing to datamemory too???
+- [x] Test 3 (Sort Data)
+	- Works Great!
+	- No more datamemory issues
 - [ ] Test 4 (Binary Search)
 	- Having Issues
 - [ ] Test 5 (Palindrome)
