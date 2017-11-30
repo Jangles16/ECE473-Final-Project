@@ -39,7 +39,7 @@ module Controller(
 				j_jump = 0;
 				mem_write = 0;
 				jal = 0;
-				stall = 0;
+				stall = 1;
 				jr = 1;
 			end
 		end 

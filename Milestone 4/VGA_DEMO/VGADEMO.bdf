@@ -4843,6 +4843,11 @@ agreement for further details.
 	(bus)
 )
 (connector
+	(text "LO" (rect 1450 176 1464 193)(font "Intel Clear" ))
+	(pt 1472 192)
+	(pt 1424 192)
+)
+(connector
 	(pt 472 -128)
 	(pt 480 -128)
 )
@@ -4859,11 +4864,6 @@ agreement for further details.
 	(text "ck[0]" (rect 509 -128 532 -111)(font "Intel Clear" ))
 	(pt 480 -112)
 	(pt 544 -112)
-)
-(connector
-	(text "LO" (rect 1450 176 1464 193)(font "Intel Clear" ))
-	(pt 1472 192)
-	(pt 1424 192)
 )
 (junction (pt 1664 296))
 (junction (pt 1096 120))

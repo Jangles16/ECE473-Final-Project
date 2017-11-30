@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADEMO
-Thu Nov 30 00:24:05 2017
+Thu Nov 30 09:49:37 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -23,8 +23,8 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  15. Inverted Register Statistics
  16. Multiplexer Restructuring Statistics (Restructuring Performed)
  17. Source assignments for VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated
- 18. Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_alp2:auto_generated
- 19. Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_9lp2:auto_generated
+ 18. Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated
+ 19. Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated
  20. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|vga_control:inst2
  21. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i
  22. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|char_engine:inst
@@ -75,7 +75,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 30 00:24:05 2017       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 30 09:49:36 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGADEMO                                     ;
 ; Top-level Entity Name           ; VGADEMO                                     ;
@@ -199,73 +199,73 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                 ;
-+---------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                        ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                ; Library ;
-+---------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../Milestone-4-Test-Programs/Test05-Palindrome-Data.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test05-Palindrome-Data.mif ;         ;
-; ../Milestone-4-Test-Programs/Test05-Palindrome-Code.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test05-Palindrome-Code.mif ;         ;
-; ../VGA_Components/VGA_BLOCK.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/VGA_BLOCK.bdf                         ;         ;
-; ../Clock_Div/CLK_DIV.VHD                                ; yes             ; User VHDL File                     ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Clock_Div/CLK_DIV.VHD                                ;         ;
-; ../VGA_Components/vram.v                                ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vram.v                                ;         ;
-; ../VGA_Components/vgaclk_0002.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vgaclk_0002.v                         ;         ;
-; ../VGA_Components/vgaclk.v                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vgaclk.v                              ;         ;
-; ../VGA_Components/vga_control.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vga_control.v                         ;         ;
-; ../VGA_Components/color_encoder.v                       ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/color_encoder.v                       ;         ;
-; ../VGA_Components/char_engine.v                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v                         ;         ;
-; instructionmem.v                                        ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/instructionmem.v                            ;         ;
-; datamem.v                                               ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/datamem.v                                   ;         ;
-; VGADEMO.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/VGADEMO.bdf                                 ;         ;
-; registerfile.v                                          ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/registerfile.v                              ;         ;
-; PC.v                                                    ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/PC.v                                        ;         ;
-; SignExtend.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/SignExtend.v                                ;         ;
-; Zeros.v                                                 ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Zeros.v                                     ;         ;
-; ZeroExtend.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ZeroExtend.v                                ;         ;
-; Add4.v                                                  ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Add4.v                                      ;         ;
-; IF_ID_pipe.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v                                ;         ;
-; EX_MEM_pipe.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/EX_MEM_pipe.v                               ;         ;
-; ID_EX_pipe.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ID_EX_pipe.v                                ;         ;
-; ALU.v                                                   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ALU.v                                       ;         ;
-; MEM_WB_pipe.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MEM_WB_pipe.v                               ;         ;
-; Controller.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v                                ;         ;
-; MUX_2x32.v                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_2x32.v                                  ;         ;
-; Forwarding.v                                            ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Forwarding.v                                ;         ;
-; MUX_3x32.v                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_3x32.v                                  ;         ;
-; MUX_2x5.v                                               ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_2x5.v                                   ;         ;
-; Cycle_Counter.v                                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Cycle_Counter.v                             ;         ;
-; JumpSel.v                                               ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/JumpSel.v                                   ;         ;
-; MUX2x1.vhd                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX2x1.vhd                                  ;         ;
-; id_ex_fw.v                                              ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/id_ex_fw.v                                  ;         ;
-; br_controller.v                                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/br_controller.v                             ;         ;
-; MUX_4x1.v                                               ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_4x1.v                                   ;         ;
-; altera_pll.v                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altera_pll.v                                                         ;         ;
-; altsyncram.tdf                                          ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf                                                       ;         ;
-; stratix_ram_block.inc                                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                                ;         ;
-; lpm_mux.inc                                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc                                                          ;         ;
-; lpm_decode.inc                                          ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc                                                       ;         ;
-; aglobal170.inc                                          ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc                                                       ;         ;
-; a_rdenreg.inc                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                        ;         ;
-; altrom.inc                                              ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                                           ;         ;
-; altram.inc                                              ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                                           ;         ;
-; altdpram.inc                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                                         ;         ;
-; db/altsyncram_1tn2.tdf                                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_1tn2.tdf                      ;         ;
-; db/decode_3na.tdf                                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/decode_3na.tdf                           ;         ;
-; db/decode_s2a.tdf                                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/decode_s2a.tdf                           ;         ;
-; db/mux_chb.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_chb.tdf                              ;         ;
-; db/mux_jhb.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_jhb.tdf                              ;         ;
-; lpm_mux.tdf                                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf                                                          ;         ;
-; muxlut.inc                                              ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/muxlut.inc                                                           ;         ;
-; bypassff.inc                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc                                                         ;         ;
-; altshift.inc                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc                                                         ;         ;
-; db/mux_sjc.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_sjc.tdf                              ;         ;
-; db/mux_dlc.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_dlc.tdf                              ;         ;
-; db/mux_40e.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_40e.tdf                              ;         ;
-; db/altsyncram_alp2.tdf                                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_alp2.tdf                      ;         ;
-; db/mux_flc.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_flc.tdf                              ;         ;
-; db/mux_tjc.tdf                                          ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_tjc.tdf                              ;         ;
-; db/altsyncram_9lp2.tdf                                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_9lp2.tdf                      ;         ;
-+---------------------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                               ;
++--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                               ; Library ;
++--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; ../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ;         ;
+; ../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ;         ;
+; ../VGA_Components/VGA_BLOCK.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/VGA_BLOCK.bdf                        ;         ;
+; ../Clock_Div/CLK_DIV.VHD                               ; yes             ; User VHDL File                     ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Clock_Div/CLK_DIV.VHD                               ;         ;
+; ../VGA_Components/vram.v                               ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vram.v                               ;         ;
+; ../VGA_Components/vgaclk_0002.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vgaclk_0002.v                        ;         ;
+; ../VGA_Components/vgaclk.v                             ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vgaclk.v                             ;         ;
+; ../VGA_Components/vga_control.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vga_control.v                        ;         ;
+; ../VGA_Components/color_encoder.v                      ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/color_encoder.v                      ;         ;
+; ../VGA_Components/char_engine.v                        ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v                        ;         ;
+; instructionmem.v                                       ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/instructionmem.v                           ;         ;
+; datamem.v                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/datamem.v                                  ;         ;
+; VGADEMO.bdf                                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/VGADEMO.bdf                                ;         ;
+; registerfile.v                                         ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/registerfile.v                             ;         ;
+; PC.v                                                   ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/PC.v                                       ;         ;
+; SignExtend.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/SignExtend.v                               ;         ;
+; Zeros.v                                                ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Zeros.v                                    ;         ;
+; ZeroExtend.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ZeroExtend.v                               ;         ;
+; Add4.v                                                 ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Add4.v                                     ;         ;
+; IF_ID_pipe.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v                               ;         ;
+; EX_MEM_pipe.v                                          ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/EX_MEM_pipe.v                              ;         ;
+; ID_EX_pipe.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ID_EX_pipe.v                               ;         ;
+; ALU.v                                                  ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ALU.v                                      ;         ;
+; MEM_WB_pipe.v                                          ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MEM_WB_pipe.v                              ;         ;
+; Controller.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v                               ;         ;
+; MUX_2x32.v                                             ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_2x32.v                                 ;         ;
+; Forwarding.v                                           ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Forwarding.v                               ;         ;
+; MUX_3x32.v                                             ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_3x32.v                                 ;         ;
+; MUX_2x5.v                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_2x5.v                                  ;         ;
+; Cycle_Counter.v                                        ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Cycle_Counter.v                            ;         ;
+; JumpSel.v                                              ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/JumpSel.v                                  ;         ;
+; MUX2x1.vhd                                             ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX2x1.vhd                                 ;         ;
+; id_ex_fw.v                                             ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/id_ex_fw.v                                 ;         ;
+; br_controller.v                                        ; yes             ; User Verilog HDL File              ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/br_controller.v                            ;         ;
+; MUX_4x1.v                                              ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/MUX_4x1.v                                  ;         ;
+; altera_pll.v                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altera_pll.v                                                        ;         ;
+; altsyncram.tdf                                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf                                                      ;         ;
+; stratix_ram_block.inc                                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                               ;         ;
+; lpm_mux.inc                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.inc                                                         ;         ;
+; lpm_decode.inc                                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_decode.inc                                                      ;         ;
+; aglobal170.inc                                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc                                                      ;         ;
+; a_rdenreg.inc                                          ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                       ;         ;
+; altrom.inc                                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                                          ;         ;
+; altram.inc                                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                                          ;         ;
+; altdpram.inc                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                                        ;         ;
+; db/altsyncram_1tn2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_1tn2.tdf                     ;         ;
+; db/decode_3na.tdf                                      ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/decode_3na.tdf                          ;         ;
+; db/decode_s2a.tdf                                      ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/decode_s2a.tdf                          ;         ;
+; db/mux_chb.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_chb.tdf                             ;         ;
+; db/mux_jhb.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_jhb.tdf                             ;         ;
+; lpm_mux.tdf                                            ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_mux.tdf                                                         ;         ;
+; muxlut.inc                                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/muxlut.inc                                                          ;         ;
+; bypassff.inc                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/bypassff.inc                                                        ;         ;
+; altshift.inc                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altshift.inc                                                        ;         ;
+; db/mux_sjc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_sjc.tdf                             ;         ;
+; db/mux_dlc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_dlc.tdf                             ;         ;
+; db/mux_40e.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_40e.tdf                             ;         ;
+; db/altsyncram_5np2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_5np2.tdf                     ;         ;
+; db/mux_flc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_flc.tdf                             ;         ;
+; db/mux_tjc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_tjc.tdf                             ;         ;
+; db/altsyncram_4np2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_4np2.tdf                     ;         ;
++--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
@@ -273,14 +273,14 @@ agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2866                                                                                 ;
+; Estimate of Logic utilization (ALMs needed) ; 2869                                                                                 ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 3677                                                                                 ;
-;     -- 7 input functions                    ; 46                                                                                   ;
-;     -- 6 input functions                    ; 1822                                                                                 ;
-;     -- 5 input functions                    ; 419                                                                                  ;
+; Combinational ALUT usage for logic          ; 3671                                                                                 ;
+;     -- 7 input functions                    ; 49                                                                                   ;
+;     -- 6 input functions                    ; 1832                                                                                 ;
+;     -- 5 input functions                    ; 410                                                                                  ;
 ;     -- 4 input functions                    ; 487                                                                                  ;
-;     -- <=3 input functions                  ; 903                                                                                  ;
+;     -- <=3 input functions                  ; 893                                                                                  ;
 ;                                             ;                                                                                      ;
 ; Dedicated logic registers                   ; 2216                                                                                 ;
 ;                                             ;                                                                                      ;
@@ -295,7 +295,7 @@ agreement for further details.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; MUX_4x1:inst20|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated|l2_w0_n0_mux_dataout ;
 ; Maximum fan-out                             ; 1697                                                                                 ;
-; Total fan-out                               ; 27909                                                                                ;
+; Total fan-out                               ; 27912                                                                                ;
 ; Average fan-out                             ; 4.60                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
@@ -305,8 +305,8 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |VGADEMO                                     ; 3677 (1)            ; 2216 (0)                  ; 311296            ; 1          ; 36   ; 0            ; |VGADEMO                                                                                                                    ; VGADEMO         ; work         ;
-;    |ALU:inst16|                              ; 688 (688)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
+; |VGADEMO                                     ; 3671 (1)            ; 2216 (0)                  ; 311296            ; 1          ; 36   ; 0            ; |VGADEMO                                                                                                                    ; VGADEMO         ; work         ;
+;    |ALU:inst16|                              ; 689 (689)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
 ;    |Add4:inst12|                             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Add4:inst12                                                                                                        ; Add4            ; work         ;
 ;    |Controller:inst2|                        ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Controller:inst2                                                                                                   ; Controller      ; work         ;
 ;    |Cycle_Counter:inst9|                     ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Cycle_Counter:inst9                                                                                                ; Cycle_Counter   ; work         ;
@@ -338,8 +338,8 @@ agreement for further details.
 ;       |lpm_mux:LPM_MUX_component|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|MUX_4x1:inst20|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux         ; work         ;
 ;          |mux_sjc:auto_generated|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|MUX_4x1:inst20|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated                                                    ; mux_sjc         ; work         ;
 ;    |PC:inst15|                               ; 69 (69)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|PC:inst15                                                                                                          ; PC              ; work         ;
-;    |VGA_BLOCK:inst4|                         ; 1394 (0)            ; 669 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4                                                                                                    ; VGA_BLOCK       ; work         ;
-;       |char_engine:inst|                     ; 1133 (1133)         ; 578 (578)                 ; 0                 ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst                                                                                   ; char_engine     ; work         ;
+;    |VGA_BLOCK:inst4|                         ; 1390 (0)            ; 669 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4                                                                                                    ; VGA_BLOCK       ; work         ;
+;       |char_engine:inst|                     ; 1129 (1129)         ; 578 (578)                 ; 0                 ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst                                                                                   ; char_engine     ; work         ;
 ;       |vga_control:inst2|                    ; 173 (173)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vga_control:inst2                                                                                  ; vga_control     ; work         ;
 ;       |vgaclk:inst4|                         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vgaclk:inst4                                                                                       ; vgaclk          ; work         ;
 ;          |vgaclk_0002:vgaclk_inst|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst                                                               ; vgaclk_0002     ; work         ;
@@ -350,28 +350,28 @@ agreement for further details.
 ;                |decode_3na:decode3|          ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode3       ; decode_3na      ; work         ;
 ;                |decode_s2a:rden_decode_a|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a ; decode_s2a      ; work         ;
 ;                |mux_chb:mux4|                ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4             ; mux_chb         ; work         ;
-;    |br_controller:inst30|                    ; 183 (183)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|br_controller:inst30                                                                                               ; br_controller   ; work         ;
+;    |br_controller:inst30|                    ; 180 (180)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|br_controller:inst30                                                                                               ; br_controller   ; work         ;
 ;    |clk_div:inst11|                          ; 34 (34)             ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|clk_div:inst11                                                                                                     ; clk_div         ; work         ;
 ;    |datamem:inst1|                           ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1                                                                                                      ; datamem         ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component                                                                      ; altsyncram      ; work         ;
-;          |altsyncram_9lp2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component|altsyncram_9lp2:auto_generated                                       ; altsyncram_9lp2 ; work         ;
+;          |altsyncram_4np2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated                                       ; altsyncram_4np2 ; work         ;
 ;    |instructionmem:inst|                     ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst                                                                                                ; instructionmem  ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component                                                                ; altsyncram      ; work         ;
-;          |altsyncram_alp2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component|altsyncram_alp2:auto_generated                                 ; altsyncram_alp2 ; work         ;
+;          |altsyncram_5np2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated                                 ; altsyncram_5np2 ; work         ;
 ;    |registerfile:inst5|                      ; 1022 (1022)         ; 1088 (1088)               ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|registerfile:inst5                                                                                                 ; registerfile    ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                            ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------------------+
-; Name                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                     ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------------------+
-; VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                                                    ;
-; datamem:inst1|altsyncram:altsyncram_component|altsyncram_9lp2:auto_generated|ALTSYNCRAM              ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../Milestone-4-Test-Programs/Test05-Palindrome-Data.mif ;
-; instructionmem:inst|altsyncram:altsyncram_component|altsyncram_alp2:auto_generated|ALTSYNCRAM        ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../Milestone-4-Test-Programs/Test05-Palindrome-Code.mif ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+---------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                              ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
+; Name                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                       ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
+; VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                                                      ;
+; datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated|ALTSYNCRAM              ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ;
+; instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated|ALTSYNCRAM        ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -446,7 +446,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ALU:inst16|result[1]                                ; ALU:inst16|result[31]       ; yes                    ;
 ; ALU:inst16|result[0]                                ; ALU:inst16|result[31]       ; yes                    ;
 ; Controller:inst2|jump_out                           ; Controller:inst2|reg_dest   ; yes                    ;
-; Controller:inst2|stall                              ; Controller:inst2|op2_src[1] ; yes                    ;
+; Controller:inst2|stall                              ; Controller:inst2|stall      ; yes                    ;
 ; Controller:inst2|jal                                ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|reg_dest                           ; Controller:inst2|reg_dest   ; yes                    ;
 ; Controller:inst2|op2_src[1]                         ; Controller:inst2|op2_src[1] ; yes                    ;
@@ -843,8 +843,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst4|char_engine:inst|y[2]           ; 10      ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[1]           ; 18      ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[0]           ; 22      ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[1]  ; 4       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[2]  ; 4       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[1]  ; 5       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[2]  ; 5       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[0]  ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[5]  ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[31] ; 3       ;
@@ -986,7 +986,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------------+
-; Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_alp2:auto_generated ;
+; Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                          ;
 +---------------------------------+--------------------+------+---------------------------------------------+
@@ -995,7 +995,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_9lp2:auto_generated ;
+; Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                    ;
 +---------------------------------+--------------------+------+---------------------------------------+
@@ -1450,64 +1450,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: instructionmem:inst|altsyncram:altsyncram_component              ;
-+------------------------------------+---------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                   ; Type           ;
-+------------------------------------+---------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                       ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                      ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                     ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                      ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                     ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                       ; Untyped        ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                         ; Untyped        ;
-; WIDTH_A                            ; 32                                                      ; Signed Integer ;
-; WIDTHAD_A                          ; 6                                                       ; Signed Integer ;
-; NUMWORDS_A                         ; 64                                                      ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                            ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                    ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                    ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; WIDTH_B                            ; 32                                                      ; Signed Integer ;
-; WIDTHAD_B                          ; 6                                                       ; Signed Integer ;
-; NUMWORDS_B                         ; 64                                                      ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                  ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                  ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                  ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                  ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                            ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                  ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                    ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                       ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                       ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                                    ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                       ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
-; INIT_FILE                          ; ../Milestone-4-Test-Programs/Test05-Palindrome-Code.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                  ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                       ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                         ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                         ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                   ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                   ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                       ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone V                                               ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_alp2                                         ; Untyped        ;
-+------------------------------------+---------------------------------------------------------+----------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instructionmem:inst|altsyncram:altsyncram_component                ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                     ; Type           ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                           ; Untyped        ;
+; WIDTH_A                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                        ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WIDTH_B                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                        ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                         ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                         ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                 ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; INIT_FILE                          ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                                 ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_5np2                                           ; Untyped        ;
++------------------------------------+-----------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1625,64 +1625,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datamem:inst1|altsyncram:altsyncram_component                    ;
-+------------------------------------+---------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                   ; Type           ;
-+------------------------------------+---------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                       ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                      ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                     ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                      ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                     ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                       ; Untyped        ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                         ; Untyped        ;
-; WIDTH_A                            ; 32                                                      ; Signed Integer ;
-; WIDTHAD_A                          ; 6                                                       ; Signed Integer ;
-; NUMWORDS_A                         ; 64                                                      ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                            ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                    ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                    ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                    ; Untyped        ;
-; WIDTH_B                            ; 32                                                      ; Signed Integer ;
-; WIDTHAD_B                          ; 6                                                       ; Signed Integer ;
-; NUMWORDS_B                         ; 64                                                      ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                  ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                  ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                  ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                  ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                            ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                  ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                    ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                    ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                    ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                       ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                       ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                                    ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                       ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                               ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                    ; Untyped        ;
-; INIT_FILE                          ; ../Milestone-4-Test-Programs/Test05-Palindrome-Data.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                  ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                       ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                  ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                         ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                         ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                   ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                   ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                       ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone V                                               ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_9lp2                                         ; Untyped        ;
-+------------------------------------+---------------------------------------------------------+----------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datamem:inst1|altsyncram:altsyncram_component                      ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                     ; Type           ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                           ; Untyped        ;
+; WIDTH_A                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                        ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WIDTH_B                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                        ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                         ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                         ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                 ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; INIT_FILE                          ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                                 ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_4np2                                           ; Untyped        ;
++------------------------------------+-----------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1760,7 +1760,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 425                         ;
 ;     SCLR SLD          ; 32                          ;
 ;     plain             ; 141                         ;
-; arriav_lcell_comb     ; 3677                        ;
+; arriav_lcell_comb     ; 3671                        ;
 ;     arith             ; 501                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 335                         ;
@@ -1768,16 +1768,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 30                          ;
 ;         4 data inputs ; 61                          ;
 ;         5 data inputs ; 58                          ;
-;     extend            ; 46                          ;
-;         7 data inputs ; 46                          ;
-;     normal            ; 3071                        ;
+;     extend            ; 49                          ;
+;         7 data inputs ; 49                          ;
+;     normal            ; 3062                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 206                         ;
-;         3 data inputs ; 253                         ;
+;         2 data inputs ; 209                         ;
+;         3 data inputs ; 240                         ;
 ;         4 data inputs ; 426                         ;
-;         5 data inputs ; 361                         ;
-;         6 data inputs ; 1822                        ;
+;         5 data inputs ; 352                         ;
+;         6 data inputs ; 1832                        ;
 ;     shared            ; 59                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 42                          ;
@@ -1788,7 +1788,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 102                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.90                       ;
-; Average LUT depth     ; 5.48                        ;
+; Average LUT depth     ; 5.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1807,7 +1807,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 30 00:22:57 2017
+    Info: Processing started: Thu Nov 30 09:48:30 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2086,7 +2086,7 @@ Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncr
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../Milestone-4-Test-Programs/Test05-Palindrome-Code.mif"
+    Info (12134): Parameter "init_file" = "../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2106,20 +2106,9 @@ Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncr
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_alp2.tdf
-    Info (12023): Found entity 1: altsyncram_alp2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_alp2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_alp2" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component|altsyncram_alp2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113031): 64 out of 64 addresses are reinitialized. The latest initialized data will replace the existing data. There are 64 warnings found, and 10 warnings are reported. File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test05-Palindrome-Code.mif Line: 1
-    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 13
-    Warning (113030): Memory Initialization File address 1 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 14
-    Warning (113030): Memory Initialization File address 2 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 15
-    Warning (113030): Memory Initialization File address 3 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 16
-    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 17
-    Warning (113030): Memory Initialization File address 5 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 18
-    Warning (113030): Memory Initialization File address 6 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 19
-    Warning (113030): Memory Initialization File address 7 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 20
-    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 21
-    Warning (113030): Memory Initialization File address 9 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5np2.tdf
+    Info (12023): Found entity 1: altsyncram_5np2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_5np2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_5np2" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "Zeros" for hierarchy "Zeros:inst27"
 Info (12128): Elaborating entity "ID_EX_FW" for hierarchy "ID_EX_FW:inst29"
 Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:inst5"
@@ -2196,7 +2185,7 @@ Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_com
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../Milestone-4-Test-Programs/Test05-Palindrome-Data.mif"
+    Info (12134): Parameter "init_file" = "../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2216,20 +2205,9 @@ Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9lp2.tdf
-    Info (12023): Found entity 1: altsyncram_9lp2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_9lp2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_9lp2" for hierarchy "datamem:inst1|altsyncram:altsyncram_component|altsyncram_9lp2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113031): 64 out of 64 addresses are reinitialized. The latest initialized data will replace the existing data. There are 64 warnings found, and 10 warnings are reported. File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test05-Palindrome-Data.mif Line: 1
-    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 13
-    Warning (113030): Memory Initialization File address 1 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 14
-    Warning (113030): Memory Initialization File address 2 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 15
-    Warning (113030): Memory Initialization File address 3 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 16
-    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 17
-    Warning (113030): Memory Initialization File address 5 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 18
-    Warning (113030): Memory Initialization File address 6 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 19
-    Warning (113030): Memory Initialization File address 7 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 20
-    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 21
-    Warning (113030): Memory Initialization File address 9 is reinitialized File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4np2.tdf
+    Info (12023): Found entity 1: altsyncram_4np2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_4np2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_4np2" for hierarchy "datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:inst10"
 Info (12128): Elaborating entity "ZeroExtend" for hierarchy "ZeroExtend:inst28"
 Info (12128): Elaborating entity "Add4" for hierarchy "Add4:inst12"
@@ -2337,7 +2315,6 @@ Warning (13012): Latch Controller:inst2|jump_out has unsafe behavior File: C:/Us
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[27] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|stall has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 13
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|jal has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 10
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
     Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
@@ -2407,18 +2384,18 @@ Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[0]"
-Info (21057): Implemented 5454 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5448 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 5314 logic cells
+    Info (21061): Implemented 5308 logic cells
     Info (21064): Implemented 102 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 217 warnings
-    Info: Peak virtual memory: 848 megabytes
-    Info: Processing ended: Thu Nov 30 00:24:05 2017
-    Info: Elapsed time: 00:01:08
-    Info: Total CPU time (on all processors): 00:01:27
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 194 warnings
+    Info: Peak virtual memory: 846 megabytes
+    Info: Processing ended: Thu Nov 30 09:49:37 2017
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:26
 
 
 +------------------------------------------+
