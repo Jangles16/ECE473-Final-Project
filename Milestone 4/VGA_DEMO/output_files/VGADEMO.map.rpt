@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADEMO
-Thu Nov 30 09:49:37 2017
+Thu Nov 30 10:53:13 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -23,8 +23,8 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  15. Inverted Register Statistics
  16. Multiplexer Restructuring Statistics (Restructuring Performed)
  17. Source assignments for VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated
- 18. Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated
- 19. Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated
+ 18. Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated
+ 19. Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_chp2:auto_generated
  20. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|vga_control:inst2
  21. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i
  22. Parameter Settings for User Entity Instance: VGA_BLOCK:inst4|char_engine:inst
@@ -75,7 +75,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 30 09:49:36 2017       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 30 10:53:13 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGADEMO                                     ;
 ; Top-level Entity Name           ; VGADEMO                                     ;
@@ -204,8 +204,8 @@ agreement for further details.
 +--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                               ; Library ;
 +--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ;         ;
-; ../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ;         ;
+; ../Milestone-4-Test-Programs/Test04-BinSearch-Data.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test04-BinSearch-Data.mif ;         ;
+; ../Milestone-4-Test-Programs/Test04-BinSearch-Code.mif ; yes             ; User Memory Initialization File    ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Milestone-4-Test-Programs/Test04-BinSearch-Code.mif ;         ;
 ; ../VGA_Components/VGA_BLOCK.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/VGA_BLOCK.bdf                        ;         ;
 ; ../Clock_Div/CLK_DIV.VHD                               ; yes             ; User VHDL File                     ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/Clock_Div/CLK_DIV.VHD                               ;         ;
 ; ../VGA_Components/vram.v                               ; yes             ; User Wizard-Generated File         ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/vram.v                               ;         ;
@@ -261,10 +261,10 @@ agreement for further details.
 ; db/mux_sjc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_sjc.tdf                             ;         ;
 ; db/mux_dlc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_dlc.tdf                             ;         ;
 ; db/mux_40e.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_40e.tdf                             ;         ;
-; db/altsyncram_5np2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_5np2.tdf                     ;         ;
+; db/altsyncram_dhp2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_dhp2.tdf                     ;         ;
 ; db/mux_flc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_flc.tdf                             ;         ;
 ; db/mux_tjc.tdf                                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/mux_tjc.tdf                             ;         ;
-; db/altsyncram_4np2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_4np2.tdf                     ;         ;
+; db/altsyncram_chp2.tdf                                 ; yes             ; Auto-Generated Megafunction        ; C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_chp2.tdf                     ;         ;
 +--------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -276,11 +276,11 @@ agreement for further details.
 ; Estimate of Logic utilization (ALMs needed) ; 2869                                                                                 ;
 ;                                             ;                                                                                      ;
 ; Combinational ALUT usage for logic          ; 3671                                                                                 ;
-;     -- 7 input functions                    ; 49                                                                                   ;
-;     -- 6 input functions                    ; 1832                                                                                 ;
-;     -- 5 input functions                    ; 410                                                                                  ;
-;     -- 4 input functions                    ; 487                                                                                  ;
-;     -- <=3 input functions                  ; 893                                                                                  ;
+;     -- 7 input functions                    ; 50                                                                                   ;
+;     -- 6 input functions                    ; 1831                                                                                 ;
+;     -- 5 input functions                    ; 400                                                                                  ;
+;     -- 4 input functions                    ; 468                                                                                  ;
+;     -- <=3 input functions                  ; 922                                                                                  ;
 ;                                             ;                                                                                      ;
 ; Dedicated logic registers                   ; 2216                                                                                 ;
 ;                                             ;                                                                                      ;
@@ -295,7 +295,7 @@ agreement for further details.
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; MUX_4x1:inst20|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated|l2_w0_n0_mux_dataout ;
 ; Maximum fan-out                             ; 1697                                                                                 ;
-; Total fan-out                               ; 27912                                                                                ;
+; Total fan-out                               ; 27868                                                                                ;
 ; Average fan-out                             ; 4.60                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
@@ -306,12 +306,12 @@ agreement for further details.
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; |VGADEMO                                     ; 3671 (1)            ; 2216 (0)                  ; 311296            ; 1          ; 36   ; 0            ; |VGADEMO                                                                                                                    ; VGADEMO         ; work         ;
-;    |ALU:inst16|                              ; 689 (689)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
+;    |ALU:inst16|                              ; 690 (690)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
 ;    |Add4:inst12|                             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Add4:inst12                                                                                                        ; Add4            ; work         ;
 ;    |Controller:inst2|                        ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Controller:inst2                                                                                                   ; Controller      ; work         ;
 ;    |Cycle_Counter:inst9|                     ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Cycle_Counter:inst9                                                                                                ; Cycle_Counter   ; work         ;
 ;    |EX_MEM_pipe:inst36|                      ; 0 (0)               ; 72 (72)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|EX_MEM_pipe:inst36                                                                                                 ; EX_MEM_pipe     ; work         ;
-;    |Forwarding:inst18|                       ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Forwarding:inst18                                                                                                  ; Forwarding      ; work         ;
+;    |Forwarding:inst18|                       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Forwarding:inst18                                                                                                  ; Forwarding      ; work         ;
 ;    |ID_EX_FW:inst29|                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ID_EX_FW:inst29                                                                                                    ; ID_EX_FW        ; work         ;
 ;    |ID_EX_PIPE:inst14|                       ; 0 (0)               ; 162 (162)                 ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ID_EX_PIPE:inst14                                                                                                  ; ID_EX_PIPE      ; work         ;
 ;    |IF_ID_pipe:inst6|                        ; 0 (0)               ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|IF_ID_pipe:inst6                                                                                                   ; IF_ID_pipe      ; work         ;
@@ -354,24 +354,24 @@ agreement for further details.
 ;    |clk_div:inst11|                          ; 34 (34)             ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|clk_div:inst11                                                                                                     ; clk_div         ; work         ;
 ;    |datamem:inst1|                           ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1                                                                                                      ; datamem         ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component                                                                      ; altsyncram      ; work         ;
-;          |altsyncram_4np2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated                                       ; altsyncram_4np2 ; work         ;
+;          |altsyncram_chp2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|datamem:inst1|altsyncram:altsyncram_component|altsyncram_chp2:auto_generated                                       ; altsyncram_chp2 ; work         ;
 ;    |instructionmem:inst|                     ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst                                                                                                ; instructionmem  ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component                                                                ; altsyncram      ; work         ;
-;          |altsyncram_5np2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated                                 ; altsyncram_5np2 ; work         ;
+;          |altsyncram_dhp2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated                                 ; altsyncram_dhp2 ; work         ;
 ;    |registerfile:inst5|                      ; 1022 (1022)         ; 1088 (1088)               ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|registerfile:inst5                                                                                                 ; registerfile    ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                              ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
-; Name                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                       ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
-; VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                                                      ;
-; datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated|ALTSYNCRAM              ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ;
-; instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated|ALTSYNCRAM        ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ;
-+------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
+; Name                                                                                                 ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                    ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
+; VGA_BLOCK:inst4|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port ; 307200       ; 1            ; 38400        ; 8            ; 307200 ; None                                                   ;
+; datamem:inst1|altsyncram:altsyncram_component|altsyncram_chp2:auto_generated|ALTSYNCRAM              ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../Milestone-4-Test-Programs/Test04-BinSearch-Data.mif ;
+; instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated|ALTSYNCRAM        ; AUTO ; True Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048   ; ../Milestone-4-Test-Programs/Test04-BinSearch-Code.mif ;
++------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+--------------------------------------------------------+
 
 
 +-----------------------------------------------+
@@ -986,7 +986,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------------+
-; Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated ;
+; Source assignments for instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                          ;
 +---------------------------------+--------------------+------+---------------------------------------------+
@@ -995,7 +995,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated ;
+; Source assignments for datamem:inst1|altsyncram:altsyncram_component|altsyncram_chp2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                    ;
 +---------------------------------+--------------------+------+---------------------------------------+
@@ -1450,64 +1450,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: instructionmem:inst|altsyncram:altsyncram_component                ;
-+------------------------------------+-----------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                     ; Type           ;
-+------------------------------------+-----------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                           ; Untyped        ;
-; WIDTH_A                            ; 32                                                        ; Signed Integer ;
-; WIDTHAD_A                          ; 6                                                         ; Signed Integer ;
-; NUMWORDS_A                         ; 64                                                        ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; WIDTH_B                            ; 32                                                        ; Signed Integer ;
-; WIDTHAD_B                          ; 6                                                         ; Signed Integer ;
-; NUMWORDS_B                         ; 64                                                        ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                    ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                         ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                         ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                 ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
-; INIT_FILE                          ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone V                                                 ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_5np2                                           ; Untyped        ;
-+------------------------------------+-----------------------------------------------------------+----------------+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: instructionmem:inst|altsyncram:altsyncram_component             ;
++------------------------------------+--------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                  ; Type           ;
++------------------------------------+--------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                      ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                     ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                    ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                     ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                    ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                      ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                        ; Untyped        ;
+; WIDTH_A                            ; 32                                                     ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                      ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                     ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                           ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                   ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WIDTH_B                            ; 32                                                     ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                      ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                     ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                 ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                 ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                 ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                           ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                      ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                      ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                   ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                              ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; INIT_FILE                          ; ../Milestone-4-Test-Programs/Test04-BinSearch-Code.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                 ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                      ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                  ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                  ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                      ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                              ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_dhp2                                        ; Untyped        ;
++------------------------------------+--------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1625,64 +1625,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: datamem:inst1|altsyncram:altsyncram_component                      ;
-+------------------------------------+-----------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                     ; Type           ;
-+------------------------------------+-----------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                           ; Untyped        ;
-; WIDTH_A                            ; 32                                                        ; Signed Integer ;
-; WIDTHAD_A                          ; 6                                                         ; Signed Integer ;
-; NUMWORDS_A                         ; 64                                                        ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
-; WIDTH_B                            ; 32                                                        ; Signed Integer ;
-; WIDTHAD_B                          ; 6                                                         ; Signed Integer ;
-; NUMWORDS_B                         ; 64                                                        ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                    ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                         ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                         ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                 ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
-; INIT_FILE                          ; ../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                    ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
-; DEVICE_FAMILY                      ; Cyclone V                                                 ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_4np2                                           ; Untyped        ;
-+------------------------------------+-----------------------------------------------------------+----------------+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datamem:inst1|altsyncram:altsyncram_component                   ;
++------------------------------------+--------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                  ; Type           ;
++------------------------------------+--------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                      ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                     ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                    ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                     ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                    ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                      ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                        ; Untyped        ;
+; WIDTH_A                            ; 32                                                     ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                      ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                     ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                           ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                   ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                   ; Untyped        ;
+; WIDTH_B                            ; 32                                                     ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                      ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                     ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                 ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                 ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                 ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                           ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                 ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                   ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                   ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                   ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                      ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                      ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                   ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                              ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                   ; Untyped        ;
+; INIT_FILE                          ; ../Milestone-4-Test-Programs/Test04-BinSearch-Data.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                 ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                      ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                 ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                        ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                  ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                  ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                      ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                              ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_chp2                                        ; Untyped        ;
++------------------------------------+--------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1768,16 +1768,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 30                          ;
 ;         4 data inputs ; 61                          ;
 ;         5 data inputs ; 58                          ;
-;     extend            ; 49                          ;
-;         7 data inputs ; 49                          ;
-;     normal            ; 3062                        ;
+;     extend            ; 50                          ;
+;         7 data inputs ; 50                          ;
+;     normal            ; 3061                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 209                         ;
-;         3 data inputs ; 240                         ;
-;         4 data inputs ; 426                         ;
-;         5 data inputs ; 352                         ;
-;         6 data inputs ; 1832                        ;
+;         2 data inputs ; 215                         ;
+;         3 data inputs ; 263                         ;
+;         4 data inputs ; 407                         ;
+;         5 data inputs ; 342                         ;
+;         6 data inputs ; 1831                        ;
 ;     shared            ; 59                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 42                          ;
@@ -1797,7 +1797,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:46     ;
+; Top            ; 00:00:43     ;
 +----------------+--------------+
 
 
@@ -1807,7 +1807,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 30 09:48:30 2017
+    Info: Processing started: Thu Nov 30 10:52:11 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -2086,7 +2086,7 @@ Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncr
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../../Milestone-4-Test-Programs/Test01-ZeroArray-Code.mif"
+    Info (12134): Parameter "init_file" = "../Milestone-4-Test-Programs/Test04-BinSearch-Code.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2106,9 +2106,9 @@ Info (12133): Instantiated megafunction "instructionmem:inst|altsyncram:altsyncr
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5np2.tdf
-    Info (12023): Found entity 1: altsyncram_5np2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_5np2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_5np2" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component|altsyncram_5np2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dhp2.tdf
+    Info (12023): Found entity 1: altsyncram_dhp2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_dhp2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_dhp2" for hierarchy "instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "Zeros" for hierarchy "Zeros:inst27"
 Info (12128): Elaborating entity "ID_EX_FW" for hierarchy "ID_EX_FW:inst29"
 Info (12128): Elaborating entity "registerfile" for hierarchy "registerfile:inst5"
@@ -2185,7 +2185,7 @@ Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_com
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "../../Milestone-4-Test-Programs/Test01-ZeroArray-Data.mif"
+    Info (12134): Parameter "init_file" = "../Milestone-4-Test-Programs/Test04-BinSearch-Data.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2205,9 +2205,9 @@ Info (12133): Instantiated megafunction "datamem:inst1|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4np2.tdf
-    Info (12023): Found entity 1: altsyncram_4np2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_4np2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_4np2" for hierarchy "datamem:inst1|altsyncram:altsyncram_component|altsyncram_4np2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_chp2.tdf
+    Info (12023): Found entity 1: altsyncram_chp2 File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/db/altsyncram_chp2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_chp2" for hierarchy "datamem:inst1|altsyncram:altsyncram_component|altsyncram_chp2:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:inst10"
 Info (12128): Elaborating entity "ZeroExtend" for hierarchy "ZeroExtend:inst28"
 Info (12128): Elaborating entity "Add4" for hierarchy "Add4:inst12"
@@ -2392,10 +2392,10 @@ Info (21057): Implemented 5448 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 194 warnings
-    Info: Peak virtual memory: 846 megabytes
-    Info: Processing ended: Thu Nov 30 09:49:37 2017
-    Info: Elapsed time: 00:01:07
-    Info: Total CPU time (on all processors): 00:01:26
+    Info: Peak virtual memory: 848 megabytes
+    Info: Processing ended: Thu Nov 30 10:53:13 2017
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:01:21
 
 
 +------------------------------------------+
