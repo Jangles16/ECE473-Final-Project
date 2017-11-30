@@ -10,13 +10,22 @@ module JumpSel(
 	input wire j_jump,
 	input wire [26:0] sign_imm,
 	input wire [31:0] pc,
+	input wire [31:0] rs_if_id,
+	input wire jr,
 	output reg [31:0] j_addr
 	);
 	
 	always @* begin
+	
+		if (jr == 1) begin
+			j_addr = rs_if_id;
+		end
+	
 		if (j_jump == 1)  begin
 			j_addr = {pc[31:28],(sign_imm << 2)};
-		end else begin
+		end 
+		
+		else begin
 			if (rs_id_ex == ex_mem_dst) begin
 				j_addr = ex_mem_addr;
 			end else begin

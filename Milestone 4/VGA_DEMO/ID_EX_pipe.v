@@ -39,7 +39,9 @@ module ID_EX_PIPE(
 	output reg mem_write_out,
 	output reg [1:0] op2_src_out,
 	input wire jal_in,
-	output reg jal_out
+	output reg jal_out,
+	input wire jump_in,
+	output reg jump_out
 	);
 	
 	initial begin
@@ -59,6 +61,7 @@ module ID_EX_PIPE(
 	end
 	
 	always @(posedge clock) begin
+	
 		if (reset == 1'b1) begin
 			data_out_1 <= 32'h00000000;
 			data_out_2 <= 32'h00000000;
@@ -74,7 +77,11 @@ module ID_EX_PIPE(
 			mem_write_out <= 0;
 			op2_src_out <= 0;
 			jal_out <=0;
-		end else begin
+			jump_out <=0;
+			
+		end 
+		
+		else begin
 			data_out_1 <= data_in_1;
 			data_out_2 <= data_in_2;
 			sextend_out <= sextend_in;
@@ -90,6 +97,7 @@ module ID_EX_PIPE(
 			mem_write_out <= mem_write_in;
 			op2_src_out <= op2_src_in;
 			jal_out <= jal_in;
+			jump_out <= jump_in;
 		end
 	end
 endmodule

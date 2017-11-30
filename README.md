@@ -37,9 +37,11 @@ Complete
 
 - Two successful test cases in Milestone 4 required (single person):
 	- Required(2) = 1,2 both work correctly
-	- Bonus Tests = 7
+	- Bonus Tests = 7,6
 	- I get full credit and extra points!
 - I seem to be having a problem with jr, possibly jump too.
+	- I seem to have jr fixed (for the most part) right now.
+	- Will need to confirm with other test cases.
 - Also having issues with writing to datamemory when not supposed to.
 
 
@@ -55,8 +57,9 @@ Complete
 	- Having Issues
 - [ ] Test 5 (Palindrome)
 	- Having Issues
-- [ ] Test 6 (Prime)
-	- Having Issues
+- [x] Test 6 (Prime)
+	- Works Great!
+	- It was an issue with jr before.  added more logic to fix that.
 - [x] Test 7 (GCD)
 	- Works Great!
 - [ ] Test 8 (polynomial)

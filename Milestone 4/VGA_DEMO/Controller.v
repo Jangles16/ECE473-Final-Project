@@ -10,7 +10,8 @@ module Controller(
 	output reg jal,
 	output reg jump_out,
 	output reg j_jump,
-	output reg stall
+	output reg stall,
+	output reg jr
 	);
 	
 	integer instr;
@@ -27,6 +28,7 @@ module Controller(
 			mem_write = 0;
 			jal = 0;
 			stall = 0;
+			jr = 0;
 			//jump register instruction
 			if (ins[5:0] == 6'b001000) begin
 				jump_out = 1;
@@ -38,6 +40,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 1;
 			end
 		end 
 		else if(instr != 6'b000000) begin
@@ -51,6 +54,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b001101) begin	//ori
 				op2_src = 2'b01;
@@ -62,6 +66,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b001010) begin	//slti
 				op2_src = 2'b01;
@@ -73,6 +78,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b001000) begin	//addi
 				op2_src = 2'b01;
@@ -84,6 +90,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b001001) begin	//addiu
 				op2_src = 2'b01;
@@ -95,6 +102,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b100011) begin	//lw
 				op2_src = 2'b01;
@@ -106,6 +114,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 1;
+				jr = 0;
 			end
 			if(instr == 6'b101011) begin	//sw
 				op2_src = 2'b01;
@@ -117,6 +126,7 @@ module Controller(
 				mem_write = 1;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b001111) begin	//lui
 				op2_src = 2'b10;	//totally right
@@ -128,6 +138,7 @@ module Controller(
 				mem_write = 0;
 				jal = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b000010) begin	//j
 				op2_src = 2'b01;
@@ -139,6 +150,7 @@ module Controller(
 				jal = 0;
 				mem_write = 0;
 				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b000011) begin	//jal
 				op2_src = 2'b01;
@@ -149,6 +161,7 @@ module Controller(
 				j_jump = 1;
 				jal = 1;
 				mem_write = 0;
+				jr = 0;
 			end
 			if(instr == 6'b000100) begin	//beq
 				op2_src = 2'b00;
@@ -159,7 +172,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
-				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b000101) begin	//bne
 				op2_src = 2'b00;
@@ -170,7 +183,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
-				stall = 0;
+				jr = 0;
 			end
 			if(instr == 6'b000111) begin	//bgtz
 				op2_src = 2'b00;
@@ -181,7 +194,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
-				stall=0;
+				jr = 0;
 			end
 			if(instr == 6'b000001) begin	//bgez
 				op2_src = 2'b00;
@@ -192,7 +205,7 @@ module Controller(
 				j_jump = 0;
 				jal = 0;
 				mem_write = 0;
-				stall =0;
+				jr = 0;
 			end
 		end
 		else begin

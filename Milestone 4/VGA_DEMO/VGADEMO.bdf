@@ -917,6 +917,13 @@ agreement for further details.
 		(line (pt 0 240)(pt 16 240))
 	)
 	(port
+		(pt 0 256)
+		(input)
+		(text "jump_in" (rect 0 0 37 12)(font "Arial" ))
+		(text "jump_in" (rect 21 251 58 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
 		(pt 248 32)
 		(output)
 		(text "data_out_1[31..0]" (rect 0 0 86 12)(font "Arial" ))
@@ -1020,6 +1027,13 @@ agreement for further details.
 		(text "jal_out" (rect 0 0 31 12)(font "Arial" ))
 		(text "jal_out" (rect 201 251 227 263)(font "Arial" ))
 		(line (pt 248 256)(pt 232 256))
+	)
+	(port
+		(pt 248 272)
+		(output)
+		(text "jump_out" (rect 0 0 44 12)(font "Arial" ))
+		(text "jump_out" (rect 190 267 227 279)(font "Arial" ))
+		(line (pt 248 272)(pt 232 272))
 	)
 	(drawing
 		(rectangle (rect 16 16 232 288))
@@ -1233,6 +1247,13 @@ agreement for further details.
 		(text "stall" (rect 0 0 20 12)(font "Arial" ))
 		(text "stall" (rect 155 155 171 167)(font "Arial" ))
 		(line (pt 192 160)(pt 176 160))
+	)
+	(port
+		(pt 192 176)
+		(output)
+		(text "jr" (rect 0 0 5 12)(font "Arial" ))
+		(text "jr" (rect 167 171 171 183)(font "Arial" ))
+		(line (pt 192 176)(pt 176 176))
 	)
 	(drawing
 		(rectangle (rect 16 16 176 192))
@@ -1534,9 +1555,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 3208 448 3440 656)
+	(rect 3208 448 3440 688)
 	(text "JumpSel" (rect 5 0 47 12)(font "Arial" ))
-	(text "inst23" (rect 8 192 37 204)(font "Arial" ))
+	(text "inst23" (rect 8 224 37 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1601,6 +1622,20 @@ agreement for further details.
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "rs_if_id[31..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "rs_if_id[31..0]" (rect 21 171 89 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "jr" (rect 0 0 5 12)(font "Arial" ))
+		(text "jr" (rect 21 187 26 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
 		(pt 232 32)
 		(output)
 		(text "j_addr[31..0]" (rect 0 0 61 12)(font "Arial" ))
@@ -1608,7 +1643,7 @@ agreement for further details.
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 216 192))
+		(rectangle (rect 16 16 216 224))
 	)
 )
 (symbol
@@ -1637,7 +1672,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 592 88 736 184)
+	(rect 320 88 464 184)
 	(text "MUX_3x32" (rect 33 0 106 16)(font "Arial" (font_size 10)))
 	(text "inst3" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -1728,9 +1763,9 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 2280 -112 2520 0)
-	(text "id_ex_fw" (rect 5 0 48 12)(font "Arial" ))
-	(text "inst29" (rect 8 96 37 108)(font "Arial" ))
+	(rect 2280 -112 2520 32)
+	(text "ID_EX_FW" (rect 5 0 59 12)(font "Arial" ))
+	(text "inst29" (rect 8 128 37 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1760,6 +1795,13 @@ agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
+		(pt 0 96)
+		(input)
+		(text "jr" (rect 0 0 5 12)(font "Arial" ))
+		(text "jr" (rect 21 91 26 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
 		(pt 240 32)
 		(output)
 		(text "data_out[31..0]" (rect 0 0 74 12)(font "Arial" ))
@@ -1767,7 +1809,7 @@ agreement for further details.
 		(line (pt 240 32)(pt 224 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 224 96))
+		(rectangle (rect 16 16 224 128))
 	)
 )
 (symbol
@@ -2726,6 +2768,53 @@ agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
+(symbol
+	(rect 584 88 728 168)
+	(text "MUX_2x32" (rect 33 0 106 16)(font "Arial" (font_size 10)))
+	(text "inst25" (rect 8 64 37 76)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "data1x[31..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data1x[31..0]" (rect 4 24 78 38)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 64 40)(line_width 3))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "data0x[31..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "data0x[31..0]" (rect 4 40 78 54)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 64 56)(line_width 3))
+	)
+	(port
+		(pt 72 80)
+		(input)
+		(text "sel" (rect 0 0 14 16)(font "Arial" (font_size 8))(vertical))
+		(text "sel" (rect 64 48 78 64)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 80)(pt 72 68))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 72 32 139 46)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 80 48)(line_width 3))
+	)
+	(drawing
+		(line (pt 64 24)(pt 64 72))
+		(line (pt 64 24)(pt 80 32))
+		(line (pt 64 72)(pt 80 64))
+		(line (pt 80 32)(pt 80 64))
+		(line (pt 0 0)(pt 146 0))
+		(line (pt 146 0)(pt 146 82))
+		(line (pt 0 82)(pt 146 82))
+		(line (pt 0 0)(pt 0 82))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
 (connector
 	(text "vga_clk" (rect 752 312 789 329)(font "Intel Clear" ))
 	(pt 696 328)
@@ -2855,11 +2944,6 @@ agreement for further details.
 	(pt 1792 264)
 )
 (connector
-	(pt 512 8)
-	(pt 1336 8)
-	(bus)
-)
-(connector
 	(text "INSTR[15..0]" (rect 1696 488 1752 505)(font "Intel Clear" (font_size 6)))
 	(pt 1688 504)
 	(pt 1776 504)
@@ -2932,22 +3016,6 @@ agreement for further details.
 	(text "dst_wb[4..0]" (rect 1720 360 1777 377)(font "Intel Clear" ))
 	(pt 1792 376)
 	(pt 1712 376)
-	(bus)
-)
-(connector
-	(pt 592 160)
-	(pt 512 160)
-	(bus)
-)
-(connector
-	(pt 512 8)
-	(pt 512 160)
-	(bus)
-)
-(connector
-	(text "jump_addr[31..0]" (rect 544 128 624 145)(font "Intel Clear" ))
-	(pt 592 144)
-	(pt 536 144)
 	(bus)
 )
 (connector
@@ -3025,35 +3093,8 @@ agreement for further details.
 	(pt 1128 192)
 )
 (connector
-	(pt 736 144)
-	(pt 792 144)
-	(bus)
-)
-(connector
 	(pt 848 152)
 	(pt 792 152)
-	(bus)
-)
-(connector
-	(pt 792 144)
-	(pt 792 152)
-	(bus)
-)
-(connector
-	(pt 664 184)
-	(pt 664 200)
-	(bus)
-)
-(connector
-	(text "branch,jump" (rect 609 184 666 201)(font "Intel Clear" ))
-	(pt 664 200)
-	(pt 584 200)
-	(bus)
-)
-(connector
-	(text "br_addr[31..0]" (rect 544 112 610 129)(font "Intel Clear" ))
-	(pt 592 128)
-	(pt 536 128)
 	(bus)
 )
 (connector
@@ -3203,11 +3244,6 @@ agreement for further details.
 	(text "j_jump" (rect 1985 -8 2016 9)(font "Intel Clear" ))
 	(pt 1976 8)
 	(pt 2008 8)
-)
-(connector
-	(text "jump" (rect 1987 -24 2010 -7)(font "Intel Clear" ))
-	(pt 1976 -8)
-	(pt 2008 -8)
 )
 (connector
 	(pt 2128 -88)
@@ -4562,7 +4598,6 @@ agreement for further details.
 	(pt 2328 112)
 )
 (connector
-	(text "<<__$DEF_ALIAS957>>" (rect 2722 8 2834 25)(font "Intel Clear" )(invisible))
 	(pt 2832 24)
 	(pt 2760 24)
 	(bus)
@@ -4677,11 +4712,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "LO" (rect 1450 176 1464 193)(font "Intel Clear" ))
-	(pt 1472 192)
-	(pt 1424 192)
-)
-(connector
 	(text "rs1[31..0]" (rect 333 456 376 473)(font "Intel Clear" ))
 	(pt 360 472)
 	(pt 320 472)
@@ -4691,6 +4721,120 @@ agreement for further details.
 	(text "rs2[31..0]" (rect 340 472 383 489)(font "Intel Clear" ))
 	(pt 360 488)
 	(pt 320 488)
+	(bus)
+)
+(connector
+	(text "wb_data[31..0]" (rect 318 440 388 457)(font "Intel Clear" ))
+	(pt 280 456)
+	(pt 360 456)
+	(bus)
+)
+(connector
+	(text "LO" (rect 2284 96 2298 113)(font "Intel Clear" ))
+	(pt 2328 112)
+	(pt 2280 112)
+)
+(connector
+	(pt 2472 440)
+	(pt 2488 440)
+)
+(connector
+	(text "jump" (rect 1987 -24 2010 -7)(font "Intel Clear" ))
+	(pt 1976 -8)
+	(pt 2008 -8)
+)
+(connector
+	(text "jr" (rect 2000 24 2005 41)(font "Intel Clear" ))
+	(pt 1976 40)
+	(pt 2008 40)
+)
+(connector
+	(text "jr" (rect 2149 408 2154 425)(font "Intel Clear" ))
+	(pt 2224 424)
+	(pt 2136 424)
+)
+(connector
+	(text "jr_out" (rect 2471 443 2488 470)(font "Intel Clear" )(vertical))
+	(pt 2488 440)
+	(pt 2488 480)
+)
+(connector
+	(text "jr_out" (rect 3152 624 3179 641)(font "Intel Clear" ))
+	(pt 3208 640)
+	(pt 3144 640)
+)
+(connector
+	(pt 1336 8)
+	(pt 232 8)
+	(bus)
+)
+(connector
+	(text "jump_addr[31..0]" (rect 272 128 352 145)(font "Intel Clear" ))
+	(pt 320 144)
+	(pt 264 144)
+	(bus)
+)
+(connector
+	(pt 392 200)
+	(pt 392 184)
+	(bus)
+)
+(connector
+	(text "br_addr[31..0]" (rect 272 112 338 129)(font "Intel Clear" ))
+	(pt 320 128)
+	(pt 264 128)
+	(bus)
+)
+(connector
+	(pt 232 160)
+	(pt 320 160)
+	(bus)
+)
+(connector
+	(pt 232 8)
+	(pt 232 160)
+	(bus)
+)
+(connector
+	(text "branch,jump" (rect 321 184 378 201)(font "Intel Clear" ))
+	(pt 336 200)
+	(pt 392 200)
+	(bus)
+)
+(connector
+	(pt 792 152)
+	(pt 792 136)
+	(bus)
+)
+(connector
+	(pt 792 136)
+	(pt 728 136)
+	(bus)
+)
+(connector
+	(pt 464 144)
+	(pt 584 144)
+	(bus)
+)
+(connector
+	(text "rs_data[31..0]" (rect 528 112 592 129)(font "Intel Clear" ))
+	(pt 584 128)
+	(pt 520 128)
+	(bus)
+)
+(connector
+	(pt 656 168)
+	(pt 656 184)
+)
+(connector
+	(text "jr_out" (rect 616 168 643 185)(font "Intel Clear" ))
+	(pt 656 184)
+	(pt 608 184)
+)
+(connector
+	(text "zeros[31..0]" (rect 3152 608 3206 625)(font "Intel Clear" ))
+	(pt 3208 624)
+	(pt 3144 624)
 	(bus)
 )
 (connector
@@ -4712,15 +4856,14 @@ agreement for further details.
 	(pt 544 -112)
 )
 (connector
-	(text "wb_data[31..0]" (rect 318 440 388 457)(font "Intel Clear" ))
-	(pt 280 456)
-	(pt 360 456)
-	(bus)
+	(text "jr" (rect 2232 -32 2237 -15)(font "Intel Clear" ))
+	(pt 2280 -16)
+	(pt 2224 -16)
 )
 (connector
-	(text "LO" (rect 2284 96 2298 113)(font "Intel Clear" ))
-	(pt 2328 112)
-	(pt 2280 112)
+	(text "jr_out" (rect 1450 176 1477 193)(font "Intel Clear" ))
+	(pt 1472 192)
+	(pt 1424 192)
 )
 (junction (pt 1664 296))
 (junction (pt 1096 120))
