@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDR[5]",
 					"strict" : false
 				},

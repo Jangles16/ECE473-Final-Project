@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGADEMO
-Thu Nov 30 10:53:13 2017
+Thu Nov 30 23:37:52 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -75,13 +75,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 30 10:53:13 2017       ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 30 23:37:52 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGADEMO                                     ;
 ; Top-level Entity Name           ; VGADEMO                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2216                                        ;
+; Total registers                 ; 2183                                        ;
 ; Total pins                      ; 36                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 311,296                                     ;
@@ -273,16 +273,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2869                                                                                 ;
+; Estimate of Logic utilization (ALMs needed) ; 2902                                                                                 ;
 ;                                             ;                                                                                      ;
-; Combinational ALUT usage for logic          ; 3671                                                                                 ;
-;     -- 7 input functions                    ; 50                                                                                   ;
-;     -- 6 input functions                    ; 1831                                                                                 ;
-;     -- 5 input functions                    ; 400                                                                                  ;
-;     -- 4 input functions                    ; 468                                                                                  ;
-;     -- <=3 input functions                  ; 922                                                                                  ;
+; Combinational ALUT usage for logic          ; 3696                                                                                 ;
+;     -- 7 input functions                    ; 34                                                                                   ;
+;     -- 6 input functions                    ; 1892                                                                                 ;
+;     -- 5 input functions                    ; 362                                                                                  ;
+;     -- 4 input functions                    ; 447                                                                                  ;
+;     -- <=3 input functions                  ; 961                                                                                  ;
 ;                                             ;                                                                                      ;
-; Dedicated logic registers                   ; 2216                                                                                 ;
+; Dedicated logic registers                   ; 2183                                                                                 ;
 ;                                             ;                                                                                      ;
 ; I/O pins                                    ; 36                                                                                   ;
 ; Total MLAB memory bits                      ; 0                                                                                    ;
@@ -294,8 +294,8 @@ agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                    ;
 ;                                             ;                                                                                      ;
 ; Maximum fan-out node                        ; MUX_4x1:inst20|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated|l2_w0_n0_mux_dataout ;
-; Maximum fan-out                             ; 1697                                                                                 ;
-; Total fan-out                               ; 27868                                                                                ;
+; Maximum fan-out                             ; 1664                                                                                 ;
+; Total fan-out                               ; 27843                                                                                ;
 ; Average fan-out                             ; 4.60                                                                                 ;
 +---------------------------------------------+--------------------------------------------------------------------------------------+
 
@@ -305,12 +305,12 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |VGADEMO                                     ; 3671 (1)            ; 2216 (0)                  ; 311296            ; 1          ; 36   ; 0            ; |VGADEMO                                                                                                                    ; VGADEMO         ; work         ;
-;    |ALU:inst16|                              ; 690 (690)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
+; |VGADEMO                                     ; 3696 (1)            ; 2183 (0)                  ; 311296            ; 1          ; 36   ; 0            ; |VGADEMO                                                                                                                    ; VGADEMO         ; work         ;
+;    |ALU:inst16|                              ; 708 (708)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ALU:inst16                                                                                                         ; ALU             ; work         ;
 ;    |Add4:inst12|                             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Add4:inst12                                                                                                        ; Add4            ; work         ;
 ;    |Controller:inst2|                        ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Controller:inst2                                                                                                   ; Controller      ; work         ;
 ;    |Cycle_Counter:inst9|                     ; 16 (16)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Cycle_Counter:inst9                                                                                                ; Cycle_Counter   ; work         ;
-;    |EX_MEM_pipe:inst36|                      ; 0 (0)               ; 72 (72)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|EX_MEM_pipe:inst36                                                                                                 ; EX_MEM_pipe     ; work         ;
+;    |EX_MEM_pipe:inst36|                      ; 0 (0)               ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|EX_MEM_pipe:inst36                                                                                                 ; EX_MEM_pipe     ; work         ;
 ;    |Forwarding:inst18|                       ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|Forwarding:inst18                                                                                                  ; Forwarding      ; work         ;
 ;    |ID_EX_FW:inst29|                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ID_EX_FW:inst29                                                                                                    ; ID_EX_FW        ; work         ;
 ;    |ID_EX_PIPE:inst14|                       ; 0 (0)               ; 162 (162)                 ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|ID_EX_PIPE:inst14                                                                                                  ; ID_EX_PIPE      ; work         ;
@@ -338,8 +338,8 @@ agreement for further details.
 ;       |lpm_mux:LPM_MUX_component|            ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|MUX_4x1:inst20|lpm_mux:LPM_MUX_component                                                                           ; lpm_mux         ; work         ;
 ;          |mux_sjc:auto_generated|            ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|MUX_4x1:inst20|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated                                                    ; mux_sjc         ; work         ;
 ;    |PC:inst15|                               ; 69 (69)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|PC:inst15                                                                                                          ; PC              ; work         ;
-;    |VGA_BLOCK:inst4|                         ; 1390 (0)            ; 669 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4                                                                                                    ; VGA_BLOCK       ; work         ;
-;       |char_engine:inst|                     ; 1129 (1129)         ; 578 (578)                 ; 0                 ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst                                                                                   ; char_engine     ; work         ;
+;    |VGA_BLOCK:inst4|                         ; 1395 (0)            ; 669 (0)                   ; 307200            ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4                                                                                                    ; VGA_BLOCK       ; work         ;
+;       |char_engine:inst|                     ; 1134 (1134)         ; 578 (578)                 ; 0                 ; 1          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst                                                                                   ; char_engine     ; work         ;
 ;       |vga_control:inst2|                    ; 173 (173)           ; 85 (85)                   ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vga_control:inst2                                                                                  ; vga_control     ; work         ;
 ;       |vgaclk:inst4|                         ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vgaclk:inst4                                                                                       ; vgaclk          ; work         ;
 ;          |vgaclk_0002:vgaclk_inst|           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|VGA_BLOCK:inst4|vgaclk:inst4|vgaclk_0002:vgaclk_inst                                                               ; vgaclk_0002     ; work         ;
@@ -358,7 +358,7 @@ agreement for further details.
 ;    |instructionmem:inst|                     ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst                                                                                                ; instructionmem  ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component                                                                ; altsyncram      ; work         ;
 ;          |altsyncram_dhp2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |VGADEMO|instructionmem:inst|altsyncram:altsyncram_component|altsyncram_dhp2:auto_generated                                 ; altsyncram_dhp2 ; work         ;
-;    |registerfile:inst5|                      ; 1022 (1022)         ; 1088 (1088)               ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|registerfile:inst5                                                                                                 ; registerfile    ; work         ;
+;    |registerfile:inst5|                      ; 1024 (1024)         ; 1088 (1088)               ; 0                 ; 0          ; 0    ; 0            ; |VGADEMO|registerfile:inst5                                                                                                 ; registerfile    ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -446,13 +446,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ALU:inst16|result[1]                                ; ALU:inst16|result[31]       ; yes                    ;
 ; ALU:inst16|result[0]                                ; ALU:inst16|result[31]       ; yes                    ;
 ; Controller:inst2|jump_out                           ; Controller:inst2|reg_dest   ; yes                    ;
-; Controller:inst2|stall                              ; Controller:inst2|stall      ; yes                    ;
+; Controller:inst2|jr                                 ; Controller:inst2|reg_dest   ; yes                    ;
+; Controller:inst2|stall                              ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|jal                                ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|reg_dest                           ; Controller:inst2|reg_dest   ; yes                    ;
+; Controller:inst2|mem_write                          ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|op2_src[1]                         ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|op2_src[0]                         ; Controller:inst2|op2_src[1] ; yes                    ;
-; Controller:inst2|jr                                 ; Controller:inst2|reg_dest   ; yes                    ;
-; Controller:inst2|mem_write                          ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|j_jump                             ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|mem_reg_dst                        ; Controller:inst2|op2_src[1] ; yes                    ;
 ; Controller:inst2|reg_write                          ; Controller:inst2|reg_dest   ; yes                    ;
@@ -817,8 +817,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2216  ;
-; Number of registers using Synchronous Clear  ; 1596  ;
+; Total registers                              ; 2183  ;
+; Number of registers using Synchronous Clear  ; 1561  ;
 ; Number of registers using Synchronous Load   ; 119   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -838,39 +838,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; registerfile:inst5|Regfile[29][2]               ; 3       ;
 ; registerfile:inst5|Regfile[29][5]               ; 3       ;
 ; registerfile:inst5|Regfile[29][4]               ; 3       ;
+; registerfile:inst5|Regfile[29][1]               ; 3       ;
+; registerfile:inst5|Regfile[29][0]               ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[31]          ; 36      ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[3]           ; 9       ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[2]           ; 10      ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[1]           ; 18      ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[0]           ; 22      ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[1]  ; 5       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[2]  ; 5       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[1]  ; 4       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[2]  ; 4       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[0]  ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[5]  ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[31] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[26] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[23] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[22] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[13] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[12] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[30] ; 5       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[21] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[11] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[7]  ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[25] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[24] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[15] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[14] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[30] ; 4       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[10] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[20] ; 4       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[9]  ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[6]  ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[10] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[8]  ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[7]  ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[6]  ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[29] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[28] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[19] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[18] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[22] ; 4       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[23] ; 4       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[27] ; 4       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[13] ; 3       ;
-; VGA_BLOCK:inst4|char_engine:inst|data_index[12] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[25] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[24] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[15] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[14] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[27] ; 3       ;
+; VGA_BLOCK:inst4|char_engine:inst|data_index[26] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[17] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[16] ; 3       ;
 ; VGA_BLOCK:inst4|char_engine:inst|data_index[4]  ; 8       ;
@@ -902,7 +904,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_BLOCK:inst4|char_engine:inst|y[14]          ; 1       ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[13]          ; 1       ;
 ; VGA_BLOCK:inst4|char_engine:inst|y[12]          ; 1       ;
-; Total number of inverted registers = 70         ;         ;
+; Total number of inverted registers = 72         ;         ;
 +-------------------------------------------------+---------+
 
 
@@ -911,68 +913,68 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[16][26]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[8][18]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[24][24]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[4][9]                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[20][3]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[12][2]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[28][17]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[2][28]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[18][22]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[10][11]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[26][22]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[6][4]                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[22][9]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[14][4]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[30][17]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[1][5]                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[17][22]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[9][4]                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[25][14]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[5][18]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[21][29]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[13][27]                                               ;
-; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[29][8]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[3][10]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[16][27]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[8][29]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[24][26]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[4][22]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[20][16]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[12][13]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[28][5]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[2][25]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[18][27]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[10][6]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[26][26]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[6][12]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[22][27]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[14][8]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[30][3]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[1][16]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[17][30]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[9][3]                                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[25][27]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[5][30]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[21][21]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[13][16]                                               ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[29][24]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[3][13]                                                ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[19][5]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[11][14]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[27][29]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[7][15]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[23][28]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[15][10]                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[31][4]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|ID_EX_PIPE:inst14|data_out_1[30]                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|x[2]                                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[11][3]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[27][30]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[7][29]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[23][5]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[15][25]                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[31][9]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |VGADEMO|ID_EX_PIPE:inst14|data_out_1[31]                                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|x[27]                                           ;
 ; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|mem_out[5]                                      ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_2[22]                                                ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_1[3]                                                 ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_debug[0]                                             ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |VGADEMO|PC:inst15|pc_out[0]                                                              ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_2[8]                                                 ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_1[18]                                                ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|registerfile:inst5|data_out_debug[22]                                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |VGADEMO|PC:inst15|pc_out[1]                                                              ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|mem_out[4]                                      ;
-; 8:1                ; 29 bits   ; 145 LEs       ; 58 LEs               ; 87 LEs                 ; Yes        ; |VGADEMO|PC:inst15|pc_out[3]                                                              ;
-; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|row[12]                                         ;
+; 8:1                ; 29 bits   ; 145 LEs       ; 58 LEs               ; 87 LEs                 ; Yes        ; |VGADEMO|PC:inst15|pc_out[16]                                                             ;
+; 14:1               ; 12 bits   ; 108 LEs       ; 0 LEs                ; 108 LEs                ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|row[14]                                         ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|hex_digit[5]                                    ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 18 LEs               ; 2 LEs                  ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|hex_digit[4]                                    ;
-; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[20]                                        ;
-; 25:1               ; 5 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[1]                                         ;
-; 28:1               ; 11 bits   ; 198 LEs       ; 187 LEs              ; 11 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[13]                                        ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[29][5]                                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|y[31]                                           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftRight0                                                           ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 160 LEs              ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[19]                                        ;
+; 25:1               ; 5 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[0]                                         ;
+; 28:1               ; 11 bits   ; 198 LEs       ; 187 LEs              ; 11 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|data[6]                                         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |VGADEMO|registerfile:inst5|Regfile[29][5]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |VGADEMO|VGA_BLOCK:inst4|char_engine:inst|y[2]                                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftLeft0                                                            ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftRight0                                                           ;
 ; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftLeft0                                                            ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftLeft0                                                            ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftRight0                                                           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftLeft0                                                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|MUX_3x32:inst21|lpm_mux:LPM_MUX_component|mux_flc:auto_generated|result_node[19] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftRight0                                                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|ALU:inst16|ShiftRight0                                                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|MUX_3x32:inst21|lpm_mux:LPM_MUX_component|mux_flc:auto_generated|result_node[26] ;
 ; 3:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |VGADEMO|VGA_BLOCK:inst4|vga_control:inst2|hcount                                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |VGADEMO|VGA_BLOCK:inst4|vga_control:inst2|hcount                                         ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|br_controller:inst30|op2[11]                                                     ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|br_controller:inst30|op1[3]                                                      ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|br_controller:inst30|op2[28]                                                     ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |VGADEMO|br_controller:inst30|op1[25]                                                     ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |VGADEMO|MUX_3x32:inst31|lpm_mux:LPM_MUX_component|mux_flc:auto_generated|_               ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |VGADEMO|MUX_3x32:inst31|lpm_mux:LPM_MUX_component|mux_flc:auto_generated|result_node[4]  ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|Controller:inst2|op2_src[0]                                                      ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |VGADEMO|MUX_3x32:inst31|lpm_mux:LPM_MUX_component|mux_flc:auto_generated|result_node[1]  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |VGADEMO|Controller:inst2|op2_src[1]                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
 
 
@@ -1752,15 +1754,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2216                        ;
-;     ENA               ; 421                         ;
-;     ENA SCLR          ; 1110                        ;
+; arriav_ff             ; 2183                        ;
+;     ENA               ; 423                         ;
+;     ENA SCLR          ; 1108                        ;
 ;     ENA SCLR SLD      ; 29                          ;
 ;     ENA SLD           ; 58                          ;
-;     SCLR              ; 425                         ;
+;     SCLR              ; 392                         ;
 ;     SCLR SLD          ; 32                          ;
 ;     plain             ; 141                         ;
-; arriav_lcell_comb     ; 3671                        ;
+; arriav_lcell_comb     ; 3696                        ;
 ;     arith             ; 501                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 335                         ;
@@ -1768,16 +1770,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 30                          ;
 ;         4 data inputs ; 61                          ;
 ;         5 data inputs ; 58                          ;
-;     extend            ; 50                          ;
-;         7 data inputs ; 50                          ;
-;     normal            ; 3061                        ;
+;     extend            ; 34                          ;
+;         7 data inputs ; 34                          ;
+;     normal            ; 3102                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 215                         ;
-;         3 data inputs ; 263                         ;
-;         4 data inputs ; 407                         ;
-;         5 data inputs ; 342                         ;
-;         6 data inputs ; 1831                        ;
+;         2 data inputs ; 237                         ;
+;         3 data inputs ; 280                         ;
+;         4 data inputs ; 386                         ;
+;         5 data inputs ; 304                         ;
+;         6 data inputs ; 1892                        ;
 ;     shared            ; 59                          ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 42                          ;
@@ -1787,8 +1789,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 102                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.90                       ;
-; Average LUT depth     ; 5.47                        ;
+; Max LUT depth         ; 12.10                       ;
+; Average LUT depth     ; 5.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1797,7 +1799,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:43     ;
+; Top            ; 00:00:44     ;
 +----------------+--------------+
 
 
@@ -1807,7 +1809,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 30 10:52:11 2017
+    Info: Processing started: Thu Nov 30 23:36:39 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGADEMO -c VGADEMO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1963,8 +1965,8 @@ Warning (10230): Verilog HDL assignment warning at char_engine.v(173): truncated
 Warning (10230): Verilog HDL assignment warning at char_engine.v(174): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 174
 Warning (10230): Verilog HDL assignment warning at char_engine.v(175): truncated value with size 32 to match size of target (6) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 175
 Warning (10230): Verilog HDL assignment warning at char_engine.v(177): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 177
-Warning (10230): Verilog HDL assignment warning at char_engine.v(591): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 591
-Warning (10230): Verilog HDL assignment warning at char_engine.v(598): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 598
+Warning (10230): Verilog HDL assignment warning at char_engine.v(594): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 594
+Warning (10230): Verilog HDL assignment warning at char_engine.v(601): truncated value with size 32 to match size of target (5) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 601
 Warning (10762): Verilog HDL Case Statement warning at char_engine.v(180): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 180
 Warning (10230): Verilog HDL assignment warning at char_engine.v(97): truncated value with size 32 to match size of target (16) File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_Components/char_engine.v Line: 97
 Info (12128): Elaborating entity "color_encoder" for hierarchy "VGA_BLOCK:inst4|color_encoder:inst1"
@@ -2313,22 +2315,23 @@ Warning (13012): Latch ALU:inst16|result[0] has unsafe behavior File: C:/Users/J
     Warning (13013): Ports ENA and CLR on the latch are fed by the same signal ID_EX_PIPE:inst14|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/ID_EX_pipe.v Line: 63
 Warning (13012): Latch Controller:inst2|jump_out has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 11
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[27] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
+Warning (13012): Latch Controller:inst2|jr has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 15
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|stall has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 13
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|jal has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 10
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
     Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|reg_dest has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 7
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
+Warning (13012): Latch Controller:inst2|mem_write has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 9
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|op2_src[1] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 46
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
     Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|op2_src[0] has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 46
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
-    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
-Warning (13012): Latch Controller:inst2|jr has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 15
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
-Warning (13012): Latch Controller:inst2|mem_write has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 9
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
     Warning (13013): Ports ENA and CLR on the latch are fed by the same signal IF_ID_pipe:inst6|instr_out[26] File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/IF_ID_pipe.v Line: 16
 Warning (13012): Latch Controller:inst2|j_jump has unsafe behavior File: C:/Users/Josh Andrews/Desktop/ECE 473/ECE473-Final-Project/Milestone 4/VGA_DEMO/Controller.v Line: 12
@@ -2343,7 +2346,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[9]" is stuck at GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND
     Warning (13410): Pin "LEDR[7]" is stuck at GND
-    Warning (13410): Pin "LEDR[6]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 62 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -2384,18 +2386,18 @@ Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[1]"
     Warning (15610): No output dependent on input pin "SW[0]"
-Info (21057): Implemented 5448 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5438 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 5308 logic cells
+    Info (21061): Implemented 5298 logic cells
     Info (21064): Implemented 102 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 194 warnings
     Info: Peak virtual memory: 848 megabytes
-    Info: Processing ended: Thu Nov 30 10:53:13 2017
-    Info: Elapsed time: 00:01:02
-    Info: Total CPU time (on all processors): 00:01:21
+    Info: Processing ended: Thu Nov 30 23:37:52 2017
+    Info: Elapsed time: 00:01:13
+    Info: Total CPU time (on all processors): 00:01:27
 
 
 +------------------------------------------+

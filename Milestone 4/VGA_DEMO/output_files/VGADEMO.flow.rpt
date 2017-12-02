@@ -1,5 +1,5 @@
 Flow report for VGADEMO
-Thu Nov 30 11:00:22 2017
+Thu Nov 30 23:47:18 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Nov 30 10:59:03 2017       ;
+; Flow Status                     ; Successful - Thu Nov 30 23:45:23 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; VGADEMO                                     ;
 ; Top-level Entity Name           ; VGADEMO                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 2,817 / 18,480 ( 15 % )                     ;
-; Total registers                 ; 2342                                        ;
+; Logic utilization (in ALMs)     ; 2,830 / 18,480 ( 15 % )                     ;
+; Total registers                 ; 2297                                        ;
 ; Total pins                      ; 36 / 224 ( 16 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 311,296 / 3,153,920 ( 10 % )                ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2017 10:52:12 ;
+; Start date & time ; 11/30/2017 23:36:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VGADEMO             ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 251408596617601.151205713105640        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 251408596617601.151210300009116        ; --            ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit      ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -121,11 +121,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:01     ; 1.0                     ; 848 MB              ; 00:01:19                           ;
-; Fitter                    ; 00:05:39     ; 1.1                     ; 2033 MB             ; 00:09:25                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 776 MB              ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:01:18     ; 1.2                     ; 1094 MB             ; 00:01:31                           ;
-; Total                     ; 00:08:05     ; --                      ; --                  ; 00:12:22                           ;
+; Analysis & Synthesis      ; 00:01:12     ; 1.0                     ; 848 MB              ; 00:01:26                           ;
+; Fitter                    ; 00:07:19     ; 1.1                     ; 2060 MB             ; 00:11:01                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 774 MB              ; 00:00:07                           ;
+; TimeQuest Timing Analyzer ; 00:01:54     ; 1.2                     ; 1093 MB             ; 00:02:06                           ;
+; Total                     ; 00:10:32     ; --                      ; --                  ; 00:14:40                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

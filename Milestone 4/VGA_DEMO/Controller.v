@@ -39,7 +39,7 @@ module Controller(
 				j_jump = 0;
 				mem_write = 0;
 				jal = 0;
-				stall = 1;
+				stall = 0;
 				jr = 1;
 			end
 		end 
@@ -129,7 +129,7 @@ module Controller(
 				jr = 0;
 			end
 			if(instr == 6'b001111) begin	//lui
-				op2_src = 2'b10;	//totally right
+				op2_src = 2'b10;
 				reg_write = 1;
 				reg_dest = 1;
 				mem_reg_dst = 0;

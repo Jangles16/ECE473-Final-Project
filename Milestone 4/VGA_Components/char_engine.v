@@ -347,36 +347,39 @@ module char_engine(
 					end
 					
 
-				10: begin //RAM OUT
+				10: begin //ID EX INSTR
 						
-						hex_buffer[6] <= 6'h1b;
-						hex_buffer[5] <= 6'h0a;
-						hex_buffer[4] <= 6'h16;
-						hex_buffer[3] <= 6'h24;
-						hex_buffer[2] <= 6'h18;
-						hex_buffer[1] <= 6'h1e;
-						hex_buffer[0] <= 6'h1d;
+						hex_buffer[10] <= 6'h12;
+						hex_buffer[9] <= 6'h0f;
+						hex_buffer[8] <= 6'h24;
+						hex_buffer[7] <= 6'h0E;
+						hex_buffer[6] <= 6'h21;
+						hex_buffer[5] <= 6'h24;
+						hex_buffer[4] <= 6'h12;
+						hex_buffer[3] <= 6'h17;
+						hex_buffer[2] <= 6'h1c;
+						hex_buffer[1] <= 6'h1d;
+						hex_buffer[0] <= 6'h1b;
 						
 						row = 25;
 						column = 63;
-						num_chars = 7;
+						num_chars = 11;
 					end
 
-				11: begin //RAM WRITE
+				11: begin //ALU OP 2
 						
-						hex_buffer[8] <= 6'h1b;
 						hex_buffer[7] <= 6'h0a;
-						hex_buffer[6] <= 6'h16;
-						hex_buffer[5] <= 6'h24;
-						hex_buffer[4] <= 6'h20;
-						hex_buffer[3] <= 6'h1b;
-						hex_buffer[2] <= 6'h12;
-						hex_buffer[1] <= 6'h1d;
-						hex_buffer[0] <= 6'h0e;
+						hex_buffer[6] <= 6'h15;
+						hex_buffer[5] <= 6'h1E;
+						hex_buffer[4] <= 6'h24;
+						hex_buffer[3] <= 6'h18;
+						hex_buffer[2] <= 6'h19;
+						hex_buffer[1] <= 6'h24;
+						hex_buffer[0] <= 6'h02;
 						
 						row = 28;
 						column = 63;
-						num_chars = 9;
+						num_chars = 8;
 					end
 
 				12: begin //WRITE DATA

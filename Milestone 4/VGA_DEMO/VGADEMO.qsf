@@ -266,6 +266,8 @@ set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test02-Multiply-Data1.mif"
+set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test02-Multiply-Code.mif"
 set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test09-Fibonacci-Code.mif"
 set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test08-polynomial-Data.mif"
 set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test08-polynomial-Code.mif"
@@ -324,6 +326,4 @@ set_global_assignment -name VERILOG_FILE br_controller.v
 set_global_assignment -name MIF_FILE m3_t6_data.mif
 set_global_assignment -name MIF_FILE m3_t7_ins.mif
 set_global_assignment -name QIP_FILE MUX_4x1.qip
-set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test02-Multiply-Code.mif"
-set_global_assignment -name MIF_FILE "../Milestone-4-Test-Programs/Test02-Multiply-Data.mif"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

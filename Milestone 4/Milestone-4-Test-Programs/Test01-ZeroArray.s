@@ -11,7 +11,7 @@ main:  	la   $s0, array     # put base address of array in $s0
 loop: 	add  $t1 ,$t0, $t0    # $t1 = i * 2
 	add  $t1, $t1, $t1    # $t1 = i * 4
 	add  $t2, $s0, $t1    # $t2 = &array[i]
-	sw   $zero, 0($t2)    # array[i] = 0
+	sw   $t1, 0($t2)    # array[i] = 0
 	addi $t0, $t0, 1      # i = i + 1
 	slt  $t3, $t0, $s1    # $t3 = (i < array size)
 	bne  $t3, $zero, loop # if () go to loop

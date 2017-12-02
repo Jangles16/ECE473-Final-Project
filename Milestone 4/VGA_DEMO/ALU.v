@@ -90,7 +90,7 @@ module ALU(
 			if (op1 < op2) begin
 					result = 1;
 				end else begin
-					result = 32'h00000000;
+					result = 0;
 				end
 		end
 		
